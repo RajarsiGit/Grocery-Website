@@ -203,17 +203,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 				</div>
 				<div class="col-md-8 agileinfo_mail_grid_right">
-					<form action="#" method="post">
+					<form action="/php/mail.php" method="post">
 						<div class="col-md-6 wthree_contact_left_grid">
-							<input type="text" name="Name" value="Name*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name*';}" required="">
-							<input type="email" name="Email" value="Email*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email*';}" required="">
+							<input type="text" name="Name" value="" placeholder="Name*" required="">
+							<input type="email" name="Email" value="" placeholder="Email*" required="">
 						</div>
 						<div class="col-md-6 wthree_contact_left_grid">
-							<input type="text" name="Telephone" value="Telephone*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone*';}" required="">
-							<input type="text" name="Subject" value="Subject*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject*';}" required="">
+							<input type="text" name="Telephone" value="" placeholder="Telephone*" required="">
+							<input type="text" name="Subject" value="" placeholder="Subject*" required="">
 						</div>
 						<div class="clearfix"> </div>
-						<textarea  name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+						<textarea  name="Message" placeholder="Message" required=""></textarea>
 						<input type="submit" value="Submit">
 						<input type="reset" value="Clear">
 					</form>

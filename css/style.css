@@ -4,10 +4,16 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
 html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
 	background:#ffffff;
+	scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 ul li,ol li{
 	font-size:14px;
@@ -1115,12 +1121,16 @@ button.submit.check_out{
     padding: 0.8em 0 0;
 }
 .agileits_social_icons li a.facebook:hover{
-	background:#3b5998;
-	border-color:#3b5998;
+	background:#1877f2;
+	border-color:#1877f2;
 }
-.agileits_social_icons li a.twitter:hover{
-	background:#55acee;
-	border-color:#55acee;
+.agileits_social_icons li a.linkedin:hover{
+	background:#0a66c2;
+	border-color:#0a66c2;
+}
+.agileits_social_icons li a.github:hover{
+	background:#24292e;
+	border-color:#24292e;
 }
 .agileits_social_icons li a.google:hover{
 	background:#dd4b39;
