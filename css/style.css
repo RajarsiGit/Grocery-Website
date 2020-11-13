@@ -151,7 +151,7 @@ ul.dropdown-menu.drp-mnu {
     left:auto;
 }
 ul.dropdown-menu.drp-mnu li:first-child{
-	margin-bottom: .5em;
+	margin-bottom: 0;
 }
 ul.dropdown-menu.drp-mnu li a {
     color: #999;
