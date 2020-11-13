@@ -12,6 +12,8 @@ product_details:pr_id,pr_name,pr_rate,pr_img
 
 CREATE TABLE `grocery`.`product_details` ( `p_id` INT(255) NOT NULL AUTO_INCREMENT , `p_name` VARCHAR(100) NOT NULL , `p_rate` INT(255) NOT NULL , `p_img_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`p_id`)) ENGINE = InnoDB;
 
+ALTER TABLE `product_details` CHANGE `p_rate` `p_rate` DOUBLE(16,4) NOT NULL;
+
 cart_details:
 --------
 
@@ -19,6 +21,8 @@ show/print
 basket:c_id sl_no pr_id nquantity price
 
 CREATE TABLE `grocery`.`cart` ( `sl_no` INT(255) NOT NULL AUTO_INCREMENT , `c_id` INT(255) NOT NULL , `p_id` INT(255) NOT NULL , `quantity` INT(255) NOT NULL,`quantity` INT(255) NOT NULL , PRIMARY KEY (`sl_no`)) ENGINE = InnoDB;
+
+ALTER TABLE `cart` CHANGE `cost` `cost` DOUBLE(16,4) NOT NULL;
 
 ALTER TABLE `cart` ADD FOREIGN KEY (`c_id`) REFERENCES `customer`(`c_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
