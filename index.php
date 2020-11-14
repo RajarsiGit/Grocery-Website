@@ -36,6 +36,9 @@
         case '/bread' :
             require __DIR__ . '/bread.html';
             break;
+        case '/checkout' :
+            require __DIR__ . '/checkout.html';
+            break;
         case '/events' :
             require __DIR__ . '/events.html';
             break;
@@ -56,6 +59,9 @@
             break;
         case '/register' :
             require __DIR__ . '/register.html';
+            break;
+        case '/payment' :
+            require __DIR__ . '/payment.html';
             break;
         default:
             http_response_code(404);

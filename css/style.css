@@ -802,7 +802,7 @@ a.btn.btn-primary {
 }
  select.form-control.option-w3ls {
     width: 100%;
-    padding: 1em 1em 1em 1em;
+    padding: 0.2em 1em 0.2em 0.6em;
     font-size: 0.8em;
     margin: 0.5em 0;
     outline: none;
@@ -1376,6 +1376,9 @@ button.submit.check_out{
     color: #212121;
     font-size: 1.5em;
     margin-bottom: 1.5em;
+}
+.checkout-right h4 span{
+    color: #84c639;
 }
 .address_form_agile h4{
 	font-size: 1.2em;
@@ -2480,14 +2483,13 @@ td.invert-image a img {
 .rem{
 	position:relative;
 }
-.close1,.close2,.close3 {
+.close {
     background: url('../images/close_1.png') no-repeat 0px 0px;
     cursor: pointer;
     width: 28px;
     height: 28px;
-    position: absolute;
-    right: 15px;
-    top: -13px;
+    position: relative;
+	right: 40%;
     -webkit-transition: color 0.2s ease-in-out;
     -moz-transition: color 0.2s ease-in-out;
     -o-transition: color 0.2s ease-in-out;
@@ -2585,7 +2587,7 @@ margin: 3em 0 0 0em;
 .checkout-left-basket ul li span {
     float: right;
 }
-.checkout-left-basket ul li:nth-child(5) {
+.checkout-left-basket ul li:last-child {
     font-size: 1em;
     color: #212121;
     font-weight: 600;
