@@ -1,69 +1,26 @@
 <?php
-require_once "db_controller.php";
-session_start();
+  require_once "db_controller.php";
 
-// initializing variables
-$username = "";
-$password ="";
-$email    = "";
-$phone = "";
-$errors = array(); 
+  $db_handle = new DBController();
 
-$db_handle = new DBController();
-$db=$db_handle->connectDB();
+  if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $username = $_POST['Username'];
+    $email = $_POST['Email'];
+    $password = $_POST['Password'];
+    $phone = $_POST['Phone'];
 
-// REGISTER USER
-if($_SERVER["REQUEST_METHOD"] == "POST"){
- 
-  // receive all input values from the form
-  $username = mysqli_real_escape_string($db, $_POST['Username']);
-  $email = mysqli_real_escape_string($db, $_POST['Email']);
-  $password = mysqli_real_escape_string($db, $_POST['Password']);
-  $phone = mysqli_real_escape_string($db, $_POST['Phone']);
-
-  // form validation: ensure that the form is correctly filled ...
-  // by adding (array_push()) corresponding error unto $errors array
-  if (empty($username)) { array_push($errors, "Username is required"); }
-  if (empty($email)) { array_push($errors, "Email is required"); }
-  if (empty($password)) { array_push($errors, "Password is required"); }
-  if (strlen($phone)>10) {
-    array_push($errors, "Give a proper Phone number");
-  }
-
-
-  if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-     array_push($errors, "Give a proper email-id");
-  }
-
-  // first check the database to make sure 
-  // a user does not already exist with the same username and/or email
-  $user_check_query = "SELECT * FROM users WHERE username='$username' OR email='$email' LIMIT 1";
-  $result = mysqli_query($db, $user_check_query);
-  $user = mysqli_fetch_assoc($result);
-  
-  if ($user) { // if user exists
-    if ($user['username'] === $username) {
-      array_push($errors, "Username already exists");
+    $query = "SELECT * FROM grocery.customer WHERE c_email LIKE '".$email."' LIMIT 1;";
+    $result =  $db_handle->runQuery($query);
+    if(!$result) {
+      $query = "INSERT INTO grocery.customer (c_name, c_password, c_email, c_phone) VALUES('".$username."', '".$password."', '".$email."', ".$phone.");";
+      $result =  $db_handle->insert($query);
+      if($result) {
+        setcookie("Username", $email, time() + (86400 * 30), "/");
+        echo "<div style='margin: 1em 1em 1em 1em; text-align: center;'><h3>Registration Success!</h3><br><h4 style='padding: 1em 1em 1em 1em;'>You are logged in!</h4></div>";
+      }
     }
-
-    if ($user['email'] === $email) {
-      array_push($errors, "email already exists");
+    else {
+      echo "<div style='margin: 1em 1em 1em 1em; text-align: center;'><h3>Email exists!</h3></div>";
     }
   }
-
-  // Finally, register user if there are no errors in the form
-  if (count($errors) == 0) {
-    $password = md5($password);//encrypt the password before saving in the database
-
-    $query = "INSERT INTO customer (c_name, c_email, c_phone ,c_password) 
-              VALUES('$username', '$email', '$phone', '$password')";
-    mysqli_query($db, $query);
-    $_SESSION['username'] = $username;
-    $_SESSION['success'] = "You are now logged in";
-    header("Location: /");
-  }
-  else{
-    print($errors);
-  }
-}
 ?>

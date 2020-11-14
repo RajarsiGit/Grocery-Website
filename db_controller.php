@@ -18,11 +18,26 @@
         function runQuery($query) {
             $resultset = NULL;
             $result = mysqli_query($this->conn, $query);
-            while($row = mysqli_fetch_assoc($result)) {
-                $resultset[] = $row;
+            if($result) {
+                while($row = mysqli_fetch_assoc($result)) {
+                    $resultset[] = $row;
+                }
+                if(!empty($resultset)) {
+                    return $resultset;
+                }
             }
-            if(!empty($resultset))
-                return $resultset;
+            else {
+                return NULL;
+            }
+        }
+
+        function insert($query) {
+            if(mysqli_query($this->conn, $query)) {
+                return true;
+            }
+            else {
+                return false;
+            }
         }
     }
 ?>

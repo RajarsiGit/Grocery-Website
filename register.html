@@ -194,7 +194,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  </div>
 				  <div class="form">
 					<h2>Login to your account</h2>
-					<form action="signin.php" method="post">
+					<form action="signin.php" method="post" id="signin">
 					  <input type="text" name="Username" placeholder="Username" required=" ">
 					  <input type="password" name="Password" placeholder="Password" required=" ">
 					  <input type="submit" value="Login">
@@ -202,7 +202,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  </div>
 				  <div class="form">
 					<h2>Create an account</h2>
-					<form action="signup.php" method="post">
+					<form action="signup.php" method="post" id="signup">
 					  <input type="text" name="Username" placeholder="Username" required=" ">
 					  <input type="password" name="Password" placeholder="Password" required=" ">
 					  <input type="email" name="Email" placeholder="Email Address" required=" ">
@@ -210,7 +210,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <input type="submit" value="Register">
 					</form>
 				  </div>
+					</script>
 				  <div class="cta"><a href="#">Forgot your password?</a></div>
+				<script>
+					$(document).ready(function() {
+						$('#signup').submit(function(e) {
+							e.preventDefault();
+							var form = $(this);
+							var url = form.attr('action');
+							$.ajax({
+								type: 'POST',
+								url: url,
+								data: form.serialize(),
+								success: function(data) {
+									$('.module.form-module > .toggle, .form, .cta').fadeOut();
+									$('.module.form-module').html(data);
+									var ca = decodeURIComponent(document.cookie).split(';');
+									for(var i = 0; i <ca.length; i++) {
+										var c = ca[i];
+										while (c.charAt(0) == ' ') {
+											c = c.substring(1);
+										}
+										if (c.indexOf("Username") == 0) {
+											console.log("Cookie exists");
+											var l = document.createElement("li");
+											l.innerHTML = "<a href=\"/login\">" + c.substring("Username=".length, c.length) + "</a>";
+											document.getElementsByClassName("dropdown-menu drp-mnu")[0].insertAdjacentElement("afterbegin", l);
+											l = document.getElementsByClassName("dropdown-menu drp-mnu")[0];
+											l.childNodes[1].remove();
+											l.childNodes[2].innerHTML = "<a href=\"\">Logout</a>";
+											l.childNodes[2].childNodes[0].addEventListener("click", function() {
+												document.cookie = "Username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+												location.reload();
+											});
+											break;
+										}
+									}
+								}
+							});
+						});
+					});
+				</script>
 				</div>
 			</div>
 			<script>
@@ -375,11 +415,9 @@ $(document).ready(function(){
 
 	<script>
 	//login to register form
-		window.onload=function(){
- 			 document.getElementById("click").click();
-		};
-
-		
+	window.onload=function(){
+		document.getElementById("click").click();
+	};
 	</script>
 </body>
 </html>

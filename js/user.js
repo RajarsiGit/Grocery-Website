@@ -5,6 +5,7 @@ for(var i = 0; i <ca.length; i++) {
         c = c.substring(1);
     }
     if (c.indexOf("Username") == 0) {
+        console.log("Cookie exists");
         var l = document.createElement("li");
         l.innerHTML = "<a href=\"/login\">" + c.substring("Username=".length, c.length) + "</a>";
         document.getElementsByClassName("dropdown-menu drp-mnu")[0].insertAdjacentElement("afterbegin", l);
