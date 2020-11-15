@@ -40,3 +40,9 @@ CREATE TABLE `grocery`.`address_details` (
 ALTER TABLE `grocery`.`cart` ADD FOREIGN KEY (`c_id`) REFERENCES `customer`(`c_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 ALTER TABLE `grocery`.`cart` ADD FOREIGN KEY (`p_id`) REFERENCES `product_details`(`p_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE `product_details` CHANGE `p_rate` `p_new_rate` DOUBLE(16,4) NOT NULL;
+
+ALTER TABLE `product_details` ADD `p_old_rate` DOUBLE(16,4) NOT NULL AFTER `p_rate`;
+
+ALTER TABLE `product_details` ADD `p_type` VARCHAR(50) NOT NULL AFTER `p_img_name`;
