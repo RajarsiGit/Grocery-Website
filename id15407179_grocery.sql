@@ -1,8 +1,8 @@
-DROP DATABASE `grocery`;
+DROP DATABASE `id15407179_grocery`;
 
-CREATE DATABASE IF NOT EXISTS `grocery`;
+CREATE DATABASE IF NOT EXISTS `id15407179_grocery`;
 
-CREATE TABLE `grocery`.`customer` (
+CREATE TABLE `id15407179_grocery`.`customer` (
     `c_id` INT NOT NULL AUTO_INCREMENT,
     `c_name` VARCHAR(255) NOT NULL,
     `c_password` VARCHAR(255) NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE `grocery`.`customer` (
     PRIMARY KEY (`c_id`)
 ) ENGINE = InnoDB;
 
-CREATE TABLE `grocery`.`product_details` (
+CREATE TABLE `id15407179_grocery`.`product_details` (
     `p_id` INT NOT NULL AUTO_INCREMENT,
     `p_name` VARCHAR(255) NOT NULL,
     `p_rate` DOUBLE(16, 4) NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE `grocery`.`product_details` (
     PRIMARY KEY (`p_id`)
 ) ENGINE = InnoDB;
 
-CREATE TABLE `grocery`.`cart` (
+CREATE TABLE `id15407179_grocery`.`cart` (
     `sl_no` INT NOT NULL AUTO_INCREMENT,
     `c_id` INT NOT NULL,
     `p_id` INT NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE `grocery`.`cart` (
     PRIMARY KEY (`sl_no`)
 ) ENGINE = InnoDB;
 
-CREATE TABLE `grocery`.`address_details` (
+CREATE TABLE `id15407179_grocery`.`address_details` (
     `a_id` INT NOT NULL AUTO_INCREMENT,
     `a_house_number` VARCHAR(50) NOT NULL,
     `a_road_name` VARCHAR(255) NOT NULL,
@@ -38,12 +38,6 @@ CREATE TABLE `grocery`.`address_details` (
     PRIMARY KEY (`a_id`)
 ) ENGINE = InnoDB;
 
-ALTER TABLE `grocery`.`cart` ADD FOREIGN KEY (`c_id`) REFERENCES `customer`(`c_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE `id15407179_grocery`.`cart` ADD FOREIGN KEY (`c_id`) REFERENCES `customer`(`c_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
-ALTER TABLE `grocery`.`cart` ADD FOREIGN KEY (`p_id`) REFERENCES `product_details`(`p_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
-
-ALTER TABLE `product_details` CHANGE `p_rate` `p_new_rate` DOUBLE(16,4) NOT NULL;
-
-ALTER TABLE `product_details` ADD `p_old_rate` DOUBLE(16,4) NOT NULL AFTER `p_rate`;
-
-ALTER TABLE `product_details` ADD `p_type` VARCHAR(50) NOT NULL AFTER `p_img_name`;
+ALTER TABLE `id15407179_grocery`.`cart` ADD FOREIGN KEY (`p_id`) REFERENCES `product_details`(`p_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;

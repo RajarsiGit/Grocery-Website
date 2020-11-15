@@ -9,10 +9,10 @@
     $password = $_POST['Password'];
     $phone = $_POST['Phone'];
 
-    $query = "SELECT * FROM grocery.customer WHERE c_email LIKE '".$email."' LIMIT 1;";
+    $query = "SELECT * FROM customer WHERE c_email LIKE '".$email."' LIMIT 1;";
     $result =  $db_handle->runQuery($query);
     if(!$result) {
-      $query = "INSERT INTO grocery.customer (c_name, c_password, c_email, c_phone) VALUES('".$username."', '".$password."', '".$email."', ".$phone.");";
+      $query = "INSERT INTO customer (c_name, c_password, c_email, c_phone) VALUES('".$username."', '".$password."', '".$email."', ".$phone.");";
       $result =  $db_handle->insert($query);
       if($result) {
         setcookie("Username", $email, time() + (86400 * 30), "/");
