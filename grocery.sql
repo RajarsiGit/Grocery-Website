@@ -5,19 +5,22 @@ CREATE DATABASE IF NOT EXISTS `grocery`;
 CREATE TABLE `grocery`.`customer` (
     `c_id` INT NOT NULL AUTO_INCREMENT,
     `c_name` VARCHAR(255) NOT NULL,
-    `c_password` VARCHAR(255) NOT NULL,
-    `c_email` VARCHAR(255) NOT NULL,
+    `c_gender` VARCHAR(10) NOT NULL,
     `c_phone` VARCHAR(15) NOT NULL,
+    `c_email` VARCHAR(255) NOT NULL,
+    `c_username` VARCHAR(255) NOT NULL,
+    `c_password` VARCHAR(255) NOT NULL,
     PRIMARY KEY (`c_id`)
 ) ENGINE = InnoDB;
 
 CREATE TABLE `grocery`.`product_details` (
     `p_id` INT NOT NULL AUTO_INCREMENT,
     `p_name` VARCHAR(255) NOT NULL,
-    'p_new_rate' DOUBLE(16, 2) NOT NULL,
-    'p_old_rate' DOUBLE(16, 2) NOT NULL,
+    `p_new_rate` DOUBLE(16, 2) NOT NULL,
+    `p_old_rate` DOUBLE(16, 2) NOT NULL,
     `p_img_name` VARCHAR(100) NOT NULL,
-    'p_type' VARCHAR(255) NOT NULL,
+    `p_type` VARCHAR(255) NOT NULL,
+    `offer_tag` INT NOT NULL,
     PRIMARY KEY (`p_id`)
 ) ENGINE = InnoDB;
 

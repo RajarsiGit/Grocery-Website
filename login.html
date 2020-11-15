@@ -195,20 +195,42 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  <div class="form">
 					<h2>Login to your account</h2>
 					<form action="signin.php" method="post" id="signin">
-					  <input type="text" name="Username" placeholder="Username" required=" ">
+					  <input type="text" name="Username" placeholder="Username or Email" required=" ">
 					  <input type="password" name="Password" placeholder="Password" required=" ">
 					  <input type="submit" value="Login">
 					</form>
 				  </div>
 				  <div class="form">
 					<h2>Create an account</h2>
-					<form action="singup.php" method="post">
-					  <input type="text" name="Username" placeholder="Username" required=" ">
-					  <input type="password" name="Password" placeholder="Password" required=" ">
-					  <input type="email" name="Email" placeholder="Email Address" required=" ">
-					  <input type="text" name="Phone" placeholder="Phone Number" required=" ">
-					  <input type="submit" value="Register">
-					</form>
+					<form action="signup.php" method="post" id="signup">
+						<input type="text" name="Name" placeholder="Name" required=" ">
+						<select name="Gender" required=" ">
+						  <option value="" disabled selected hidden>Gender</option>
+						  <option value="Male">Male</option>
+						  <option value="Female">Female</option>
+						  <option value="Transgender">Transgender</option>
+						  <option value="Others">Others</option>
+						</select>
+						<input type="text" name="Phone" placeholder="Phone Number" required=" ">
+						<input type="email" name="Email" placeholder="Email Address" required=" ">
+						<input type="text" name="Username" placeholder="Username" required=" ">
+						<input type="password" id="pass" name="Password" placeholder="Password" required=" ">
+						<input type="password" id="re_pass" name="Re_Password" placeholder="Retype Password" required=" ">
+						<span id="msg"></span>
+						<script>
+							$('#pass, #re_pass').on('keyup', function() {
+								if($('#pass').val() == $('#re_pass').val()) {
+								  $('#signup').find('input').last().prop('disabled', false).removeAttr('style');
+								  $('#msg').html('Matching').css('color', 'green');
+								}
+								else {
+								  $('#signup').find('input').last().prop('disabled', true).css('background', 'gray');
+								  $('#msg').html('Not Matching').css('color', 'red');
+								}
+							})
+						</script>
+						<input type="submit" value="Register">
+					  </form>
 				  </div>
 				  <div class="cta"><a href="#">Forgot your password?</a></div>
 				<script>
@@ -217,6 +239,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							e.preventDefault();
 							var form = $(this);
 							var url = form.attr('action');
+							console.log(url);
+							console.log(form.serialize());
 							$.ajax({
 								type: 'POST',
 								url: url,

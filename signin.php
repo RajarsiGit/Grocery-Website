@@ -5,10 +5,12 @@
 
     if(!isset($_COOKIE["Username"])) {
         if(!empty($_POST["Username"]) && !empty($_POST["Password"])) {
-            $query = "SELECT c_password FROM customer WHERE c_email LIKE '".$_POST["Username"]."' LIMIT 1;";
+            $query = "SELECT c_password FROM customer WHERE c_email LIKE '".$_POST["Username"]."' OR c_username LIKE '".$_POST["Username"]."' LIMIT 1;";
             $db_pass =  $db_handle->runQuery($query);
             if($db_pass[0]["c_password"] === $_POST["Password"]) {
-                setcookie("Username", $_POST["Username"], time() + (86400 * 30), "/");
+                $query = "SELECT c_name FROM customer WHERE c_username LIKE '".$_POST["Username"]."' LIMIT 1;";
+                $result =  $db_handle->runQuery($query);
+                setcookie("Username", $result[0]["c_name"], time() + (86400 * 30), "/");
                 echo "<div style='margin: 1em 1em 1em 1em; text-align: center;'><h3>Login Success!</h3></div>";
             }
             else {
