@@ -63,6 +63,9 @@
         case '/payment' :
             require __DIR__ . '/payment.html';
             break;
+        case '/example' :
+            require __DIR__ . '/ex.html';
+            break;
         default:
             http_response_code(404);
             break;
