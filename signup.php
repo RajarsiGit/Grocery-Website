@@ -4,6 +4,7 @@
   $db_handle = new DBController();
 
   if($_SERVER["REQUEST_METHOD"] == "POST"){
+
     $name = $_POST['Name'];
     $gender = $_POST['Gender'];
     $phone = $_POST['Phone'];
@@ -11,11 +12,15 @@
     $username = $_POST['Username'];
     $password = $_POST['Password'];
 
+    $imageFileType = strtolower(pathinfo(basename($_FILES['Photo']['name']), PATHINFO_EXTENSION));
+    $image_base64 = base64_encode(file_get_contents($_FILES['Photo']['tmp_name']));
+    $photo = 'data:image/'.$imageFileType.';base64,'.$image_base64;
+
     $query = "SELECT * FROM customer WHERE c_username LIKE '".$username."' OR c_email LIKE '".$email."' LIMIT 1;";
     $result =  $db_handle->runQuery($query);
 
     if(!$result) {
-      $query = "INSERT INTO customer (c_name, c_gender, c_phone, c_email, c_username, c_password) VALUES('".$name."', '".$gender."', '".$phone."', '".$email."', '".$username."', '".$password."');";
+      $query = "INSERT INTO customer (c_name, c_gender, c_photo, c_phone, c_email, c_username, c_password) VALUES('".$name."', '".$gender."', '".$photo."', '".$phone."', '".$email."', '".$username."', '".$password."');";
       $result =  $db_handle->insert($query);
       if($result) {
         $query = "SELECT c_name FROM customer WHERE c_username LIKE '".$username."' LIMIT 1;";

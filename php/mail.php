@@ -20,8 +20,8 @@
 
     if (@mail($to, 'Message from contact page', $message, $headers))
     {
-        echo 'The message has been sent.';
+        echo "<div style='margin: 1em 1em 1em 1em; text-align: center; color: #85c639;'><h4>The message has been sent!</h4></div>";
     }else{
-        echo 'failed';
+        echo "<div style='margin: 1em 1em 1em 1em; text-align: center; color: #fa1818;'><h4>Message send failed!</h4></div>";
     }
 ?>

@@ -108,8 +108,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>(+91) 89107 42101 / 80132 76482</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:grocery@gmail.com">grocery@gmail.com</a></li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+918910742101">(+91) 89107 42101</a> / <a href="tel:+918013276482">(+91) 80132 76482</a></li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:contact@our-grocery.tk">contact@our-grocery.tk</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -202,7 +202,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				  </div>
 				  <div class="form">
 					<h2>Create an account</h2>
-					<form action="signup.php" method="post" id="signup">
+					<form action="signup.php" method="post" id="signup" enctype="multipart/form-data">
 					  <input type="text" name="Name" placeholder="Name" required=" ">
 					  <select name="Gender" required=" ">
 						<option value="" disabled selected hidden>Gender</option>
@@ -211,6 +211,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<option value="Transgender">Transgender</option>
 						<option value="Others">Others</option>
 					  </select>
+					  <input type="file" name="Photo" placeholder="Photo" required=" " value=" "> 
 					  <input type="text" name="Phone" placeholder="Phone Number" required=" ">
 					  <input type="email" name="Email" placeholder="Email Address" required=" ">
 					  <input type="text" name="Username" placeholder="Username" required=" ">
@@ -238,12 +239,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					$(document).ready(function() {
 						$('#signup').submit(function(e) {
 							e.preventDefault();
-							var form = $(this);
-							var url = form.attr('action');
+							var form = document.getElementById('signup');
+							var data = new FormData(form);
+							var url = 'signup.php';
 							$.ajax({
 								type: 'POST',
+								enctype: 'multipart/form-data',
 								url: url,
-								data: form.serialize(),
+								data: data,
+								processData: false,
+								contentType: false,
 								success: function(data) {
 									$('.module.form-module > .toggle, .form, .cta').fadeOut();
 									$('.module.form-module').html(data);
@@ -254,7 +259,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											c = c.substring(1);
 										}
 										if (c.indexOf("Username") == 0) {
-											console.log("Cookie exists");
 											var l = document.createElement("li");
 											l.innerHTML = "<a href=\"/login\">" + c.substring("Username=".length, c.length) + "</a>";
 											document.getElementsByClassName("dropdown-menu drp-mnu")[0].insertAdjacentElement("afterbegin", l);

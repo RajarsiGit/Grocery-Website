@@ -18,7 +18,7 @@
                 <td class=\"invert\">".strval($i)."</td>
                 <td class=\"invert-image\"><a href=\"/single\"><img src=\"".$result[0]['p_img_name']."\" alt=\" \" class=\"img-responsive\"></a></td>
                 <td class=\"invert\">".strval($q)."</td>
-                <td class=\"invert\">".$_POST["item_name_".strval($i)]."</td>
+                <td class=\"invert\">".$p_name."</td>
                 <td class=\"invert\">$ ".number_format(strval($r), 2, '.', '')."</td>
                 <td class=\"invert\">$ ".number_format(strval($d), 2, '.', '')."</td>
                 <td class=\"invert\"><strong>$ ".number_format(strval($p), 2, '.', '')."</strong></td>
