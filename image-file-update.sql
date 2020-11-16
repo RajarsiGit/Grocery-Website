@@ -1,0 +1,1 @@
+UPDATE grocery.product_details SET p_img_name = concat('images/', p_img_name);

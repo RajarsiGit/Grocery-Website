@@ -16,8 +16,11 @@ CREATE TABLE `id15407179_grocery`.`customer` (
 CREATE TABLE `id15407179_grocery`.`product_details` (
     `p_id` INT NOT NULL AUTO_INCREMENT,
     `p_name` VARCHAR(255) NOT NULL,
-    `p_rate` DOUBLE(16, 4) NOT NULL,
+    `p_new_rate` DOUBLE(16, 2) NOT NULL,
+    `p_old_rate` DOUBLE(16, 2) NOT NULL,
     `p_img_name` VARCHAR(100) NOT NULL,
+    `p_type` VARCHAR(255) NOT NULL,
+    `offer_tag` INT NOT NULL,
     PRIMARY KEY (`p_id`)
 ) ENGINE = InnoDB;
 
@@ -26,7 +29,7 @@ CREATE TABLE `id15407179_grocery`.`cart` (
     `c_id` INT NOT NULL,
     `p_id` INT NOT NULL,
     `quantity` INT NOT NULL,
-    `cost` DOUBLE(16, 4) NOT NULL,
+    `cost` DOUBLE(16, 2) NOT NULL,
     PRIMARY KEY (`sl_no`)
 ) ENGINE = InnoDB;
 
