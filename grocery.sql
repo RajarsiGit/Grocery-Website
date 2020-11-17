@@ -35,18 +35,15 @@ CREATE TABLE `grocery`.`cart` (
 
 CREATE TABLE `grocery`.`address_details` (
     `a_id` INT NOT NULL AUTO_INCREMENT,
-    `a_house_number` VARCHAR(50) NOT NULL,
-    `a_road_name` VARCHAR(255) NOT NULL,
+    `a_name` VARCHAR(255) NOT NULL,
+    `a_phone` VARCHAR(15) NOT NULL,
     `a_landmark` VARCHAR(255) NOT NULL,
     `a_city` VARCHAR(255) NOT NULL,
-    `a_zip` VARCHAR(8) NOT NULL,
+    `a_type` VARCHAR(50) NOT NULL,
+    `total_price` DOUBLE(16, 2) NOT NULL,
     PRIMARY KEY (`a_id`)
 ) ENGINE = InnoDB;
 
 ALTER TABLE `grocery`.`cart` ADD FOREIGN KEY (`c_id`) REFERENCES `customer`(`c_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 ALTER TABLE `grocery`.`cart` ADD FOREIGN KEY (`p_id`) REFERENCES `product_details`(`p_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
-
-ALTER TABLE `address_details` ADD `a_type` VARCHAR(50) NOT NULL AFTER `a_city`;
-
-ALTER TABLE `address_details` ADD `total_price` DOUBLE(16,4) NOT NULL AFTER `a_type`;

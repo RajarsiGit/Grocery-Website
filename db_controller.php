@@ -3,7 +3,7 @@
         private $host = "localhost";
         private $user = "root";
         //private $user = "id15407179_root";
-        private $password = "";
+        private $password = "toor";
         //private $password = "}|u4@Iv~7b7_gAxY";
         private $database = "grocery";
         //private $database = "id15407179_grocery";

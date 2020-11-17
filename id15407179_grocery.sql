@@ -36,11 +36,12 @@ CREATE TABLE `id15407179_grocery`.`cart` (
 
 CREATE TABLE `id15407179_grocery`.`address_details` (
     `a_id` INT NOT NULL AUTO_INCREMENT,
-    `a_house_number` VARCHAR(50) NOT NULL,
-    `a_road_name` VARCHAR(255) NOT NULL,
+    `a_name` VARCHAR(255) NOT NULL,
+    `a_phone` VARCHAR(15) NOT NULL,
     `a_landmark` VARCHAR(255) NOT NULL,
     `a_city` VARCHAR(255) NOT NULL,
-    `a_zip` VARCHAR(8) NOT NULL,
+    `a_type` VARCHAR(50) NOT NULL,
+    `total_price` DOUBLE(16, 2) NOT NULL,
     PRIMARY KEY (`a_id`)
 ) ENGINE = InnoDB;
 
