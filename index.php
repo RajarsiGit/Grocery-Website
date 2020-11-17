@@ -16,25 +16,25 @@
             require __DIR__ . '/about.html';
             break;
         case '/products' :
-            require __DIR__ . '/products.html';
+            require __DIR__ . '/products.php';
             break;
         case '/household' :
-            require __DIR__ . '/household.html';
+            require __DIR__ . '/household.php';
             break;
         case '/vegetables' :
-            require __DIR__ . '/vegetables.html';
+            require __DIR__ . '/vegetables.php';
             break;
         case '/drinks' :
-            require __DIR__ . '/drinks.html';
+            require __DIR__ . '/drinks.php';
             break;
         case '/pet' :
-            require __DIR__ . '/pet.html';
+            require __DIR__ . '/pet.php';
             break;
         case '/frozen' :
-            require __DIR__ . '/frozen.html';
+            require __DIR__ . '/frozen.php';
             break;
         case '/bread' :
-            require __DIR__ . '/bread.html';
+            require __DIR__ . '/bread.php';
             break;
         case '/checkout' :
             require __DIR__ . '/checkout.html';
@@ -64,7 +64,7 @@
             require __DIR__ . '/payment.html';
             break;
         case '/example' :
-            require __DIR__ . '/ex.html';
+            require __DIR__ . '/example.php';
             break;
         default:
             http_response_code(404);
