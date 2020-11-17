@@ -150,7 +150,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="w3ls_vegetables">
 									<ul>	
 										<li><a href="/vegetables">Vegetables</a></li>
-										<li><a href="/vegetables">Fruits</a></li>
+										<li><a href="/fruits">Fruits</a></li>
 									</ul>
 								</div>                  
 							</div>				
@@ -160,8 +160,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>
-										<li><a href="/drinks">Soft Drinks</a></li>
-										<li><a href="/drinks">Juices</a></li>
+                                        <li><a href="/softdrinks">Soft Drinks</a></li>
+                                        <li><a href="/juices">Juices</a></li>
+                                        <li><a href="/energydrinks">Energy Drinks</a></li>
 									</ul>
 								</div>                  
 							</div>	
@@ -188,31 +189,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
 			</div>
 			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_sub">
-				<h3>Beverages</h3>
+				<h3>Soft Drinks</h3>
 				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>soft drinks</h6>
 					<?php
                         $_SESSION['TYPE'] = 'softdrinks';
-						$_SESSION['LIMIT'] = '4';
-						$_SESSION['OFFSET'] = '0'; 
-                        include('fetch-prod.php');
-                    ?>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>Juices</h6>
-					<?php
-                        $_SESSION['TYPE'] = 'juices';
-						$_SESSION['LIMIT'] = '4';
-						$_SESSION['OFFSET'] = '0'; 
-                        include('fetch-prod.php');
-                    ?>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>Energy Drinks</h6>
-					<?php
-                        $_SESSION['TYPE'] = 'energydrinks';
 						$_SESSION['LIMIT'] = '4';
 						$_SESSION['OFFSET'] = '0'; 
                         include('fetch-prod.php');

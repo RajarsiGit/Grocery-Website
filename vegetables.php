@@ -150,7 +150,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="w3ls_vegetables">
 									<ul>	
 										<li><a href="/vegetables">Vegetables</a></li>
-										<li><a href="/vegetables">Fruits</a></li>
+										<li><a href="/fruits">Fruits</a></li>
 									</ul>
 								</div>                  
 							</div>				
@@ -160,8 +160,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>
-										<li><a href="/drinks">Soft Drinks</a></li>
-										<li><a href="/drinks">Juices</a></li>
+                                        <li><a href="/softdrinks">Soft Drinks</a></li>
+                                        <li><a href="/juices">Juices</a></li>
+                                        <li><a href="/energydrinks">Energy Drinks</a></li>
 									</ul>
 								</div>                  
 							</div>	
@@ -236,10 +237,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"> </div>
 			</div>
 			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_veg">
-				<h3 class="w3l_fruit">Fruits & Vegetables</h3>
+				<h3 class="w3l_fruit">Vegetables</h3>
 				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
 					<?php
-                        $_SESSION['TYPE'] = 'veg&fruits';
+                        $_SESSION['TYPE'] = 'vegetables';
 						$_SESSION['LIMIT'] = '4';
 						$_SESSION['OFFSET'] = '0'; 
                         include('fetch-prod.php');
@@ -248,18 +249,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
 					<?php
-                        $_SESSION['TYPE'] = 'veg&fruits';
-						$_SESSION['LIMIT'] = '4';
+                        $_SESSION['TYPE'] = 'vegetables';
+						$_SESSION['LIMIT'] = '2';
 						$_SESSION['OFFSET'] = '4';
-                        include('fetch-prod.php');
-                    ?>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
-					<?php
-                        $_SESSION['TYPE'] = 'veg&fruits';
-						$_SESSION['LIMIT'] = '4';
-						$_SESSION['OFFSET'] = '8';
                         include('fetch-prod.php');
                     ?>
 					<div class="clearfix"> </div>

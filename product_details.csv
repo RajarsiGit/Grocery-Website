@@ -1,72 +1,73 @@
-1,Raisin Rolls (2 In 1 Pack),4,5,bakery/37.png,bakery,1
-2,Butter Croissants (50 Gm),2,4,bakery/38.png,bakery,1
-3,Bread Wheat Pita (250 Gm),3,5,bakery/39.png,bakery,1
-4,Hot Dog Roll (150 Gm),4,5,bakery/40.png,bakery,1
-5,Masala Bread (500 Gm),3,5,bakery/41.png,bakery,1
-6,Rolls Chocolate (3 Pcs),5,8,bakery/42.png,bakery,1
-7,Wheat Masala Pav (500 Gm),6,8,bakery/43.png,bakery,1
-8,Baked - Garlic Bread (200 Gm),6,8,bakery/44.png,bakery,1
-9,Eggless Walnut (250 Gm),6,8,bakery/45.png,bakery,1
-10,Assorted Muffins (200 Gm),6,8,bakery/46.png,bakery,1
-11,Bagels - Sesame (200 Gm),6,7,bakery/47.png,bakery,1
-12,Flax & Walnut Loaf (400 Gm),7,9,bakery/48.png,bakery,0
-13,Mixed Fruit Juice (1 Ltr),3,4,bevarages/13.png,bevarages,0
-14,Prune Juice - Sunsweet (1 Ltr),4,5,bevarages/14.png,bevarages,0
-15,Coco Cola Zero Can (330 Ml),3,5,bevarages/15.png,bevarages,0
-16,Sprite Bottle (2 Ltr),3,4,bevarages/16.png,bevarages,0
-17,Mixed Fruit Juice (1 Ltr),3,4,bevarages/49.png,bevarages,0
-18,Aamras Juice (250 Ml),4,5,bevarages/50.png,bevarages,0
-19,Coconut Water (1000 Ml),6,8,bevarages/51.png,bevarages,0
-20,Ceres Orange Juice (1 Ltr),6,8,bevarages/52.png,bevarages,0
-21,Dabur Glucose D (250 Gm),10,12,bevarages/53.png,bevarages,0
-22,Mix Lemon Flavour (50 Gm),8,10,bevarages/54.png,bevarages,0
-23,Schweppes Water (250 Ltr),6,7,bevarages/55.png,bevarages,0
-24,Red Bull Energy Drink (250 Ml),7,9,bevarages/56.png,bevarages,1
-25,"Dishwash Gel, Lemon (1.5 Ltr)",8,10,cleaning/17.png,cleaning,1
-26,Dish Wash Bar (500 Gm),2,4,cleaning/18.png,cleaning,1
-27,Air Freshener (50 Gm),3,5,cleaning/19.png,cleaning,1
-28,Toilet Cleaner Expert (1 Ltr),6,7,cleaning/20.png,cleaning,1
-29,Knorr Instant Soup (100 Gm),3,5,food/5.png,food,1
-30,Chings Noodles (75 Gm),5,8,food/6.png,food,1
-31,Lahsun Sev (150 Gm),3,5,food/7.png,food,1
-32,Premium Bake Rusk (300 Gm),5,7,food/8.png,food,1
-33,Pepper Salami (250 Gm),10,12,frozen/64.png,frozen,1
-34,Sumeru Green Pees (500 Gm),9,11,frozen/65.png,frozen,0
-35,Tikka Chicken (300 Gm),6,8,frozen/66.png,frozen,0
-36,Mixed Vegetables (500 Gm),6,7,frozen/67.png,frozen,0
-37,Mango Pulp (800 Gm),9,11,frozen/68.png,frozen,0
-38,Kesar Mango Pulp (800 Gm),5,8,frozen/69.png,frozen,0
-39,Frozen Sweet Corn (250 Gm),6,8,frozen/70.png,frozen,0
-40,Chicken Nuggets (1 Kg),4,6,frozen/71.png,frozen,0
-41,Garlic Fingers (400 Gm),5,7,frozen/72.png,frozen,0
-42,Catch Fish Finger (200 Gm),8,10,frozen/73.png,frozen,0
-43,Sumeru Chicken (500 Ml),11,15,frozen/74.png,frozen,0
-44,Veggie Fingers (400 Gm),7,9,frozen/75.png,frozen,0
-45,Can - Tuna For Cats (400 Gm),8,10,pets/57.png,pets,0
-46,Junior Pet Food (90 Gm),5,6,pets/58.png,pets,0
-47,Dogs Food - Junior (4 Kg),9,11,pets/4.png,pets,0
-48,Gravy Food For Dogs (20 Kg),15,18,pets/59.png,pets,1
-49,Meat For Dogs (100 Gm),8,10,pets/60.png,pets,1
-50,Weekly Pack (200 Gm),5,8,pets/61.png,pets,1
-51,Dog Munchies (500 Gm),6,8,pets/62.png,pets,1
-52,Nutrition For Cats (90 Gm),6,8,pets/63.png,pets,1
-53,Food For Adult Dogs (80 Gms),3,4,pets/25.png,pets,1
-54,Young Adult Dogs (1.2 Kg),6,10,pets/26.png,pets,1
-55,Cat Food Ocean Fish (1.4 Kg),6,7,pets/27.png,pets,1
-56,Chicken In Jelly Can (400 Gm),7,9,pets/28.png,pets,1
-57,Princeware Packaging Container Pack (6 No's),8,10,utensils/21.png,utensils,0
-58,Signoraware Container Center Press (900 Ml),5,8,utensils/22.png,utensils,0
-59,Ship Stainless Steel Sauce Pan Single (1 Pc),6,8,utensils/23.png,utensils,0
-60,Omega Stainless Steel Puri Dabba (1 Pc),6,8,utensils/24.png,utensils,0
-61,Fresh Spinach (Palak),2,3,veg&fruits/9.png,veg&fruits,0
-62,Fresh Mango Dasheri (1 Kg),5,8,veg&fruits/10.png,veg&fruits,0
-63,Fresh Apple Red (1 Kg),6,8,veg&fruits/11.png,veg&fruits,0
-64,Fresh Broccoli (500 Gm),4,6,veg&fruits/12.png,veg&fruits,0
-65,Fresh Bananas (1 Kg),10,12,veg&fruits/29.png,veg&fruits,0
-66,Fresh Cauliflower (2 Nos),5,8,veg&fruits/30.png,veg&fruits,0
-67,Fresh Brinjal Bharta (1 Kg),2,3,veg&fruits/31.png,veg&fruits,0
-68,Fresh Sweet Lime (500 Gm),6,7,veg&fruits/32.png,veg&fruits,0
-69,Fresh Basket Onion (1 Kg),5,7,veg&fruits/33.png,veg&fruits,0
-70,Fresh Muskmelon (1 Kg),4,5,veg&fruits/34.png,veg&fruits,0
-71,Fresh Mushroom (500 Ml),11,15,veg&fruits/35.png,veg&fruits,0
-72,Fresh Strawberry (1 Pc),7,9,veg&fruits/36.png,veg&fruits,0
+p_id,p_name,p_new_rate,p_old_rate,p_img_name,p_type,offer_tag
+1,"Raisin Rolls (2 In 1 Pack)",4.00,5.00,images/bakery/37.png,bakery,1
+2,"Butter Croissants (50 Gm)",2.00,4.00,images/bakery/38.png,bakery,1
+3,"Bread Wheat Pita (250 Gm)",3.00,5.00,images/bakery/39.png,bakery,1
+4,"Hot Dog Roll (150 Gm)",4.00,5.00,images/bakery/40.png,bakery,1
+5,"Masala Bread (500 Gm)",3.00,5.00,images/bakery/41.png,bakery,1
+6,"Rolls Chocolate (3 Pcs)",5.00,8.00,images/bakery/42.png,bakery,1
+7,"Wheat Masala Pav (500 Gm)",6.00,8.00,images/bakery/43.png,bakery,1
+8,"Baked - Garlic Bread (200 Gm)",6.00,8.00,images/bakery/44.png,bakery,1
+9,"Eggless Walnut (250 Gm)",6.00,8.00,images/bakery/45.png,bakery,1
+10,"Assorted Muffins (200 Gm)",6.00,8.00,images/bakery/46.png,bakery,1
+11,"Bagels - Sesame (200 Gm)",6.00,7.00,images/bakery/47.png,bakery,1
+12,"Flax & Walnut Loaf (400 Gm)",7.00,9.00,images/bakery/48.png,bakery,0
+13,"Mixed Fruit Juice (1 Ltr)",3.00,4.00,images/juices/13.png,juices,0
+14,"Prune Juice - Sunsweet (1 Ltr)",4.00,5.00,images/softdrinks/14.png,softdrinks,0
+15,"Coco Cola Zero Can (330 Ml)",3.00,5.00,images/softdrinks/15.png,softdrinks,0
+16,"Sprite Bottle (2 Ltr)",3.00,4.00,images/softdrinks/16.png,softdrinks,0
+17,"Mixed Fruit Juice (1 Ltr)",3.00,4.00,images/softdrinks/49.png,softdrinks,0
+18,"Aamras Juice (250 Ml)",4.00,5.00,images/juices/50.png,juices,0
+19,"Coconut Water (1000 Ml)",6.00,8.00,images/juices/51.png,juices,0
+20,"Ceres Orange Juice (1 Ltr)",6.00,8.00,images/juices/52.png,juices,0
+21,"Dabur Glucose D (250 Gm)",10.00,12.00,images/energydrinks/53.png,energydrinks,0
+22,"Mix Lemon Flavour (50 Gm)",8.00,10.00,images/energydrinks/54.png,energydrinks,0
+23,"Schweppes Water (250 Ltr)",6.00,7.00,images/energydrinks/55.png,energydrinks,0
+24,"Red Bull Energy Drink (250 Ml)",7.00,9.00,images/energydrinks/56.png,energydrinks,1
+25,"Dishwash Gel, Lemon (1.5 Ltr)",8.00,10.00,images/cleaning/17.png,cleaning,1
+26,"Dish Wash Bar (500 Gm)",2.00,4.00,images/cleaning/18.png,cleaning,1
+27,"Air Freshener (50 Gm)",3.00,5.00,images/cleaning/19.png,cleaning,1
+28,"Toilet Cleaner Expert (1 Ltr)",6.00,7.00,images/cleaning/20.png,cleaning,1
+29,"Knorr Instant Soup (100 Gm)",3.00,5.00,images/food/5.png,food,1
+30,"Chings Noodles (75 Gm)",5.00,8.00,images/food/6.png,food,1
+31,"Lahsun Sev (150 Gm)",3.00,5.00,images/food/7.png,food,1
+32,"Premium Bake Rusk (300 Gm)",5.00,7.00,images/food/8.png,food,1
+33,"Pepper Salami (250 Gm)",10.00,12.00,images/frozen/64.png,frozen,1
+34,"Sumeru Green Pees (500 Gm)",9.00,11.00,images/frozen/65.png,frozen,0
+35,"Tikka Chicken (300 Gm)",6.00,8.00,images/frozen/66.png,frozen,0
+36,"Mixed Vegetables (500 Gm)",6.00,7.00,images/frozen/67.png,frozen,0
+37,"Mango Pulp (800 Gm)",9.00,11.00,images/frozen/68.png,frozen,0
+38,"Kesar Mango Pulp (800 Gm)",5.00,8.00,images/frozen/69.png,frozen,0
+39,"Frozen Sweet Corn (250 Gm)",6.00,8.00,images/frozen/70.png,frozen,0
+40,"Chicken Nuggets (1 Kg)",4.00,6.00,images/frozen/71.png,frozen,0
+41,"Garlic Fingers (400 Gm)",5.00,7.00,images/frozen/72.png,frozen,0
+42,"Catch Fish Finger (200 Gm)",8.00,10.00,images/frozen/73.png,frozen,0
+43,"Sumeru Chicken (500 Ml)",11.00,15.00,images/frozen/74.png,frozen,0
+44,"Veggie Fingers (400 Gm)",7.00,9.00,images/frozen/75.png,frozen,0
+45,"Can - Tuna For Cats (400 Gm)",8.00,10.00,images/pets/57.png,pets,0
+46,"Junior Pet Food (90 Gm)",5.00,6.00,images/pets/58.png,pets,0
+47,"Dogs Food - Junior (4 Kg)",9.00,11.00,images/pets/4.png,pets,0
+48,"Gravy Food For Dogs (20 Kg)",15.00,18.00,images/pets/59.png,pets,1
+49,"Meat For Dogs (100 Gm)",8.00,10.00,images/pets/60.png,pets,1
+50,"Weekly Pack (200 Gm)",5.00,8.00,images/pets/61.png,pets,1
+51,"Dog Munchies (500 Gm)",6.00,8.00,images/pets/62.png,pets,1
+52,"Nutrition For Cats (90 Gm)",6.00,8.00,images/pets/63.png,pets,1
+53,"Food For Adult Dogs (80 Gms)",3.00,4.00,images/pets/25.png,pets,1
+54,"Young Adult Dogs (1.2 Kg)",6.00,10.00,images/pets/26.png,pets,1
+55,"Cat Food Ocean Fish (1.4 Kg)",6.00,7.00,images/pets/27.png,pets,1
+56,"Chicken In Jelly Can (400 Gm)",7.00,9.00,images/pets/28.png,pets,1
+57,"Princeware Packaging Container Pack (6 No's)",8.00,10.00,images/utensils/21.png,utensils,0
+58,"Signoraware Container Center Press (900 Ml)",5.00,8.00,images/utensils/22.png,utensils,0
+59,"Ship Stainless Steel Sauce Pan Single (1 Pc)",6.00,8.00,images/utensils/23.png,utensils,0
+60,"Omega Stainless Steel Puri Dabba (1 Pc)",6.00,8.00,images/utensils/24.png,utensils,0
+61,"Fresh Spinach (Palak)",2.00,3.00,images/vegetables/9.png,vegetables,0
+62,"Fresh Mango Dasheri (1 Kg)",5.00,8.00,images/fruits/10.png,fruits,0
+63,"Fresh Apple Red (1 Kg)",6.00,8.00,images/fruits/11.png,fruits,0
+64,"Fresh Broccoli (500 Gm)",4.00,6.00,images/vegetables/12.png,vegetables,0
+65,"Fresh Bananas (1 Kg)",10.00,12.00,images/fruits/29.png,fruits,0
+66,"Fresh Cauliflower (2 Nos)",5.00,8.00,images/vegetables/30.png,vegetables,0
+67,"Fresh Brinjal Bharta (1 Kg)",2.00,3.00,images/vegetables/31.png,vegetables,0
+68,"Fresh Sweet Lime (500 Gm)",6.00,7.00,images/fruits/32.png,fruits,0
+69,"Fresh Basket Onion (1 Kg)",5.00,7.00,images/vegetables/33.png,vegetables,0
+70,"Fresh Muskmelon (1 Kg)",4.00,5.00,images/fruits/34.png,fruits,0
+71,"Fresh Mushroom (500 Ml)",11.00,15.00,images/vegetables/35.png,vegetables,0
+72,"Fresh Strawberry (1 Pc)",7.00,9.00,images/fruits/36.png,fruits,0

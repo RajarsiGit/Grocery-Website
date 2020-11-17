@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | About Us :: w3layouts</title>
+<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Fruits & Vegetables :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -121,7 +121,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>|</span></li>
-				<li>About Us</li>
+				<li>Fruits & Vegetables</li>
 			</ul>
 		</div>
 	</div>
@@ -185,136 +185,82 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-<!-- about -->
-		<div class="privacy about">
-			<h3>About Us</h3>
-			<p class="animi">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
-				praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
-				excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
-				officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
-				rerum facilis est et expedita distinctio.</p>
-			<div class="agile_about_grids">
-				<div class="col-md-6 agile_about_grid_right">
-					<img src="images/31.jpg" alt=" " class="img-responsive" />
-				</div>
-				<div class="col-md-6 agile_about_grid_left">
+			<div class="w3l_banner_nav_right_banner5">
+				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
+			</div>
+			<div class="w3l_banner_nav_right_banner3_btm">
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+					<div class="view view-tenth">
+						<img src="images/18.jpg" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Grocery Store</h4>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+						</div>
+					</div>
+					<h4>Fruits & Vegetables</h4>
 					<ol>
-						<li>laborum et dolorum fuga</li>
-						<li>corrupti quos dolores et quas</li>
-						<li>est et expedita distinctio</li>
-						<li>deleniti atque corrupti quos</li>
-						<li>excepturi sint occaecati cupiditate</li>
-						<li>accusamus et iusto odio</li>
+						<li>sunt in culpa qui officia</li>
+						<li>commodo consequat</li>
+						<li>sed do eiusmod tempor incididunt</li>
+					</ol>
+				</div>
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+					<div class="view view-tenth">
+						<img src="images/19.jpg" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Grocery Store</h4>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+						</div>
+					</div>
+					<h4>Dry Fruits</h4>
+					<ol>
+						<li>enim ipsam voluptatem officia</li>
+						<li>tempora incidunt ut labore et</li>
+						<li>vel eum iure reprehenderit</li>
+					</ol>
+				</div>
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+					<div class="view view-tenth">
+						<img src="images/20.jpg" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Grocery Store</h4>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+						</div>
+					</div>
+					<h4>Vegetables</h4>
+					<ol>
+						<li>dolorem eum fugiat voluptas</li>
+						<li>ut aliquid ex ea commodi</li>
+						<li>magnam aliquam quaerat</li>
 					</ol>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-		</div>
-<!-- //about -->
+			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_veg">
+				<h3 class="w3l_fruit">Fruits</h3>
+				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
+					<?php
+                        $_SESSION['TYPE'] = 'fruits';
+						$_SESSION['LIMIT'] = '4';
+						$_SESSION['OFFSET'] = '0'; 
+                        include('fetch-prod.php');
+                    ?>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
+					<?php
+                        $_SESSION['TYPE'] = 'fruits';
+						$_SESSION['LIMIT'] = '2';
+						$_SESSION['OFFSET'] = '4';
+                        include('fetch-prod.php');
+                    ?>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
 		</div>
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
-<!-- team -->
-	<div class="team">
-		<div class="container">
-			<h3>Meet Our Amazing Team</h3>
-			<div class="agileits_team_grids">
-				<div class="col-md-6 agileits_team_grid">
-					<img src="images/32.jpg" alt=" " class="img-responsive" />
-					<h4>Rajarsi Saha</h4>
-					<p>Developer</p>
-					<ul class="agileits_social_icons agileits_social_icons_team">
-						<li><a href="https://www.facebook.com/rajarsi.saha.3997/" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/rajarsi-saha-2709a297/" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li><a href="https://github.com/RajarsiGit/" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-						<li><a href="mailto://rajarsi3997@gmail.com/" class="google"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-md-6 agileits_team_grid">
-					<img src="images/33.jpg" alt=" " class="img-responsive" />
-					<h4>Sawon Bhattacharya</h4>
-					<p>Developer</p>
-					<ul class="agileits_social_icons agileits_social_icons_team">
-						<li><a href="https://www.facebook.com/sawon.bhattacharjee/" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/sawon-bhattacharya-890187167/" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li><a href="https://github.com/SawonBhattacharya/" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-						<li><a href="mailto://sawon17081997@gmail.com/" class="google"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-<!-- //team -->
-<!-- testimonials -->
-	<div class="testimonials">
-		<div class="container">
-			<h3>Testimonials</h3>
-				<div class="w3_testimonials_grids">
-					<div class="wmuSlider example1 animated wow slideInUp" data-wow-delay=".5s">
-						<div class="wmuSliderWrapper">
-							<article style="position: absolute; width: 100%; opacity: 0;"> 
-								<div class="banner-wrap">
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Andrew Smith <span>Customer</span></h4>
-									</div>
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Thomson Richard <span>Customer</span></h4>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</article>
-							<article style="position: absolute; width: 100%; opacity: 0;"> 
-								<div class="banner-wrap">
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Crisp Kale <span>Customer</span></h4>
-									</div>
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>John Paul <span>Customer</span></h4>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</article>
-							<article style="position: absolute; width: 100%; opacity: 0;"> 
-								<div class="banner-wrap">
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Rosy Carl <span>Customer</span></h4>
-									</div>
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Rockson Doe <span>Customer</span></h4>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</article>
-						</div>
-					</div>
-					<script src="js/jquery.wmuSlider.js"></script> 
-					<script>
-						$('.example1').wmuSlider();         
-					</script> 
-				</div>
-		</div>
-	</div>
-<!-- //testimonials -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">

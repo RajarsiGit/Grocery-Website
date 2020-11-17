@@ -21,11 +21,20 @@
         case '/household' :
             require __DIR__ . '/household.php';
             break;
+        case '/fruits' :
+            require __DIR__ . '/fruits.php';
+            break;
         case '/vegetables' :
             require __DIR__ . '/vegetables.php';
             break;
-        case '/drinks' :
-            require __DIR__ . '/drinks.php';
+        case '/softdrinks' :
+            require __DIR__ . '/softdrinks.php';
+            break;
+        case '/juices' :
+            require __DIR__ . '/juices.php';
+            break;
+        case '/energydrinks' :
+            require __DIR__ . '/energydrinks.php';
             break;
         case '/pet' :
             require __DIR__ . '/pet.php';
