@@ -81,8 +81,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+918910742101">(+91) 89107 42101</a> / <a href="tel:+918013276482">(+91) 80132 76482</a></li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:contact@our-grocery.tk">contact@our-grocery.tk</a></li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i>(+91) 89107 42101 / 80132 76482</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:grocery@gmail.com">grocery@gmail.com</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -182,7 +182,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="checkout-left">	
 				<div class="col-md-4 checkout-left-basket">
 					<h4>Continue to basket</h4>
-					<ul id="bill" style="text-transform: capitalize;">
+					<ul id="bill" style="text-transform: capitalize;" onchange="updateAmt();">
 					</ul>
 				</div>
 				<script src="js/jquery-1.11.1.min.js"></script>
@@ -203,48 +203,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								$('#cart').serialize()
 							).done(function(result) {
 								$('#bill').html(result);
+								var amt = $('#tot-amt').html();
+								$('#amt-field').attr('value', amt.substring(1, amt.length));
 							});
 						});
 					});
 				</script>
 				<div class="col-md-8 address_form_agile">
 					  <h4>Add a new Details</h4>
-				<form action="/payment" method="post" class="creditly-card-form agileinfo_form">
+				<form action="checkout.php" method="post" class="creditly-card-form agileinfo_form">
 									<section class="creditly-wrapper wthree, w3_agileits_wrapper">
 										<div class="information-wrapper">
 											<div class="first-row form-group">
 												<div class="controls">
 													<label class="control-label">Full name: </label>
-													<input class="billing-address-name form-control" type="text" name="name" placeholder="Full name">
+													<input class="billing-address-name form-control" type="text" name="Name" placeholder="Full name">
 												</div>
 												<div class="w3_agileits_card_number_grids">
 													<div class="w3_agileits_card_number_grid_left">
 														<div class="controls">
 															<label class="control-label">Mobile number:</label>
-														    <input class="form-control" type="text" placeholder="Mobile number">
+														    <input class="form-control" type="text" name="Phone" placeholder="Mobile number">
 														</div>
 													</div>
 													<div class="w3_agileits_card_number_grid_right">
 														<div class="controls">
 															<label class="control-label">Landmark: </label>
-														 <input class="form-control" type="text" placeholder="Landmark">
+														 <input class="form-control" type="text" name="Landmark" placeholder="Landmark">
 														</div>
 													</div>
 													<div class="clear"> </div>
 												</div>
 												<div class="controls">
 													<label class="control-label">Town/City: </label>
-												 <input class="form-control" type="text" placeholder="Town/City">
+												 <input class="form-control" type="text" name="City" placeholder="Town/City">
 												</div>
 													<div class="controls">
 															<label class="control-label">Address type: </label>
-												     <select class="form-control option-w3ls">
-														<option>Office</option>
-														<option>Home</option>
-														<option>Commercial</option>
+												     <select name="Address_type" class="form-control option-w3ls">
+														<option value="office">Office</option>
+														<option value="home">Home</option>
+														<option value="commercial">Commercial</option>
 													</select>
 												</div>
 											</div>
+											<input class="form-control" type="hidden" name="Amount" id="amt-field" value=" ">
 											<button class="submit check_out">Delivery to this Address</button>
 										</div>
 									</section>

@@ -6,7 +6,6 @@ CREATE TABLE `grocery`.`customer` (
     `c_id` INT NOT NULL AUTO_INCREMENT,
     `c_name` VARCHAR(255) NOT NULL,
     `c_gender` VARCHAR(10) NOT NULL,
-    `c_photo` LONGTEXT NOT NULL,
     `c_phone` VARCHAR(15) NOT NULL,
     `c_email` VARCHAR(255) NOT NULL,
     `c_username` VARCHAR(255) NOT NULL,
@@ -47,3 +46,7 @@ CREATE TABLE `grocery`.`address_details` (
 ALTER TABLE `grocery`.`cart` ADD FOREIGN KEY (`c_id`) REFERENCES `customer`(`c_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 ALTER TABLE `grocery`.`cart` ADD FOREIGN KEY (`p_id`) REFERENCES `product_details`(`p_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE `address_details` ADD `a_type` VARCHAR(50) NOT NULL AFTER `a_city`;
+
+ALTER TABLE `address_details` ADD `total_price` DOUBLE(16,4) NOT NULL AFTER `a_type`;
