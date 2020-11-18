@@ -296,6 +296,9 @@ ul.dropdown-menu.drp-mnu li a i {
 .w3ls_vegetables ul li:nth-child(2) {
     margin-bottom:.5em;
 }
+.w3ls_vegetables ul li:last-child {
+    margin-bottom:0em !important;
+}
 .w3ls_vegetables ul li a {
     color: #212121;
 /*-- w3layouts --*/
