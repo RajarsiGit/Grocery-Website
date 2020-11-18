@@ -1,4 +1,3 @@
-p_id,p_name,p_new_rate,p_old_rate,p_img_name,p_type,offer_tag
 1,"Raisin Rolls (2 In 1 Pack)",4.00,5.00,images/bakery/37.png,bakery,1
 2,"Butter Croissants (50 Gm)",2.00,4.00,images/bakery/38.png,bakery,1
 3,"Bread Wheat Pita (250 Gm)",3.00,5.00,images/bakery/39.png,bakery,1
@@ -55,7 +54,7 @@ p_id,p_name,p_new_rate,p_old_rate,p_img_name,p_type,offer_tag
 54,"Young Adult Dogs (1.2 Kg)",6.00,10.00,images/pets/26.png,pets,1
 55,"Cat Food Ocean Fish (1.4 Kg)",6.00,7.00,images/pets/27.png,pets,1
 56,"Chicken In Jelly Can (400 Gm)",7.00,9.00,images/pets/28.png,pets,1
-57,"Princeware Packaging Container Pack (6 No's)",8.00,10.00,images/utensils/21.png,utensils,0
+57,"Princeware Packaging Container Pack (6 Nos)",8.00,10.00,images/utensils/21.png,utensils,0
 58,"Signoraware Container Center Press (900 Ml)",5.00,8.00,images/utensils/22.png,utensils,0
 59,"Ship Stainless Steel Sauce Pan Single (1 Pc)",6.00,8.00,images/utensils/23.png,utensils,0
 60,"Omega Stainless Steel Puri Dabba (1 Pc)",6.00,8.00,images/utensils/24.png,utensils,0
