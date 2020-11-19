@@ -143,7 +143,7 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 	text-decoration:none;
 }
 ul.dropdown-menu.drp-mnu {
-    right: 0;
+    right: -225%;
     min-width: 130px;
     text-align: center;
     padding: 1.5em 0;
@@ -2156,10 +2156,10 @@ p.animi{
 	overflow: hidden;
 }
 .wmuSlider .wmuSliderWrapper article img {
-	/*--max-width: 100%;
+	max-width: 100%;
 	width: auto;
 	height: auto;
-	display:block;--*/
+	display:block;
 }
 /* Default Skin */
 .wmuSliderPagination {
