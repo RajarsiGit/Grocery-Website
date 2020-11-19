@@ -8,8 +8,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Payment :: w3layouts</title>
+<title>Our Grocery | Payment</title>
 <!-- for-mobile-apps -->
+<link rel="shortcut icon" href="images/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -325,7 +326,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!-- //footer -->
 <!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
 <!-- easy-responsive-tabs -->    
 <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
 <script src="js/easyResponsiveTabs.js"></script>
