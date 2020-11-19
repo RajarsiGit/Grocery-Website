@@ -1,2 +1,2 @@
 # Grocery Website
- A website to demonrsate e-commerce for a Grocery
+ A website to demonstrate e-commerce for a Grocery Store.
