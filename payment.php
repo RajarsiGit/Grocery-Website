@@ -326,7 +326,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!-- //footer -->
 <!-- js -->
-<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
 <!-- easy-responsive-tabs -->    
 <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
 <script src="js/easyResponsiveTabs.js"></script>

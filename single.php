@@ -23,7 +23,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
 <!-- //font-awesome icons -->
 <!-- js -->
-<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
 <!-- //js -->
  <script src='js/okzoom.js'></script>
   <script>
