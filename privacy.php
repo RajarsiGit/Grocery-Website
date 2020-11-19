@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | About Us :: w3layouts</title>
+<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Privacy Policy :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -29,6 +29,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script> 
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -64,7 +65,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="/login">Login</a></li> 
+								<?php
+									if(isset($_COOKIE['u_id'])){
+										echo '<li><a href="#">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="/login" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+									}else{
+										echo '<li><a href="/login">Login</a></li>';
+									}
+								?>
 								<li><a href="/register">Sign Up</a></li>
 							</ul>
 						</div>                  
@@ -121,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>|</span></li>
-				<li>About Us</li>
+				<li>Privacy Policy & Terms of Use</li>
 			</ul>
 		</div>
 	</div>
@@ -185,136 +192,73 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-<!-- about -->
-		<div class="privacy about">
-			<h3>About Us</h3>
-			<p class="animi">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
-				praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
-				excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
-				officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
-				rerum facilis est et expedita distinctio.</p>
-			<div class="agile_about_grids">
-				<div class="col-md-6 agile_about_grid_right">
-					<img src="images/31.jpg" alt=" " class="img-responsive" />
+<!-- privacy -->
+		<div class="privacy">
+			<div class="privacy1">
+				<h3>Privacy Policy</h3>
+				<div class="banner-bottom-grid1 privacy1-grid">
+					<ul>
+						<li><i class="glyphicon glyphicon-user" aria-hidden="true"></i></li>
+						<li>Profile <span>Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+					</ul>
+					<ul>
+						<li><i class="glyphicon glyphicon-search" aria-hidden="true"></i></li>
+						<li>Search <span>Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+					</ul>
+					<ul>
+						<li><i class="glyphicon glyphicon-paste" aria-hidden="true"></i></li>
+						<li>News Feed <span>Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+					</ul>
+					<ul>
+						<li><i class="glyphicon glyphicon-qrcode" aria-hidden="true"></i></li>
+						<li>Applications <span>Excepteur sint occaecat cupidatat non proident, sunt in
+							culpa qui officia deserunt mollit anim id est laborum.</span></li>
+					</ul>
 				</div>
-				<div class="col-md-6 agile_about_grid_left">
-					<ol>
-						<li>laborum et dolorum fuga</li>
-						<li>corrupti quos dolores et quas</li>
-						<li>est et expedita distinctio</li>
-						<li>deleniti atque corrupti quos</li>
-						<li>excepturi sint occaecati cupiditate</li>
-						<li>accusamus et iusto odio</li>
-					</ol>
+			</div>
+			<div class="privacy1">
+				<h3>Terms of Use</h3>
+				<div class="banner-bottom-grid1 privacy2-grid">
+					<div class="privacy2-grid1">
+						<h4>deserunt mollit anim id est laborum?</h4>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+						<div class="privacy2-grid1-sub">
+							<h5>1. sint occaecat cupidatat non proident, sunt</h5>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in
+								culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="privacy2-grid1-sub">
+							<h5>2.perspiciatis unde omnis iste natus error</h5>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in
+								culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="privacy2-grid1-sub">
+							<h5>3. natus error sit voluptatem accusant</h5>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in
+								culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="privacy2-grid1-sub">
+							<h5>4. occaecat cupidatat non proident, sunt in</h5>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in
+								culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="privacy2-grid1-sub">
+							<h5>5. deserunt mollit anim id est laborum</h5>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in
+								culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
 				</div>
-				<div class="clearfix"> </div>
 			</div>
 		</div>
-<!-- //about -->
+<!-- //privacy -->
 		</div>
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
-<!-- team -->
-	<div class="team">
-		<div class="container">
-			<h3>Meet Our Amazing Team</h3>
-			<div class="agileits_team_grids">
-				<div class="col-md-6 agileits_team_grid">
-					<img src="images/32.jpg" alt=" " class="img-responsive" />
-					<h4>Rajarsi Saha</h4>
-					<p>Developer</p>
-					<ul class="agileits_social_icons agileits_social_icons_team">
-						<li><a href="https://www.facebook.com/rajarsi.saha.3997/" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/rajarsi-saha-2709a297/" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li><a href="https://github.com/RajarsiGit/" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-						<li><a href="mailto://rajarsi3997@gmail.com/" class="google"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-md-6 agileits_team_grid">
-					<img src="images/33.jpg" alt=" " class="img-responsive" />
-					<h4>Sawon Bhattacharya</h4>
-					<p>Developer</p>
-					<ul class="agileits_social_icons agileits_social_icons_team">
-						<li><a href="https://www.facebook.com/sawon.bhattacharjee/" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/sawon-bhattacharya-890187167/" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li><a href="https://github.com/SawonBhattacharya/" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-						<li><a href="mailto://sawon17081997@gmail.com/" class="google"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-<!-- //team -->
-<!-- testimonials -->
-	<div class="testimonials">
-		<div class="container">
-			<h3>Testimonials</h3>
-				<div class="w3_testimonials_grids">
-					<div class="wmuSlider example1 animated wow slideInUp" data-wow-delay=".5s">
-						<div class="wmuSliderWrapper">
-							<article style="position: absolute; width: 100%; opacity: 0;"> 
-								<div class="banner-wrap">
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Andrew Smith <span>Customer</span></h4>
-									</div>
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Thomson Richard <span>Customer</span></h4>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</article>
-							<article style="position: absolute; width: 100%; opacity: 0;"> 
-								<div class="banner-wrap">
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Crisp Kale <span>Customer</span></h4>
-									</div>
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>John Paul <span>Customer</span></h4>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</article>
-							<article style="position: absolute; width: 100%; opacity: 0;"> 
-								<div class="banner-wrap">
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Rosy Carl <span>Customer</span></h4>
-									</div>
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Rockson Doe <span>Customer</span></h4>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</article>
-						</div>
-					</div>
-					<script src="js/jquery.wmuSlider.js"></script> 
-					<script>
-						$('.example1').wmuSlider();         
-					</script> 
-				</div>
-		</div>
-	</div>
-<!-- //testimonials -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -370,7 +314,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/user.js"></script>
 <script>
 $(document).ready(function(){
     $(".dropdown").hover(            

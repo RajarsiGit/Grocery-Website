@@ -4,16 +4,16 @@
 
     switch ($request) {
         case '/' :
-            require __DIR__ . '/home.html';
+            require __DIR__ . '/home.php';
             break;
         case '' :
-            require __DIR__ . '/home.html';
+            require __DIR__ . '/home.php';
             break;
         case '/home' :
-            require __DIR__ . '/home.html';
+            require __DIR__ . '/home.php';
             break;
         case '/about' :
-            require __DIR__ . '/about.html';
+            require __DIR__ . '/about.php';
             break;
         case '/products' :
             require __DIR__ . '/products.php';
@@ -46,37 +46,37 @@
             require __DIR__ . '/bread.php';
             break;
         case '/checkout' :
-            require __DIR__ . '/checkout.html';
+            require __DIR__ . '/checkout.php';
             break;
         case '/events' :
-            require __DIR__ . '/events.html';
+            require __DIR__ . '/events.php';
             break;
         case '/services' :
-            require __DIR__ . '/services.html';
+            require __DIR__ . '/services.php';
             break;
         case '/faqs' :
-            require __DIR__ . '/faqs.html';
+            require __DIR__ . '/faqs.php';
             break;
         case '/privacy' :
-            require __DIR__ . '/privacy.html';
+            require __DIR__ . '/privacy.php';
             break;
         case '/mail' :
-            require __DIR__ . '/mail.html';
+            require __DIR__ . '/mail.php';
             break;
         case '/login' :
-            require __DIR__ . '/login.html';
+            require __DIR__ . '/login.php';
             break;
         case '/register' :
-            require __DIR__ . '/register.html';
+            require __DIR__ . '/register.php';
             break;
         case '/payment' :
-            require __DIR__ . '/payment.html';
+            require __DIR__ . '/payment.php';
             break;
         case '/example' :
             require __DIR__ . '/example.php';
             break;
         default:
-            http_response_code(404);
-            break;
+        require __DIR__ . '/notfound.php';
+    break;
     }
 ?>

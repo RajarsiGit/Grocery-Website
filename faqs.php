@@ -29,6 +29,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script> 
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -64,7 +65,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="/login">Login</a></li> 
+								<?php
+									if(isset($_COOKIE['u_id'])){
+										echo '<li><a href="#">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="/login" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+									}else{
+										echo '<li><a href="/login">Login</a></li>';
+									}
+								?>
 								<li><a href="/register">Sign Up</a></li>
 							</ul>
 						</div>                  
@@ -377,7 +384,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/user.js"></script>
 <script>
 $(document).ready(function(){
     $(".dropdown").hover(            

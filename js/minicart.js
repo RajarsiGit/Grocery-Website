@@ -2382,7 +2382,7 @@ var currencies = {
     HUF: { before: 'Ft' },
     IDR: { before: 'Rp' },
     ILS: { before: '\u20AA' },
-    INR: { before: 'Rs.' },
+    INR: { before: '₹' },
     ISK: { before: 'kr' },
     JMD: { before: 'J$' },
     JPY: { before: '\u00A5' },

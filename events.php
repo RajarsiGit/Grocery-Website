@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Products :: w3layouts</title>
+<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Events :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -66,7 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
 								<?php
-									if(isset($_COOKIE['u_id'])) {
+									if(isset($_COOKIE['u_id'])){
 										echo '<li><a href="#">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="/login" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
 									}else{
 										echo '<li><a href="/login">Login</a></li>';
@@ -128,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>|</span></li>
-				<li>Branded Foods</li>
+				<li>Events</li>
 			</ul>
 		</div>
 	</div>
@@ -192,96 +192,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-			<div class="w3l_banner_nav_right_banner3">
-				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
-			</div>
-			<div class="w3l_banner_nav_right_banner3_btm">
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
-					<div class="view view-tenth">
-						<img src="images/13.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<h4>Grocery Store</h4>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+<!-- events -->
+		<div class="events">
+			<h3>Events</h3>
+			<div class="events-bottom">
+				<div class="col-md-6 events_bottom_left">
+					<div class="col-md-4 events_bottom_left1">
+						<div class="events_bottom_left1_grid">
+							<h4>1</h4>
+							<p>Dec, 2020</p>
 						</div>
 					</div>
-					<h4>Utensils</h4>
-					<ol>
-						<li>sunt in culpa qui officia</li>
-						<li>commodo consequat</li>
-						<li>sed do eiusmod tempor incididunt</li>
-					</ol>
-				</div>
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
-					<div class="view view-tenth">
-						<img src="images/14.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<h4>Grocery Store</h4>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-						</div>
-					</div>
-					<h4>Hair Care</h4>
-					<ol>
-						<li>enim ipsam voluptatem officia</li>
-						<li>tempora incidunt ut labore et</li>
-						<li>vel eum iure reprehenderit</li>
-					</ol>
-				</div>
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
-					<div class="view view-tenth">
+					<div class="col-md-8 events_bottom_left2">	
 						<img src="images/15.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<h4>Grocery Store</h4>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-						</div>
+						<h4>Website Launch</h4>
+						<ul>
+							<li><i class="fa fa-clock-o" aria-hidden="true"></i>3:00 PM</li>
+							<li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Admin</a></li>
+						</ul>
+						<p>Launching this website soon! Stay tuned!</p>
 					</div>
-					<h4>Cookies</h4>
-					<ol>
-						<li>dolorem eum fugiat voluptas</li>
-						<li>ut aliquid ex ea commodi</li>
-						<li>magnam aliquam quaerat</li>
-					</ol>
+					<div class="clearfix"> </div>
 				</div>
+
 				<div class="clearfix"> </div>
 			</div>
-			<div class="w3ls_w3l_banner_nav_right_grid">
-				<h3>Popular Brands</h3>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>food</h6>
-                    <?php
-                        $_SESSION['TYPE'] = 'food';
-						$_SESSION['LIMIT'] = '4';
-						$_SESSION['OFFSET'] = '0';
-                        include('fetch-prod.php');
-                    ?>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>vegetables & fruits</h6>
-                    <?php
-                        $_SESSION['TYPE'] = 'vegetables';
-						$_SESSION['LIMIT'] = '2';
-						$_SESSION['OFFSET'] = '0';
-                        include('fetch-prod.php');
-					?>
-					<?php
-                        $_SESSION['TYPE'] = 'fruits';
-						$_SESSION['LIMIT'] = '2';
-						$_SESSION['OFFSET'] = '0';
-                        include('fetch-prod.php');
-                    ?>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>beverages</h6>
-                    <?php
-                        $_SESSION['TYPE'] = 'softdrinks';
-						$_SESSION['LIMIT'] = '4';
-						$_SESSION['OFFSET'] = '0';
-                        include('fetch-prod.php');
-                    ?>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
+		</div>
+<!-- //events -->
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -374,24 +311,25 @@ $(document).ready(function(){
 <!-- //here ends scrolling icon -->
 <script src="js/minicart.js"></script>
 <script>
-	paypal.minicart.render();
+		paypal.minicart.render();
 
-	paypal.minicart.cart.on('checkout', function (evt) {
-		var items = this.items(),
-			len = items.length,
-			total = 0,
-			i;
+		paypal.minicart.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
 
-		// Count the number of each item in the cart
-		for (i = 0; i < len; i++) {
-			total += items[i].get('quantity');
-		}
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
 
-		if (total < 3) {
-			alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
-			evt.preventDefault();
-		}
-	});
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+
 	</script>
 </body>
 </html>

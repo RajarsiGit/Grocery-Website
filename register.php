@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Services :: w3layouts</title>
+<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Sign In & Sign Up :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -29,6 +29,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script> 
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -46,7 +47,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="w3l_offers">
 			<a href="/products">Today's special Offers !</a>
 		</div>
-		<div class="w3l_search">
+        <div class="w3l_search">
 		</div>
 		<div class="product_list_header">  
 			<form action="#" method="post" class="last">
@@ -56,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <input type="submit" name="submit" value="View your cart" class="button" />
                 </fieldset>
             </form>
-		</div>
+        </div>
 		<div class="w3l_header_right">
 			<ul>
 				<li class="dropdown profile_details_drop">
@@ -64,7 +65,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="/login">Login</a></li> 
+								<?php
+									if(isset($_COOKIE['u_id'])){
+										echo '<li><a href="#">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="/login" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+									}else{
+										echo '<li><a href="/login">Login</a></li>';
+									}
+								?>
 								<li><a href="/register">Sign Up</a></li>
 							</ul>
 						</div>                  
@@ -121,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>|</span></li>
-				<li>Services</li>
+				<li>Sign In & Sign Up</li>
 			</ul>
 		</div>
 	</div>
@@ -129,7 +136,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
-			<nav class="navbar nav_bottom">
+		<nav class="navbar nav_bottom">
 			 <!-- Brand and toggle get grouped for better mobile display -->
 			  <div class="navbar-header nav_2">
 				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
@@ -185,93 +192,138 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-<!-- services -->
-		<div class="services">
-			<h3>Services</h3>
-			<div class="w3ls_service_grids">
-				<div class="col-md-5 w3ls_service_grid_left">
-					<h4>cum soluta nobis est</h4>
-					<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-						voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-						repellat.</p>
+<!-- login -->
+		<div class="w3_login">
+			<h3>Sign In & Sign Up</h3>
+			<div class="w3_login_module">
+				<div class="module form-module">
+				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+					<div class="tooltip" id="click" onclick="">Click Me</div>
+				  </div>
+				  <div class="form">
+					<h2>Login to your account</h2>
+					<form action="" method="post" id="signin">
+					  <input type="text" name="Username" placeholder="Username or Email" required=" ">
+					  <input type="password" name="Password" placeholder="Password" required=" ">
+					  <input type="submit" value="Login">
+					</form>
+				  </div>
+				  <div class="form">
+					<h2>Create an account</h2>
+					<form action="" method="post" id="signup" enctype="multipart/form-data">
+					  <input type="text" name="Name" placeholder="Name" required=" " maxlength="255">
+					  <select name="Gender" required=" ">
+						<option value="" disabled selected hidden>Gender</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="Transgender">Transgender</option>
+						<option value="Others">Others</option>
+					  </select>
+					  <input type="file" id="file" name="Photo" placeholder="Photo" required=" " value=" " accept="image/*">
+					  <input type="text" name="Phone" placeholder="Phone Number" required=" " maxlength="10">
+					  <input type="email" name="Email" placeholder="Email Address" required=" " maxlength="255">
+					  <input type="text" name="Username" placeholder="Username" required=" " maxlength="255">
+					  <input type="password" id="pass" name="Password" placeholder="Password" required=" " maxlength="255">
+					  <input type="password" id="re_pass" name="Re_Password" placeholder="Retype Password" required=" " maxlength="255">
+					  <span id="msg"></span>
+					  <script>
+						  	$('#file').on('change', function() {
+								const size =  (this.files[0].size/1024).toFixed(2); 
+								if (size > 500) {
+									alert('File should be no more than 500KB!');
+									$('#file').val(null);
+								} else {
+								}
+							});
+						  $('#pass, #re_pass').on('keyup', function() {
+							  if($('#pass').val() == $('#re_pass').val()) {
+								$('#submit').prop('disabled', false).removeAttr('style');
+								$('#msg').html('Matching').css('color', 'green');
+							  }
+							  else {
+								$('#submit').prop('disabled', true).css('background', 'gray');
+								$('#msg').html('Not Matching').css('color', 'red');
+							  }
+						  });
+					  </script>
+					  <input type="submit" id="submit" value="Register">
+					</form>
+				  </div>
+					</script>
+				  <div class="cta"><a href="#">Forgot your password?</a></div>
+				<script>
+					$(document).ready(function() {
+						$('#signin').submit(function(e) {
+							e.preventDefault();
+							var form = document.getElementById('signin');
+							var data = new FormData(form);
+							var url = 'signin.php';
+							$.ajax({
+								type: 'POST',
+								url: url,
+								data: data,
+								processData: false,
+								contentType: false,
+								success: function(data) {
+									$('.module.form-module > .toggle, .form, .cta').fadeOut();
+									$('.module.form-module').html(data);
+									$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
+                                    $('.dropdown-menu.drp-mnu').prepend("<li><a href='/login'>" + $.cookie('u_id').split(' ')[0] + "</a></li>");
+									setTimeout(function() {location.reload();}, 1000);
+								}
+							});
+						});
+						$('#signup').submit(function(e) {
+							e.preventDefault();
+							var form = document.getElementById('signup');
+							var data = new FormData(form);
+							var url = 'signup.php';
+							$.ajax({
+								type: 'POST',
+								enctype: 'multipart/form-data',
+								url: url,
+								data: data,
+								processData: false,
+								contentType: false,
+								success: function(data) {
+									$('.module.form-module > .toggle, .form, .cta').fadeOut();
+									$('.module.form-module').html(data);
+									if($('.dropdown-menu.drp-mnu > li').length == 3) {
+										$('.dropdown-menu.drp-mnu > li:first-child').remove();
+									}
+                                    $('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
+									$('.dropdown-menu.drp-mnu').prepend("<li><a href='/login'>" + $.cookie('u_id').split(' ')[0] + "</a></li>");
+									<?php
+										if($_SESSION['pay'] == '1') {
+											echo 'setTimeout(function() {$("#cart").submit();}, 1500);';
+										}
+									?>
+								}
+							});
+						});
+					});
+				</script>
 				</div>
-				<div class="col-md-7 w3ls_service_grid_right">
-					<div class="col-md-4 w3ls_service_grid_right_1">
-						<img src="images/18.jpg" alt=" " class="img-responsive" />
-					</div>
-					<div class="col-md-4 w3ls_service_grid_right_1">
-						<img src="images/19.jpg" alt=" " class="img-responsive" />
-					</div>
-					<div class="col-md-4 w3ls_service_grid_right_1">
-						<img src="images/20.jpg" alt=" " class="img-responsive" />
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>
 			</div>
-			<div class="w3ls_service_grids1">
-				<div class="col-md-6 w3ls_service_grids1_left">
-					<img src="images/4.jpg" alt=" " class="img-responsive" />
-				</div>
-				<div class="col-md-6 w3ls_service_grids1_right">
-					<ul>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>et voluptates repudiandae sint et molestiae</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>rerum necessitatibus saepe eveniet ut</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>placeat facere possimus, omnis voluptas</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Et harum quidem rerum facilis est et expedita</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>similique sunt in culpa qui officia deserunt</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>odio dignissimos ducimus qui blanditiis</li>
-					</ul>
-					<a href="/single">Shop Now</a>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
+			<script>
+				$('.toggle').click(function(){
+				  // Switches the Icon
+				  $(this).children('i').toggleClass('fa-pencil');
+				  // Switches the forms  
+				  $('.form').animate({
+					height: "toggle",
+					'padding-top': 'toggle',
+					'padding-bottom': 'toggle',
+					opacity: "toggle"
+				  }, "slow");
+				});
+			</script>
 		</div>
-<!-- //services -->
+<!-- //login -->
 		</div>
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
-<!-- services-bottom -->
-	<div class="services-bottom">
-		<div class="container">
-			<div class="col-md-3 about_counter_left">
-				<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
-				<p class="counter">0</p> 
-				<h3>Followers</h3>
-			</div>
-			<div class="col-md-3 about_counter_left">
-				<i class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></i>
-				<p class="counter">0</p> 
-				<h3>Savings</h3>
-			</div>
-			<div class="col-md-3 about_counter_left">
-				<i class="glyphicon glyphicon-export" aria-hidden="true"></i>
-				<p class="counter">0</p> 
-				<h3>Support</h3>
-			</div>
-			<div class="col-md-3 about_counter_left">
-				<i class="glyphicon glyphicon-bullhorn" aria-hidden="true"></i>
-				<p class="counter">0</p> 
-				<h3>Popularity</h3>
-			</div>
-			<div class="clearfix"> </div>
-			<!-- Stats-Number-Scroller-Animation-JavaScript -->
-				<script src="js/waypoints.min.js"></script> 
-				<script src="js/counterup.min.js"></script> 
-				<script>
-					jQuery(document).ready(function( $ ) {
-						$('.counter').counterUp({
-							delay: 10,
-							time: 1000
-						});
-					});
-				</script>
-			<!-- //Stats-Number-Scroller-Animation-JavaScript -->
-
-		</div>
-	</div>
-<!-- //services-bottom -->
 <!-- newsletter-top-serv-btm -->
 	<div class="newsletter-top-serv-btm">
 		<div class="container">
@@ -355,7 +407,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/user.js"></script>
 <script>
 $(document).ready(function(){
     $(".dropdown").hover(            
@@ -387,7 +438,6 @@ $(document).ready(function(){
 			});
 	</script>
 <!-- //here ends scrolling icon -->
-<!-- //here ends scrolling icon -->
 <script src="js/minicart.js"></script>
 <script>
 		paypal.minicart.render();
@@ -409,6 +459,13 @@ $(document).ready(function(){
 			}
 		});
 
+	</script>
+
+	<script>
+	//login to register form
+	window.onload=function(){
+		document.getElementById("click").click();
+	};
 	</script>
 </body>
 </html>

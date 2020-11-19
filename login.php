@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Events :: w3layouts</title>
+<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Sign In & Sign Up :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -29,6 +29,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script> 
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -64,7 +65,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="/login">Login</a></li> 
+								<?php
+									if(isset($_COOKIE['u_id'])){
+										echo '<li><a href="#">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="/login" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+									}else{
+										echo '<li><a href="/login">Login</a></li>';
+									}
+								?>
 								<li><a href="/register">Sign Up</a></li>
 							</ul>
 						</div>                  
@@ -121,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>|</span></li>
-				<li>Events</li>
+				<li>Sign In & Sign Up</li>
 			</ul>
 		</div>
 	</div>
@@ -129,7 +136,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
-			<nav class="navbar nav_bottom">
+		<nav class="navbar nav_bottom">
 			 <!-- Brand and toggle get grouped for better mobile display -->
 			  <div class="navbar-header nav_2">
 				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
@@ -185,37 +192,167 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-<!-- events -->
-		<div class="events">
-			<h3>Events</h3>
-			<div class="events-bottom">
-				<div class="col-md-6 events_bottom_left">
-					<div class="col-md-4 events_bottom_left1">
-						<div class="events_bottom_left1_grid">
-							<h4>1</h4>
-							<p>Dec, 2020</p>
-						</div>
-					</div>
-					<div class="col-md-8 events_bottom_left2">	
-						<img src="images/15.jpg" alt=" " class="img-responsive" />
-						<h4>Website Launch</h4>
-						<ul>
-							<li><i class="fa fa-clock-o" aria-hidden="true"></i>3:00 PM</li>
-							<li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Admin</a></li>
-						</ul>
-						<p>Launching this website soon! Stay tuned!</p>
-					</div>
-					<div class="clearfix"> </div>
+<!-- login -->
+		<div class="w3_login">
+			<h3>Sign In & Sign Up</h3>
+			<div class="w3_login_module">
+				<div class="module form-module">
+				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
+					<div class="tooltip">Click Me</div>
+				  </div>
+				  <div class="form">
+					<h2>Login to your account</h2>
+					<form action="" method="post" id="signin">
+					  <input type="text" name="Username" placeholder="Username or Email" required=" ">
+					  <input type="password" name="Password" placeholder="Password" required=" ">
+					  <input type="submit" value="Login">
+					</form>
+				  </div>
+				  <div class="form">
+					<h2>Create an account</h2>
+					<form action="" method="post" id="signup" enctype="multipart/form-data">
+					  <input type="text" name="Name" placeholder="Name" required=" " maxlength="255">
+					  <select name="Gender" required=" ">
+						<option value="" disabled selected hidden>Gender</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="Transgender">Transgender</option>
+						<option value="Others">Others</option>
+					  </select>
+					  <input type="file" id="file" name="Photo" placeholder="Photo" required=" " value=" " accept="image/*">
+					  <input type="text" name="Phone" placeholder="Phone Number" required=" " maxlength="10">
+					  <input type="email" name="Email" placeholder="Email Address" required=" " maxlength="255">
+					  <input type="text" name="Username" placeholder="Username" required=" " maxlength="255">
+					  <input type="password" id="pass" name="Password" placeholder="Password" required=" " maxlength="255">
+					  <input type="password" id="re_pass" name="Re_Password" placeholder="Retype Password" required=" " maxlength="255">
+					  <span id="msg"></span>
+					  <script>
+						  	$('#file').on('change', function() {
+								const size =  (this.files[0].size/1024).toFixed(2); 
+								if (size > 500) {
+									alert('File should be no more than 500KB!');
+									$('#file').val(null);
+								} else {
+								}
+							});
+						  $('#pass, #re_pass').on('keyup', function() {
+							  if($('#pass').val() == $('#re_pass').val()) {
+								$('#submit').prop('disabled', false).removeAttr('style');
+								$('#msg').html('Matching').css('color', 'green');
+							  }
+							  else {
+								$('#submit').prop('disabled', true).css('background', 'gray');
+								$('#msg').html('Not Matching').css('color', 'red');
+							  }
+						  });
+					  </script>
+					  <input type="submit" id="submit" value="Register">
+					</form>
+				  </div>
+				  <div class="cta"><a href="#">Forgot your password?</a></div>
+				<script>
+					$(document).ready(function() {
+						$('#signin').submit(function(e) {
+							e.preventDefault();
+							var form = document.getElementById('signin');
+							var data = new FormData(form);
+							var url = 'signin.php';
+							$.ajax({
+								type: 'POST',
+								url: url,
+								data: data,
+								processData: false,
+								contentType: false,
+								success: function(data) {
+									$('.module.form-module > .toggle, .form, .cta').fadeOut();
+									$('.module.form-module').html(data);
+									$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
+									$('.dropdown-menu.drp-mnu').prepend("<li><a href='/login'>" + $.cookie('u_id').split(' ')[0] + "</a></li>");
+									<?php
+										if($_SESSION['pay'] == '1') {
+											echo 'setTimeout(function() {$("#cart").submit();}, 1500);';
+										}
+										else {
+											echo 'setTimeout(function() {location.reload();}, 1500);';
+										}
+									?>
+								}
+							});
+						});
+						$('#signup').submit(function(e) {
+							e.preventDefault();
+							var form = document.getElementById('signup');
+							var data = new FormData(form);
+							var url = 'signup.php';
+							$.ajax({
+								type: 'POST',
+								enctype: 'multipart/form-data',
+								url: url,
+								data: data,
+								processData: false,
+								contentType: false,
+								success: function(data) {
+									$('.module.form-module > .toggle, .form, .cta').fadeOut();
+									$('.module.form-module').html(data);
+									if($('.dropdown-menu.drp-mnu > li').length > 0) {
+										$('.dropdown-menu.drp-mnu > li:first-child').remove();
+									}
+                                    $('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
+									$('.dropdown-menu.drp-mnu').prepend("<li><a href='/login'>" + $.cookie('u_id').split(' ')[0] + "</a></li>");
+								}
+							});
+						});
+					});
+				</script>
 				</div>
-
-				<div class="clearfix"> </div>
 			</div>
+			<script>
+				$('.toggle').click(function(){
+				  // Switches the Icon
+				  $(this).children('i').toggleClass('fa-pencil');
+				  // Switches the forms  
+				  $('.form').animate({
+					height: "toggle",
+					'padding-top': 'toggle',
+					'padding-bottom': 'toggle',
+					opacity: "toggle"
+				  }, "slow");
+				});
+			</script>
 		</div>
-<!-- //events -->
+<!-- //login -->
 		</div>
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
+<!-- newsletter-top-serv-btm -->
+	<div class="newsletter-top-serv-btm">
+		<div class="container">
+			<div class="col-md-4 wthree_news_top_serv_btm_grid">
+				<div class="wthree_news_top_serv_btm_grid_icon">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				</div>
+				<h3>Best buy</h3>
+				<p>The best deals and offers only at Grocery!</p>
+			</div>
+			<div class="col-md-4 wthree_news_top_serv_btm_grid">
+				<div class="wthree_news_top_serv_btm_grid_icon">
+					<i class="fa fa-bar-chart" aria-hidden="true"></i>
+				</div>
+				<h3>Reports</h3>
+				<p>Best annual reports!</p>
+			</div>
+			<div class="col-md-4 wthree_news_top_serv_btm_grid">
+				<div class="wthree_news_top_serv_btm_grid_icon">
+					<i class="fa fa-truck" aria-hidden="true"></i>
+				</div>
+				<h3>Fastest Delivery</h3>
+				<p>Lightning fast deliveries at your doorstep!</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //newsletter-top-serv-btm -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -271,7 +408,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/user.js"></script>
 <script>
 $(document).ready(function(){
     $(".dropdown").hover(            
@@ -325,5 +461,20 @@ $(document).ready(function(){
 		});
 
 	</script>
+<script>
+	$(document).ready(function() {
+		if($.cookie('u_id')) {
+			$('.module.form-module > .toggle, .form, .cta').fadeOut();
+			$.ajax({
+				type: 'GET',
+				url: 'getphoto.php',
+				success: function(data) {
+					$('.module.form-module').html("<div style='margin: 1em 1em 1em 1em; text-align: center;'><h3>Welcome!</h3><br><div id=\"img\"></div><br><h4 style='padding: 1em 1em 1em 1em;'>" + $.cookie('u_id').split(' ')[0] + "</h4></div>");
+					$('#img').html(data);
+				}
+			});
+		}
+	});
+</script>
 </body>
 </html>

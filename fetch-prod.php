@@ -38,7 +38,7 @@
                                     <div class=\"snipcart-thumb\">
                                         <a href=\"/single\"><img src=\"".$p_img."\" alt=\" \" class=\"img-responsive\" /></a>
                                         <p>".$p_name."</p>
-                                        <h4>$".$p_amt." <span>$".$p_o_amt."</span></h4>
+                                        <h4>₹".$p_amt." <span>₹".$p_o_amt."</span></h4>
                                     </div>
                                     <div class=\"snipcart-details\">
                                         <form id=\"cart-1\" action=\"#\" method=\"post\">
@@ -47,7 +47,7 @@
                                                 <input type=\"hidden\" name=\"add\" value=\"1\" />
                                                 <input type=\"hidden\" name=\"business\" value=\" \" />
                                                 <input type=\"hidden\" name=\"item_name\" value=\"".$p_name."\" />
-                                                <input type=\"hidden\" name=\"amount\" value=\"".$p_amt."\" />
+                                                <input type=\"hidden\" name=\"amount\" value=\"".$p_o_amt."\" />
                                                 <input type=\"hidden\" name=\"discount_amount\" value=\"".$d_amt."\" />
                                                 <input type=\"hidden\" name=\"currency_code\" value=\"INR\" />
                                                 <input type=\"hidden\" name=\"return\" value=\" \" />

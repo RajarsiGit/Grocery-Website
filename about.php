@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Mail Us :: w3layouts</title>
+<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | About Us :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -29,6 +29,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script> 
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -64,7 +65,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="/login">Login</a></li> 
+								<?php
+									if(isset($_COOKIE['u_id'])){
+										echo '<li><a href="#">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="/login" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+									}else{
+										echo '<li><a href="/login">Login</a></li>';
+									}
+								?>
 								<li><a href="/register">Sign Up</a></li>
 							</ul>
 						</div>                  
@@ -108,7 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+918910742101"></a>(+91) 89107 42101</a> / <a href="tel:+918013276482">(+91) 80132 76482</a></li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+918910742101">(+91) 89107 42101</a> / <a href="tel:+918013276482">(+91) 80132 76482</a></li>
 					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:contact@our-grocery.tk">contact@our-grocery.tk</a></li>
 				</ul>
 			</div>
@@ -121,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>|</span></li>
-				<li>Mail Us</li>
+				<li>About Us</li>
 			</ul>
 		</div>
 	</div>
@@ -185,74 +192,136 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-<!-- mail -->
-		<div class="mail">
-			<h3>Mail Us</h3>
-			<div class="agileinfo_mail_grids">
-				<div class="col-md-4 agileinfo_mail_grid_left">
-					<ul>
-						<li><i class="fa fa-home" aria-hidden="true"></i></li>
-						<li>address<span>KOLKATA, WB</span></li>
-					</ul>
-					<ul>
-						<li><i class="fa fa-envelope" aria-hidden="true"></i></li>
-						<li>email<span><a href="mailto:contact@our-grocery.tk">contact@our-grocery.tk</a></span></li>
-					</ul>
-					<ul>
-						<li><i class="fa fa-phone" aria-hidden="true"></i></li>
-						<li>call to us<span><a href="tel:+918910742101">(+91) 89107 42101</a></br><a href="tel:+918013276482">(+91) 80132 76482</a></span></li>
-					</ul>
+<!-- about -->
+		<div class="privacy about">
+			<h3>About Us</h3>
+			<p class="animi">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+				praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+				excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+				officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
+				rerum facilis est et expedita distinctio.</p>
+			<div class="agile_about_grids">
+				<div class="col-md-6 agile_about_grid_right">
+					<img src="images/31.jpg" alt=" " class="img-responsive" />
 				</div>
-				<div class="col-md-8 agileinfo_mail_grid_right">
-					<form id="mail-form" action="/php/mail.php" method="post">
-						<div class="col-md-6 wthree_contact_left_grid">
-							<input type="text" name="Name" value="" placeholder="Name*" required="">
-							<input type="email" name="Email" value="" placeholder="Email*" required="">
-						</div>
-						<div class="col-md-6 wthree_contact_left_grid">
-							<input type="text" name="Telephone" value="" placeholder="Telephone*" required="">
-							<input type="text" name="Subject" value="" placeholder="Subject*" required="">
-						</div>
-						<div class="clearfix"> </div>
-						<textarea id="txtarea" name="Message" placeholder="Message" required=""></textarea>
-						<input id="input-submit" type="submit" value="Submit">
-						<input id="input-reset" type="reset" value="Clear">
-					</form>
-					<script>
-						$(document).ready(function() {
-							$('#mail-form').submit(function(e) {
-								e.preventDefault();
-								var form = $(this);
-								var url = form.attr('action');
-								$.ajax({
-									type: 'POST',
-									url: url,
-									data: form.serialize(),
-									success: function(data) {
-										$('.col-md-8.agileinfo_mail_grid_right > form > input[type="submit"], input[type="reset"]').fadeOut();
-										setTimeout(function() {
-											$('.col-md-8.agileinfo_mail_grid_right > form > textarea').after(data);
-										}, 1000);
-										
-									}
-								});
-							});
-						});
-					</script>
+				<div class="col-md-6 agile_about_grid_left">
+					<ol>
+						<li>laborum et dolorum fuga</li>
+						<li>corrupti quos dolores et quas</li>
+						<li>est et expedita distinctio</li>
+						<li>deleniti atque corrupti quos</li>
+						<li>excepturi sint occaecati cupiditate</li>
+						<li>accusamus et iusto odio</li>
+					</ol>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-<!-- //mail -->
+<!-- //about -->
 		</div>
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
-<!-- map -->
-	<div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d235755.51605057082!2d88.314623!3d22.591071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1605189388211!5m2!1sen!2sin" style="border:0"></iframe>
+<!-- team -->
+	<div class="team">
+		<div class="container">
+			<h3>Meet Our Amazing Team</h3>
+			<div class="agileits_team_grids">
+				<div class="col-md-6 agileits_team_grid">
+					<img src="images/32.jpg" alt=" " class="img-responsive" />
+					<h4>Rajarsi Saha</h4>
+					<p>Developer</p>
+					<ul class="agileits_social_icons agileits_social_icons_team">
+						<li><a href="https://www.facebook.com/rajarsi.saha.3997/" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/rajarsi-saha-2709a297/" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="https://github.com/RajarsiGit/" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+						<li><a href="mailto://rajarsi3997@gmail.com/" class="google"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 agileits_team_grid">
+					<img src="images/33.jpg" alt=" " class="img-responsive" />
+					<h4>Sawon Bhattacharya</h4>
+					<p>Developer</p>
+					<ul class="agileits_social_icons agileits_social_icons_team">
+						<li><a href="https://www.facebook.com/sawon.bhattacharjee/" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/sawon-bhattacharya-890187167/" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="https://github.com/SawonBhattacharya/" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+						<li><a href="mailto://sawon17081997@gmail.com/" class="google"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
 	</div>
-<!-- //map -->
+<!-- //team -->
+<!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+			<h3>Testimonials</h3>
+				<div class="w3_testimonials_grids">
+					<div class="wmuSlider example1 animated wow slideInUp" data-wow-delay=".5s">
+						<div class="wmuSliderWrapper">
+							<article style="position: absolute; width: 100%; opacity: 0;"> 
+								<div class="banner-wrap">
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
+											repellat.</p>
+										<h4>Andrew Smith <span>Customer</span></h4>
+									</div>
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
+											repellat.</p>
+										<h4>Thomson Richard <span>Customer</span></h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</article>
+							<article style="position: absolute; width: 100%; opacity: 0;"> 
+								<div class="banner-wrap">
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
+											repellat.</p>
+										<h4>Crisp Kale <span>Customer</span></h4>
+									</div>
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
+											repellat.</p>
+										<h4>John Paul <span>Customer</span></h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</article>
+							<article style="position: absolute; width: 100%; opacity: 0;"> 
+								<div class="banner-wrap">
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
+											repellat.</p>
+										<h4>Rosy Carl <span>Customer</span></h4>
+									</div>
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
+											repellat.</p>
+										<h4>Rockson Doe <span>Customer</span></h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<script src="js/jquery.wmuSlider.js"></script> 
+					<script>
+						$('.example1').wmuSlider();         
+					</script> 
+				</div>
+		</div>
+	</div>
+<!-- //testimonials -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -308,7 +377,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/user.js"></script>
 <script>
 $(document).ready(function(){
     $(".dropdown").hover(            

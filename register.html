@@ -29,6 +29,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script> 
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -64,7 +65,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="mega-dropdown-menu">
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
-								<li><a href="/login">Login</a></li> 
+								<?php
+									if(isset($.cookie('u_id').split(' ')[0])){
+										echo '<li><a href="#">'.$.cookie('u_id').split(' ')[0].'</a></li><li><a href="/login" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+									}else{
+										echo '<li><a href="/login">Login</a></li>';
+									}
+								?>
 								<li><a href="/register">Sign Up</a></li>
 							</ul>
 						</div>                  
@@ -259,15 +266,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										while (c.charAt(0) == ' ') {
 											c = c.substring(1);
 										}
-										if (c.indexOf("Username") == 0) {
+										if (c.indexOf("u_id") == 0) {
 											var l = document.createElement("li");
-											l.innerHTML = "<a href=\"/login\">" + c.substring("Username=".length, c.length) + "</a>";
+											l.innerHTML = "<a href=\"/login\">" + c.substring("u_id=".length, c.length) + "</a>";
 											document.getElementsByClassName("dropdown-menu drp-mnu")[0].insertAdjacentElement("afterbegin", l);
 											l = document.getElementsByClassName("dropdown-menu drp-mnu")[0];
 											l.childNodes[1].remove();
-											l.childNodes[2].innerHTML = "<a href=\"\">Logout</a>";
+											l.childNodes[1].innerHTML = "<a href=\"\">Logout</a>";
 											l.childNodes[2].childNodes[0].addEventListener("click", function() {
-												document.cookie = "Username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+												document.cookie = "u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
 												location.reload();
 											});
 											break;
@@ -306,25 +313,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="wthree_news_top_serv_btm_grid_icon">
 					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 				</div>
-				<h3>Nam libero tempore</h3>
-				<p>Temporibus autem quibINRam et aut officiis debitis aut rerum necessitatibus 
-					saepe eveniet ut et voluptates repudiandae sint et.</p>
+				<h3>Best buy</h3>
+				<p>The best deals and offers only at Grocery!</p>
 			</div>
 			<div class="col-md-4 wthree_news_top_serv_btm_grid">
 				<div class="wthree_news_top_serv_btm_grid_icon">
 					<i class="fa fa-bar-chart" aria-hidden="true"></i>
 				</div>
-				<h3>officiis debitis aut rerum</h3>
-				<p>Temporibus autem quibINRam et aut officiis debitis aut rerum necessitatibus 
-					saepe eveniet ut et voluptates repudiandae sint et.</p>
+				<h3>Reports</h3>
+				<p>Best annual reports!</p>
 			</div>
 			<div class="col-md-4 wthree_news_top_serv_btm_grid">
 				<div class="wthree_news_top_serv_btm_grid_icon">
 					<i class="fa fa-truck" aria-hidden="true"></i>
 				</div>
-				<h3>eveniet ut et voluptates</h3>
-				<p>Temporibus autem quibINRam et aut officiis debitis aut rerum necessitatibus 
-					saepe eveniet ut et voluptates repudiandae sint et.</p>
+				<h3>Fastest Delivery</h3>
+				<p>Lightning fast deliveries at your doorstep!</p>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
@@ -385,7 +389,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/user.js"></script>
 <script>
 $(document).ready(function(){
     $(".dropdown").hover(            

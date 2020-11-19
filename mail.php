@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Products :: w3layouts</title>
+<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Mail Us :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -66,7 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
 								<?php
-									if(isset($_COOKIE['u_id'])) {
+									if(isset($_COOKIE['u_id'])){
 										echo '<li><a href="#">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="/login" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
 									}else{
 										echo '<li><a href="/login">Login</a></li>';
@@ -115,7 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+918910742101">(+91) 89107 42101</a> / <a href="tel:+918013276482">(+91) 80132 76482</a></li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+918910742101"></a>(+91) 89107 42101</a> / <a href="tel:+918013276482">(+91) 80132 76482</a></li>
 					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:contact@our-grocery.tk">contact@our-grocery.tk</a></li>
 				</ul>
 			</div>
@@ -128,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>|</span></li>
-				<li>Branded Foods</li>
+				<li>Mail Us</li>
 			</ul>
 		</div>
 	</div>
@@ -192,100 +192,74 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-			<div class="w3l_banner_nav_right_banner3">
-				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
-			</div>
-			<div class="w3l_banner_nav_right_banner3_btm">
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
-					<div class="view view-tenth">
-						<img src="images/13.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<h4>Grocery Store</h4>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-						</div>
-					</div>
-					<h4>Utensils</h4>
-					<ol>
-						<li>sunt in culpa qui officia</li>
-						<li>commodo consequat</li>
-						<li>sed do eiusmod tempor incididunt</li>
-					</ol>
+<!-- mail -->
+		<div class="mail">
+			<h3>Mail Us</h3>
+			<div class="agileinfo_mail_grids">
+				<div class="col-md-4 agileinfo_mail_grid_left">
+					<ul>
+						<li><i class="fa fa-home" aria-hidden="true"></i></li>
+						<li>address<span>KOLKATA, WB</span></li>
+					</ul>
+					<ul>
+						<li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+						<li>email<span><a href="mailto:contact@our-grocery.tk">contact@our-grocery.tk</a></span></li>
+					</ul>
+					<ul>
+						<li><i class="fa fa-phone" aria-hidden="true"></i></li>
+						<li>call to us<span><a href="tel:+918910742101">(+91) 89107 42101</a></br><a href="tel:+918013276482">(+91) 80132 76482</a></span></li>
+					</ul>
 				</div>
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
-					<div class="view view-tenth">
-						<img src="images/14.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<h4>Grocery Store</h4>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+				<div class="col-md-8 agileinfo_mail_grid_right">
+					<form id="mail-form" action="/php/mail.php" method="post">
+						<div class="col-md-6 wthree_contact_left_grid">
+							<input type="text" name="Name" value="" placeholder="Name*" required="" maxlength="255">
+							<input type="email" name="Email" value="" placeholder="Email*" required="" maxlength="255">
 						</div>
-					</div>
-					<h4>Hair Care</h4>
-					<ol>
-						<li>enim ipsam voluptatem officia</li>
-						<li>tempora incidunt ut labore et</li>
-						<li>vel eum iure reprehenderit</li>
-					</ol>
-				</div>
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
-					<div class="view view-tenth">
-						<img src="images/15.jpg" alt=" " class="img-responsive" />
-						<div class="mask">
-							<h4>Grocery Store</h4>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+						<div class="col-md-6 wthree_contact_left_grid">
+							<input type="text" name="Telephone" value="" placeholder="Telephone*" required="" maxlength="10">
+							<input type="text" name="Subject" value="" placeholder="Subject*" required="" maxlength="255">
 						</div>
-					</div>
-					<h4>Cookies</h4>
-					<ol>
-						<li>dolorem eum fugiat voluptas</li>
-						<li>ut aliquid ex ea commodi</li>
-						<li>magnam aliquam quaerat</li>
-					</ol>
+						<div class="clearfix"> </div>
+						<textarea id="txtarea" name="Message" placeholder="Message" required=""></textarea>
+						<input id="input-submit" type="submit" value="Submit">
+						<input id="input-reset" type="reset" value="Clear">
+					</form>
+					<script>
+						$(document).ready(function() {
+							$('#mail-form').submit(function(e) {
+								e.preventDefault();
+								var form = $(this);
+								var url = form.attr('action');
+								$.ajax({
+									type: 'POST',
+									url: url,
+									data: form.serialize(),
+									success: function(data) {
+										$('.col-md-8.agileinfo_mail_grid_right > form > input[type="submit"], input[type="reset"]').fadeOut();
+										setTimeout(function() {
+											$('.col-md-8.agileinfo_mail_grid_right > form > textarea').after(data);
+										}, 1000);
+										
+									}
+								});
+							});
+						});
+					</script>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<div class="w3ls_w3l_banner_nav_right_grid">
-				<h3>Popular Brands</h3>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>food</h6>
-                    <?php
-                        $_SESSION['TYPE'] = 'food';
-						$_SESSION['LIMIT'] = '4';
-						$_SESSION['OFFSET'] = '0';
-                        include('fetch-prod.php');
-                    ?>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>vegetables & fruits</h6>
-                    <?php
-                        $_SESSION['TYPE'] = 'vegetables';
-						$_SESSION['LIMIT'] = '2';
-						$_SESSION['OFFSET'] = '0';
-                        include('fetch-prod.php');
-					?>
-					<?php
-                        $_SESSION['TYPE'] = 'fruits';
-						$_SESSION['LIMIT'] = '2';
-						$_SESSION['OFFSET'] = '0';
-                        include('fetch-prod.php');
-                    ?>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>beverages</h6>
-                    <?php
-                        $_SESSION['TYPE'] = 'softdrinks';
-						$_SESSION['LIMIT'] = '4';
-						$_SESSION['OFFSET'] = '0';
-                        include('fetch-prod.php');
-                    ?>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
+		</div>
+<!-- //mail -->
 		</div>
 		<div class="clearfix"></div>
 	</div>
 <!-- //banner -->
+<!-- map -->
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d235755.51605057082!2d88.314623!3d22.591071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1605189388211!5m2!1sen!2sin" style="border:0"></iframe>
+	</div>
+<!-- //map -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -374,24 +348,25 @@ $(document).ready(function(){
 <!-- //here ends scrolling icon -->
 <script src="js/minicart.js"></script>
 <script>
-	paypal.minicart.render();
+		paypal.minicart.render();
 
-	paypal.minicart.cart.on('checkout', function (evt) {
-		var items = this.items(),
-			len = items.length,
-			total = 0,
-			i;
+		paypal.minicart.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
 
-		// Count the number of each item in the cart
-		for (i = 0; i < len; i++) {
-			total += items[i].get('quantity');
-		}
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
 
-		if (total < 3) {
-			alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
-			evt.preventDefault();
-		}
-	});
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+
 	</script>
 </body>
 </html>
