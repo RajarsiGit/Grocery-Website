@@ -1,0 +1,8 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.rajarsi.ourgrocery
+win:
+  target: nsis
+  icon: build/favicon.ico
+electronVersion: 11.0.2

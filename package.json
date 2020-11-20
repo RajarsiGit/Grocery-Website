@@ -1,0 +1,25 @@
+{
+    "name": "our-grocery",
+    "version": "0.1.0",
+    "license": "MIT",
+    "main": "main.js",
+    "build": {
+        "appId": "com.rajarsi.ourgrocery",
+        "win": {
+            "target": "nsis",
+            "icon": "build/favicon.ico"
+        }
+    },
+    "scripts": {
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "devDependencies": {
+        "electron": "^11.0.2",
+        "electron-builder": "^22.9.1"
+    },
+    "dependencies": {
+        "electron-build": "0.0.3"
+    }
+}
