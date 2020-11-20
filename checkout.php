@@ -198,7 +198,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 $p = ($r*$q) - $d;
                                 $p_name = $_POST["item_name_".strval($i)];
                                 $query = "SELECT p_img_name FROM product_details WHERE p_name LIKE '".$p_name."' LIMIT 1;";
-                                $result =  $db_handle->runQuery($query);
+                                $result =  $db_handle->fetch($query);
                                 echo "<tr>
                                         <td class=\"invert\">".strval($i)."</td>
                                         <td class=\"invert-image\"><a href=\"/single\"><img src=\"".$result[0]['p_img_name']."\" alt=\" \" class=\"img-responsive\"></a></td>

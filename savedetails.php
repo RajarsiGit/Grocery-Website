@@ -18,7 +18,7 @@
       $total_price = $_POST['Amount'];
       
       $query = "INSERT INTO address_details (a_name, a_phone, a_landmark, a_city, a_type, total_price) VALUES('".$name."',  '".$phone."', '".$landmark."', '".$city."', '".$type."', '".$total_price."');";
-      $result =  $db_handle->insert($query);
+      $result =  $db_handle->run($query);
       if($result) {
         echo "<h4 style='text-align: center;'>Thank you for shopping with us! Taking you to payment page...</h4><script>setTimeout(function() {location.href = '/payment';}, 2500);</script>";
       }

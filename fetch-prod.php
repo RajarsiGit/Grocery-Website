@@ -5,7 +5,7 @@
 
     $query = "SELECT * FROM product_details WHERE p_type LIKE '".$_SESSION['TYPE']."' LIMIT ".$_SESSION['LIMIT']." OFFSET ".$_SESSION['OFFSET'].";";
     
-    $result =  $db_handle->runQuery($query);
+    $result =  $db_handle->fetch($query);
 
     $_SESSION['TYPE'] = '';
     $_SESSION['LIMIT'] = '0';

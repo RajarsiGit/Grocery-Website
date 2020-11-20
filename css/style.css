@@ -2814,7 +2814,7 @@ input.checkbox:checked:after {
   border:1px solid #A9A9A9;
   color: #333333;
 }
-.form-module input[type="submit"] {
+.form-module input[type="submit"], button {
   background:#84C639;
   width: 100%;
   border: 0;
@@ -2825,7 +2825,7 @@ input.checkbox:checked:after {
   font-size:14px;
   font-weight:bold;
 }
-.form-module input[type="submit"]:hover {
+.form-module input[type="submit"]:hover, button:hover {
   background:#FA1818;
 }
 .form-module .cta {

@@ -17,8 +17,18 @@
             $conn = mysqli_connect($this->host, $this->user, $this->password, $this->database);
             return $conn;
         }
+
+        function run($query) {
+            $result = mysqli_query($this->conn, $query);
+            if($result) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
         
-        function runQuery($query) {
+        function fetch($query) {
             $resultset = NULL;
             $result = mysqli_query($this->conn, $query);
             if($result) {
@@ -31,15 +41,6 @@
             }
             else {
                 return NULL;
-            }
-        }
-
-        function insert($query) {
-            if(mysqli_query($this->conn, $query)) {
-                return true;
-            }
-            else {
-                return false;
             }
         }
     }

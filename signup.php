@@ -13,11 +13,11 @@
     $password = trim($_POST['Password']);
 
     $query = "SELECT * FROM customer WHERE c_username LIKE '".$username."' OR c_email LIKE '".$email."' LIMIT 1;";
-    $result =  $db_handle->runQuery($query);
+    $result =  $db_handle->fetch($query);
 
     if(!$result) {
       $query = "SELECT c_id FROM customer ORDER BY c_id DESC LIMIT 1";
-      $result = $db_handle->runQuery($query);
+      $result = $db_handle->fetch($query);
       $i = "0";
       if($result) {
         $i = $result[0]['c_id'];
@@ -27,7 +27,7 @@
       $target_file = "uploads/image".$i.".".$imageFileType;
 
       $query = "INSERT INTO customer (c_name, c_gender, c_photo, c_phone, c_email, c_username, c_password) VALUES('".$name."', '".$gender."', '".$target_file."', '".$phone."', '".$email."', '".$username."', '".$password."');";
-      $result =  $db_handle->insert($query);
+      $result =  $db_handle->run($query);
 
       if($result) {
         if(move_uploaded_file($_FILES["Photo"]["tmp_name"], $target_file)) {
