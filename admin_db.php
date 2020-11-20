@@ -44,12 +44,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="form">
                         <form id="db">
                             <input id="input" type="hidden" value="" name="data">
-                            <button type="button" onclick="submitForm(1)">CREATE CUSTOMER TABLE</button>
-                            <button type="button" onclick="submitForm(2)">CREATE CART TABLE</button>
-                            <button type="button" onclick="submitForm(3)">CREATE ADDRESS_DETAILS TABLE</button>
-                            <button type="button" onclick="submitForm(4)">DROP CUSTOMER TABLE</button>
-                            <button type="button" onclick="submitForm(5)">DROP CART TABLE</button>
-                            <button type="button" onclick="submitForm(6)">DROP ADDRESS_DETAILS TABLE</button>
+                            <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(1)">CREATE CUSTOMER TABLE</button>
+                            <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(2)">CREATE CART TABLE</button>
+                            <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(3)">CREATE ADDRESS_DETAILS TABLE</button>
+                            <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(4)">DROP CUSTOMER TABLE</button>
+                            <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(5)">DROP CART TABLE</button>
+                            <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(6)">DROP ADDRESS_DETAILS TABLE</button>
                             <div id="msg"></div>
                         </form>
                     </div>

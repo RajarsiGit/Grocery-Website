@@ -2816,10 +2816,10 @@ input.checkbox:checked:after {
 }
 .form-module input[type="submit"], button {
   background:#84C639;
-  width: 100%;
+  
   border: 0;
   padding: 10px 15px;
-  color: #ffffff;
+  
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   font-size:14px;
