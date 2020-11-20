@@ -1,8 +1,8 @@
 <!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
+Author: Rajarsi Saha & Sawon Bhattacharya
+Author URL: https://github.com/RajarsiGit/ & https://github.com/SawonBhattacharya/
+License: MIT License
+License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 -->
 <!DOCTYPE html>
 <html>
