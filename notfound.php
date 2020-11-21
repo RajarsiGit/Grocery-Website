@@ -7,7 +7,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Our Grocery | Sign In & Sign Up</title>
+<title>Our Grocery | Page Not Found - Error 404</title>
 <!-- for-mobile-apps -->
 <link rel="shortcut icon" href="images/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">

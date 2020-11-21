@@ -63,6 +63,9 @@
         case '/mail' :
             require __DIR__ . '/mail.php';
             break;
+        case '/profile' :
+            require __DIR__ . '/profile.php';
+            break;
         case '/login' :
             require __DIR__ . '/login.php';
             break;

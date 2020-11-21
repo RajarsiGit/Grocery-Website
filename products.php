@@ -68,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<ul class="dropdown-menu drp-mnu">
 								<?php
 									if(isset($_COOKIE['u_id'])) {
-										echo '<li><a href="#">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="/login" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+										echo '<li><a href="/profile">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
 									}else{
 										echo '<li><a href="/login">Login</a></li>';
 									}

@@ -57,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<ul class="dropdown-menu drp-mnu">
 								<?php
 									if(isset($_COOKIE['u_id'])){
-										echo '<li><a href="#">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="/login" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+										echo '<li><a href="/profile">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
 									}else{
 										echo '<li><a href="/login">Login</a></li>';
 									}
@@ -173,7 +173,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			
 	      <div class="checkout-right">
 				<h4>
-                    <?php echo "Your shopping cart contains: <span>".strval((count($_POST)-7)/6)." Products</span> (View cart to edit)"; ?>
+					<?php
+						if($_POST) {
+							echo "Your shopping cart contains: <span>".strval((count($_POST)-7)/6)." Products</span> (View cart to edit)";
+						}
+						else {
+							echo "Your shopping cart contains: <span>0 Products</span> (View cart to edit)"; 
+						}
+					?>
                 </h4>
 				<table class="timetable_sub">
 					<thead>
@@ -228,9 +235,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 
                                 echo "<li>".$_POST["item_name_".strval($i)]."<span>₹".number_format(strval($p), 2, '.', '')." </span></li>";
                             }
-                            $_SESSION["amount"] = $t;
-                            echo "<li>Total Service Charges<span>₹15.00</span></li>";
-                            echo "<li>Totals<span>₹".number_format($t, 2, '.', '')."</span></li>";
+							$_SESSION["amount"] = $t;
+							if($_SESSION["amount"] > 15) {
+								echo "<li>Total Service Charges<span>₹15.00</span></li>";
+                            	echo "<li>Totals<span>₹".number_format($t, 2, '.', '')."</span></li>";
+							}
+							else {
+								echo "<li>Totals<span>₹0.00</span></li>";
+							}
                         ?>
 					</ul>
 				</div>

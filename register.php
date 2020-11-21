@@ -68,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<ul class="dropdown-menu drp-mnu">
 								<?php
 									if(isset($_COOKIE['u_id'])){
-										echo '<li><a href="#">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="/login" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+										echo '<li><a href="/profile">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
 									}else{
 										echo '<li><a href="/login">Login</a></li>';
 									}
@@ -295,7 +295,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     $('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
 									$('.dropdown-menu.drp-mnu').prepend("<li><a href='/login'>" + $.cookie('u_id').split(' ')[0] + "</a></li>");
 									<?php
-										if($_SESSION['pay'] == '1') {
+										if(isset($_SESSION['pay']) && $_SESSION['pay'] == '1') {
+											$_SESSION['pay'] = '0';
 											echo 'setTimeout(function() {$("#cart").submit();}, 1500);';
 										}
 									?>
