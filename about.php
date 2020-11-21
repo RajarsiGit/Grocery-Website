@@ -236,7 +236,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="https://www.facebook.com/rajarsi.saha.3997/" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/rajarsi-saha-2709a297/" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 						<li><a href="https://github.com/RajarsiGit/" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-						<li><a href="mailto://rajarsi3997@gmail.com/" class="google"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+						<li><a href="mailto://rajarsi3997@gmail.com/" class="google"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 				<div class="col-md-6 agileits_team_grid">
