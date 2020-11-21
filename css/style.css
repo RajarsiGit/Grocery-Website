@@ -1130,6 +1130,10 @@ button.submit.check_out{
 	background:#1877f2;
 	border-color:#1877f2;
 }
+.agileits_social_icons li a.twitter:hover{
+	background:#1da1f2;
+	border-color:#1da1f2;
+}
 .agileits_social_icons li a.linkedin:hover{
 	background:#0a66c2;
 	border-color:#0a66c2;
