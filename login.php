@@ -484,14 +484,19 @@ $(document).ready(function(){
 	$(document).ready(function() {
 		if($.cookie('u_id')) {
 			$('.module.form-module > .toggle, .form, .cta').fadeOut();
-			$.ajax({
-				type: 'GET',
-				url: 'php/getphoto.php',
-				success: function(data) {
-					$('.module.form-module').html("<div style='margin: 1em 1em 1em 1em; text-align: center;'><h3>Welcome!</h3><br><div id=\"img\"></div><br><h4 style='padding: 1em 1em 1em 1em;'>" + $.cookie('u_id').split(' ')[0] + "</h4></div>");
-					$('#img').html(data);
+			$('.module.form-module').html("<div style='margin: 1em 1em 1em 1em; text-align: center;'><h3>Welcome!</h3><br><div id=\"img\"></div><br><h4 style='padding: 1em 1em 1em 1em;'>" + $.cookie('u_id').split(' ')[0] + "</h4></div>");
+			$('#img').html("<?php
+				if(isset($_COOKIE['u_id'])) {
+					require_once "php/db_controller.php";
+					$db_handle = new DBController();
+					$query = "SELECT c_photo FROM customer WHERE c_name LIKE '".$_COOKIE['u_id']."' LIMIT 1";
+					$result = $db_handle->fetch($query);
+					echo "<img src='".$result[0]['c_photo']."' height='100'>";
 				}
-			});
+				else {
+					echo "";
+				}
+			?>");
 		}
 	});
 </script>

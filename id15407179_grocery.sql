@@ -10,7 +10,7 @@ CREATE TABLE `id15407179_grocery`.`customer` (
     `c_phone` VARCHAR(15) NOT NULL,
     `c_email` VARCHAR(255) NOT NULL,
     `c_username` VARCHAR(255) NOT NULL,
-    `c_password` VARCHAR(255) NOT NULL,
+    `c_password` LONGTEXT NOT NULL,
     PRIMARY KEY (`c_id`)
 ) ENGINE = InnoDB;
 

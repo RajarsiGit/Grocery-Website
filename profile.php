@@ -188,6 +188,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 					<div class="form" style="display: block">
 						<form>
 						<?php
+							session_start();
 							if(isset($_COOKIE['u_id'])) {
 								require_once "php/db_controller.php";
 								$db_handle = new DBController();

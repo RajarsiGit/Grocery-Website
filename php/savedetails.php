@@ -1,9 +1,7 @@
 <?php
   session_start();
   require_once "db_controller.php";
-
   $db_handle = new DBController();
-
   if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(!isset($_COOKIE['u_id'])) {
       $_SESSION['pay'] = '1';
