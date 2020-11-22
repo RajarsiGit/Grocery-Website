@@ -79,7 +79,7 @@
             require __DIR__ . '/example.php';
             break;
         case '/admin' :
-            require __DIR__ . '/admin_db.php';
+            require __DIR__ . '/admin.php';
             break;
         default:
         require __DIR__ . '/notfound.php';

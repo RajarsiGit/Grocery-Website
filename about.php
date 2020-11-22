@@ -10,10 +10,14 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <title>Our Grocery | About Us</title>
 <!-- for-mobile-apps -->
 <link rel="shortcut icon" href="images/favicon.png">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://http://our-grocery.tk/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
+<meta name="HandheldFriendly" content="true" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<meta property="og:title" content="Our Grocery Web Application" >
+<meta property="og:url" content="https://http://our-grocery.tk/" >
+<meta property="og:description" content="A good and handy web application that demonstrates an online grocery store for each and everyone who finds it difficult to head to the departmental store.">
+<meta name="keywords" content="Online Grocery Store Website " />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
@@ -41,6 +45,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <!-- start-smoth-scrolling -->
 </head>
+<div class="loader_container">
+	<div class="loader">
+	<script>
+		$(window).load(function() {
+			$(".loader_container").fadeOut("slow");
+		});
+	</script>
+	</div>
+</div>
 	
 <body>
 <!-- header -->
