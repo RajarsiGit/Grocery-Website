@@ -8,7 +8,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Our Grocery | Checkout</title>
+<title>Our Grocery | Your Profile</title>
 <!-- for-mobile-apps -->
 <link rel="shortcut icon" href="images/favicon.png">
 <link rel="canonical" href="https://http://our-grocery.tk/" />
