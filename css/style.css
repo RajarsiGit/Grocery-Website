@@ -640,8 +640,9 @@ ul.dropdown-menu.drp-mnu li a i {
 	border-color: #5b951a !important;
 }
 #PPMiniCart .minicart-subtotal {
-    padding-left: 25px !important;
+    padding-left: 0px !important;
 	bottom: -17px !important;
+	left: 5%!important;
 }
 #PPMiniCart {
     left: 44% !important;
@@ -657,7 +658,7 @@ ul.dropdown-menu.drp-mnu li a i {
 #PPMiniCart .minicart-submit {
     position: absolute;
     bottom: -28px!important;
-    right: 0px!important;
+	right: -20%!important;
     min-width: 153px;
     height: 33px;
     margin-right:6px;
