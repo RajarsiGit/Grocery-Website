@@ -198,10 +198,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h3>Services</h3>
 			<div class="w3ls_service_grids">
 				<div class="col-md-5 w3ls_service_grid_left">
-					<h4>cum soluta nobis est</h4>
-					<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-						voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-						repellat.</p>
+					<h4>Get to know our services</h4>
+					<p>We believe in customer satisfaction more than anything. 
+						So we work hard towards delivering the best services 
+						in every tier to each and every one of our customers, 
+						so that our cutomers always feel an urge to visit us 
+						for the second time.</p>
+					<p>Below are some of our services that we are proud to let our cutomers know:</p>
 				</div>
 				<div class="col-md-7 w3ls_service_grid_right">
 					<div class="col-md-4 w3ls_service_grid_right_1">
@@ -223,12 +226,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-6 w3ls_service_grids1_right">
 					<ul>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>et voluptates repudiandae sint et molestiae</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>rerum necessitatibus saepe eveniet ut</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>placeat facere possimus, omnis voluptas</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Et harum quidem rerum facilis est et expedita</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>similique sunt in culpa qui officia deserunt</li>
-						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>odio dignissimos ducimus qui blanditiis</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Superfast checkouts</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Payment in all forms</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Hassle-free return polcies</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Special warranty</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>24x7 customer services</li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Overall satisfiable experience</li>
 					</ul>
 					<a href="/single">Shop Now</a>
 				</div>
@@ -288,21 +291,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 				</div>
 				<h3>Best buy</h3>
-				<p>The best deals and offers only at Grocery!</p>
+				<p>The best deals, offers & services only at Our Grocery! Don't believe us? You will for sure, after you receive your first delivery!</p>
 			</div>
 			<div class="col-md-4 wthree_news_top_serv_btm_grid">
 				<div class="wthree_news_top_serv_btm_grid_icon">
 					<i class="fa fa-bar-chart" aria-hidden="true"></i>
 				</div>
 				<h3>Reports</h3>
-				<p>Best annual reports!</p>
+				<p>We are known to have the best annual records in all respects, starting from sale to delivery and other customer services!</p>
 			</div>
 			<div class="col-md-4 wthree_news_top_serv_btm_grid">
 				<div class="wthree_news_top_serv_btm_grid_icon">
 					<i class="fa fa-truck" aria-hidden="true"></i>
 				</div>
 				<h3>Fastest Delivery</h3>
-				<p>Lightning fast deliveries at your doorstep!</p>
+				<p>Lightning fast deliveries at your doorstep, as we pick items from local stores and deliver at the lowest prices!</p>
 			</div>
 			<div class="clearfix"> </div>
 		</div>

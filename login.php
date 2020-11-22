@@ -339,21 +339,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 				</div>
 				<h3>Best buy</h3>
-				<p>The best deals and offers only at Grocery!</p>
+				<p>The best deals, offers & services only at Our Grocery! Don't believe us? You will for sure, after you receive your first delivery!</p>
 			</div>
 			<div class="col-md-4 wthree_news_top_serv_btm_grid">
 				<div class="wthree_news_top_serv_btm_grid_icon">
 					<i class="fa fa-bar-chart" aria-hidden="true"></i>
 				</div>
 				<h3>Reports</h3>
-				<p>Best annual reports!</p>
+				<p>We are known to have the best annual records in all respects, starting from sale to delivery and other customer services!</p>
 			</div>
 			<div class="col-md-4 wthree_news_top_serv_btm_grid">
 				<div class="wthree_news_top_serv_btm_grid_icon">
 					<i class="fa fa-truck" aria-hidden="true"></i>
 				</div>
 				<h3>Fastest Delivery</h3>
-				<p>Lightning fast deliveries at your doorstep!</p>
+				<p>Lightning fast deliveries at your doorstep, as we pick items from local stores and deliver at the lowest prices!</p>
 			</div>
 			<div class="clearfix"> </div>
 		</div>

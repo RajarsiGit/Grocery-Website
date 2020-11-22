@@ -196,23 +196,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- about -->
 		<div class="privacy about">
 			<h3>About Us</h3>
-			<p class="animi">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
-				praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
-				excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
-				officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 
-				rerum facilis est et expedita distinctio.</p>
+			<p class="animi">We build software that will be useful for the society, by building a team
+							of hardworking and passionate software developers who are ready to work as
+							a team and not afraid of taking responsibilites. We work in different fields 
+							like, AI solutions, UI/UX, Android & Web apps etc. We have but one goal and 
+							that is to provide you with the best software solution for your everyday
+							problems.</p>
+			<p class="animi">We are also part of a larger team known as <strong>Ultra-Dev$.</strong> <a href="https://ultra-devs.000webhostapp.com/" target="_blank" style="font-weight: bold;">Visit</a> our website to know more.</p>
+			<p class="animi">We are proud to mention few of our other projects and areas that we worked
+							on very recently:</p>
 			<div class="agile_about_grids">
 				<div class="col-md-6 agile_about_grid_right">
 					<img src="images/31.jpg" alt=" " class="img-responsive" />
 				</div>
 				<div class="col-md-6 agile_about_grid_left">
 					<ol>
-						<li>laborum et dolorum fuga</li>
-						<li>corrupti quos dolores et quas</li>
-						<li>est et expedita distinctio</li>
-						<li>deleniti atque corrupti quos</li>
-						<li>excepturi sint occaecati cupiditate</li>
-						<li>accusamus et iusto odio</li>
+						<li>Drowsiness Detector (Android)</li>
+						<li>Deli Shop Simulator (C++)</li>
 					</ol>
 				</div>
 				<div class="clearfix"> </div>
@@ -233,10 +233,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h4>Rajarsi Saha</h4>
 					<p>Developer</p>
 					<ul class="agileits_social_icons agileits_social_icons_team">
-						<li><a href="https://www.facebook.com/rajarsi.saha.3997/" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/rajarsi-saha-2709a297/" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li><a href="https://github.com/RajarsiGit/" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-						<li><a href="mailto://rajarsi3997@gmail.com/" class="google"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/rajarsi.saha.3997" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/rajarsi-saha-2709a297" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="https://github.com/RajarsiGit" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+						<li><a href="mailto://rajarsi3997@gmail.com" class="google"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 				<div class="col-md-6 agileits_team_grid">
@@ -244,10 +244,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h4>Sawon Bhattacharya</h4>
 					<p>Developer</p>
 					<ul class="agileits_social_icons agileits_social_icons_team">
-						<li><a href="https://www.facebook.com/sawon.bhattacharjee/" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/sawon-bhattacharya-890187167/" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li><a href="https://github.com/SawonBhattacharya/" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-						<li><a href="mailto://sawon17081997@gmail.com/" class="google"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/sawon.bhattacharjee" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/sawon-bhattacharya-890187167" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="https://github.com/SawonBhattacharya" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+						<li><a href="mailto://sawon17081997@gmail.com" class="google"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
