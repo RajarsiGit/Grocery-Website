@@ -3,3 +3,4 @@
 node_modules filter=lfs diff=lfs merge=lfs -text
 *.exe filter=lfs diff=lfs merge=lfs -text
 dist filter=lfs diff=lfs merge=lfs -text
+uploads filter=lfs diff=lfs merge=lfs -text
