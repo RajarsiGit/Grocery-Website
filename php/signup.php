@@ -24,7 +24,7 @@
       }
 
       $imageFileType = strtolower(pathinfo(basename($_FILES['Photo']['name']), PATHINFO_EXTENSION));
-      $target_file = "uploads/image".$i.".".$imageFileType;
+      $target_file = "../uploads/image".$i.".".$imageFileType;
 
       $query = "INSERT INTO customer (c_name, c_gender, c_photo, c_phone, c_email, c_username, c_password) VALUES('".$name."', '".$gender."', '".$target_file."', '".$phone."', '".$email."', '".$username."', '".$password."');";
       $result =  $db_handle->run($query);
