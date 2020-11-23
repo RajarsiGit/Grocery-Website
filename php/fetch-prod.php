@@ -1,5 +1,5 @@
 <?php
-    require_once "db_controller.php";
+    require_once "php/db_controller.php";
 
     $db_handle = new DBController();
 

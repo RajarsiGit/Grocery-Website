@@ -80,15 +80,19 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
 								<?php
-									if(isset($_COOKIE['u_id'])){
-										echo '<li><a href="/profile">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
-									}else{
-										echo '<li><a href="/login">Login</a></li>';
-									}
-								?>
+                                    if(isset($_COOKIE['u_id'])){
+                                        require_once "php/db_controller.php";
+                                        $db_handle = new DBController();
+                                        $query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
+										$result =  $db_handle->fetch($query);
+                                        echo '<li><a href="/profile">'.explode(' ', trim($result[0]['c_name']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+                                    }else{
+                                        echo '<li><a href="/login">Login</a></li>';
+                                    }
+                                ?>
 								<li><a href="/register">Sign Up</a></li>
 							</ul>
-						</div>                  
+						</div>
 					</div>	
 				</li>
 			</ul>
@@ -281,7 +285,19 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 									$('.module.form-module > .toggle, .form, .cta').fadeOut();
 									$('.module.form-module').html(data);
 									$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
-									$('.dropdown-menu.drp-mnu').prepend("<li><a href='/login'>" + $.cookie('u_id').split(' ')[0] + "</a></li>");
+									$('.dropdown-menu.drp-mnu').prepend(
+										"<?php
+											if(isset($_COOKIE['u_id'])){
+												require_once "php/db_controller.php";
+												$db_handle = new DBController();
+												$query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
+												$result =  $db_handle->fetch($query);  
+												echo "<li><a href='/login'>".explode(' ', trim($result[0]['c_name']))[0]."</a></li>";
+											}else{
+												echo "<li><a href='/login'>Login</a></li>";
+											}
+										?>"
+									);
 									<?php
 										if(isset($_SESSION['pay']) && $_SESSION['pay'] == '1') {
 											$_SESSION['pay'] = '0';
@@ -317,7 +333,19 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 										$('.dropdown-menu.drp-mnu > li:first-child').remove();
 									}
                                     $('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
-									$('.dropdown-menu.drp-mnu').prepend("<li><a href='/login'>" + $.cookie('u_id').split(' ')[0] + "</a></li>");
+									$('.dropdown-menu.drp-mnu').prepend(
+										"<?php
+											if(isset($_COOKIE['u_id'])){
+												require_once "php/db_controller.php";
+												$db_handle = new DBController();
+												$query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
+												$result =  $db_handle->fetch($query);  
+												echo "<li><a href='/login'>".explode(' ', trim($result[0]['c_name']))[0]."</a></li>";
+											}else{
+												echo "<li><a href='/login'>Login</a></li>";
+											}
+										?>"
+									);
 								}
 							});
 						});
@@ -484,14 +512,13 @@ $(document).ready(function(){
 	$(document).ready(function() {
 		if($.cookie('u_id')) {
 			$('.module.form-module > .toggle, .form, .cta').fadeOut();
-			$('.module.form-module').html("<div style='margin: 1em 1em 1em 1em; text-align: center;'><h3>Welcome!</h3><br><div id=\"img\"></div><br><h4 style='padding: 1em 1em 1em 1em;'>" + $.cookie('u_id').split(' ')[0] + "</h4></div>");
-			$('#img').html("<?php
+			$('.module.form-module').html("<?php
 				if(isset($_COOKIE['u_id'])) {
 					require_once "php/db_controller.php";
 					$db_handle = new DBController();
-					$query = "SELECT c_photo FROM customer WHERE c_name LIKE '".$_COOKIE['u_id']."' LIMIT 1";
+					$query = "SELECT c_name, c_photo FROM customer WHERE c_id = ".intval($_COOKIE['u_id'])." LIMIT 1";
 					$result = $db_handle->fetch($query);
-					echo "<img src='".$result[0]['c_photo']."' height='100'>";
+					echo "<div style='margin: 1em 1em 1em 1em; text-align: center;'><h3>Welcome!</h3><br><div><img src='".$result[0]['c_photo']."' height='100'></div><br><h4 style='padding: 1em 1em 1em 1em;'>".explode(' ', trim($result[0]['c_name']))[0]."</h4></div>";
 				}
 				else {
 					echo "";

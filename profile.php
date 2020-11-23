@@ -69,12 +69,16 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
 								<?php
-									if(isset($_COOKIE['u_id'])){
-										echo '<li><a href="/profile">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
-									}else{
-										echo '<li><a href="/login">Login</a></li>';
-									}
-								?>
+                                    if(isset($_COOKIE['u_id'])){
+                                        require_once "php/db_controller.php";
+                                        $db_handle = new DBController();
+                                        $query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
+                                        $result =  $db_handle->fetch($query);  
+                                        echo '<li><a href="/profile">'.explode(' ', trim($result[0]['c_name']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+                                    }else{
+                                        echo '<li><a href="/login">Login</a></li>';
+                                    }
+                                ?>
 								<li><a href="/register">Sign Up</a></li>
 							</ul>
 						</div>                  
@@ -187,33 +191,32 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<div class="module form-module" style="max-width: 90%;">
 					<div class="form" style="display: block">
 						<form>
-						<?php
-							session_start();
-							if(isset($_COOKIE['u_id'])) {
-								require_once "php/db_controller.php";
-								$db_handle = new DBController();
-								$query = "SELECT c_name, c_gender, c_photo, c_phone, c_email, c_password FROM customer WHERE c_name LIKE '".$_COOKIE['u_id']."' LIMIT 1;";
-								$result =  $db_handle->fetch($query);
-								echo '<table style="width:100%;"><tbody>';
-								foreach($result[0] as $key => $value) {
-									echo '<tr><td><label class="control-label" style="display: inline-flex; margin: 0 0 20px; padding: 10px 0px; width: 25%;">'.ucfirst(substr($key, 2)).' </label><td>';
-									if(ucfirst(substr($key, 2)) == 'Password') {
-										echo '<td style="width: 80%;"><input type="password" value="'.$value.'" disabled style="display: inline-flex; float: right; width: 100%;"></td></tr>';
+							<?php
+								if(isset($_COOKIE['u_id'])) {
+									require_once "php/db_controller.php";
+									$db_handle = new DBController();
+									$query = "SELECT c_name, c_gender, c_photo, c_phone, c_email, c_password FROM customer WHERE c_id = ".$_COOKIE['u_id']." LIMIT 1;";
+									$result =  $db_handle->fetch($query);
+									echo '<table style="width:100%;"><tbody>';
+									foreach($result[0] as $key => $value) {
+										echo '<tr><td><label class="control-label" style="display: inline-flex; margin: 0 0 20px; padding: 10px 0px; width: 25%;">'.ucfirst(substr($key, 2)).' </label><td>';
+										if(ucfirst(substr($key, 2)) == 'Password') {
+											echo '<td style="width: 80%;"><input type="password" value="'.$value.'" disabled style="display: inline-flex; float: right; width: 100%;"></td></tr>';
+										}
+										elseif(ucfirst(substr($key, 2)) == 'Photo') {
+											echo '<td style="width: 80%;"><img src="'.$value.'" style="display: block; height: 150px; margin: 0 auto 20px auto; padding: 10px 0px; "></td></tr>';
+										}
+										else {
+											echo '<td style="width: 80%;"><input type="text" value="'.$value.'" disabled style="display: inline-flex; float: right; width: 100%;"></td></tr>';
+										}
 									}
-									elseif(ucfirst(substr($key, 2)) == 'Photo') {
-										echo '<td style="width: 80%;"><img src="'.$value.'" style="display: block; height: 150px; margin: 0 auto 20px auto; padding: 10px 0px; "></td></tr>';
-									}
-									else {
-										echo '<td style="width: 80%;"><input type="text" value="'.$value.'" disabled style="display: inline-flex; float: right; width: 100%;"></td></tr>';
-									}
+									echo '</tbody></table>';
 								}
-								echo '</tbody></table>';
-							}
-							else {
-								$_SESSION['profile'] = '1';
-								echo '<h4 style="text-align: center; margin: 0 0 20px 0">Please login to view your profile!</h4><button type="button" onclick="location.href=\'/login\'" style="display: block; margin: auto;">LOGIN</button>';
-							}
-						?>
+								else {
+									$_SESSION['profile'] = '1';
+									echo '<h4 style="text-align: center; margin: 0 0 20px 0">Please login to view your profile!</h4><button type="button" onclick="location.href=\'/login\'" style="display: block; margin: auto;">LOGIN</button>';
+								}
+							?>
 						</form>
 					</div>
 				</div>

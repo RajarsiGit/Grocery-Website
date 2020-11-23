@@ -81,7 +81,11 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 							<ul class="dropdown-menu drp-mnu">
 								<?php
 									if(isset($_COOKIE['u_id'])){
-										echo '<li><a href="/profile">'.explode(' ', trim($_COOKIE['u_id']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+										require_once "php/db_controller.php";
+										$db_handle = new DBController();
+										$query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
+      									$result =  $db_handle->run($query);  
+										echo '<li><a href="/profile">'.explode(' ', trim($result[0]['c_name']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
 									}else{
 										echo '<li><a href="/login">Login</a></li>';
 									}

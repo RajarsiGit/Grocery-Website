@@ -23,7 +23,9 @@
       $result =  $db_handle->run($query);
       if($result) {
         if(move_uploaded_file($_FILES["Photo"]["tmp_name"], $target_file)) {
-          setrawcookie("u_id", rawurlencode($name), time() + (86400 * 30), "/");
+          $query = "SELECT c_id FROM customer WHERE c_name LIKE '".$name."' LIMIT 1;";
+          $result = $db_handle->fetch($query);
+          setrawcookie("u_id", rawurlencode($result[0]['c_id']), time() + (86400 * 30), "/");
           echo "<div style='margin: 1em 1em 1em 1em; text-align: center;'><h3>Registration Success!</h3><br><h4 style='padding: 1em 1em 1em 1em;'>You are logged in!</h4></div>";
         }
         else {
