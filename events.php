@@ -10,12 +10,12 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <title>Our Grocery | Events</title>
 <!-- for-mobile-apps -->
 <link rel="shortcut icon" href="images/favicon.png">
-<link rel="canonical" href="https://http://our-grocery.tk/" />
+<link rel="canonical" href="https://our-grocery.tk/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
 <meta name="HandheldFriendly" content="true" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta property="og:title" content="Our Grocery Web Application" >
-<meta property="og:url" content="https://http://our-grocery.tk/" >
+<meta property="og:url" content="https://our-grocery.tk/" >
 <meta property="og:description" content="A good and handy web application that demonstrates an online grocery store for each and everyone who finds it difficult to head to the departmental store.">
 <meta name="keywords" content="Online Grocery Store Website " />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
