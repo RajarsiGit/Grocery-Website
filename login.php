@@ -285,6 +285,9 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 								success: function(data) {
 									$('.module.form-module > .toggle, .form, .cta').fadeOut();
 									$('.module.form-module').html(data);
+									if($('.dropdown-menu.drp-mnu > li').length == 3) {
+										$('.dropdown-menu.drp-mnu > li:first-child').remove();
+									}
 									$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
 									$('.dropdown-menu.drp-mnu').prepend(
 										"<?php
@@ -300,15 +303,15 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 										?>"
 									);
 									<?php
-										if(isset($_SESSION['pay']) && $_SESSION['pay'] == '1') {
+										if(isset($_COOKIE['u_id']) &&  isset($_SESSION['pay']) && $_SESSION['pay'] == '1') {
 											$_SESSION['pay'] = '0';
 											echo 'setTimeout(function() {$("#cart").submit();}, 1500);';
 										}
-										elseif(isset($_SESSION['profile']) && $_SESSION['profile'] == '1') {
+										elseif(isset($_COOKIE['u_id']) && isset($_SESSION['profile']) && $_SESSION['profile'] == '1') {
 											$_SESSION['profile'] = '0';
 											echo 'setTimeout(function() {location.href="/profile";}, 1500);';
 										}
-										else {
+										elseif(isset($_COOKIE['u_id'])) {
 											echo 'setTimeout(function() {location.reload();}, 1500);';
 										}
 									?>
@@ -330,7 +333,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 								success: function(data) {
 									$('.module.form-module > .toggle, .form, .cta').fadeOut();
 									$('.module.form-module').html(data);
-									if($('.dropdown-menu.drp-mnu > li').length > 0) {
+									if($('.dropdown-menu.drp-mnu > li').length == 3) {
 										$('.dropdown-menu.drp-mnu > li:first-child').remove();
 									}
                                     $('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");

@@ -286,6 +286,9 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 								success: function(data) {
 									$('.module.form-module > .toggle, .form, .cta').fadeOut();
 									$('.module.form-module').html(data);
+									if($('.dropdown-menu.drp-mnu > li').length == 3) {
+										$('.dropdown-menu.drp-mnu > li:first-child').remove();
+									}
 									$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
                                     $('.dropdown-menu.drp-mnu').prepend(
 										"<?php
