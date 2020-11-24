@@ -3561,7 +3561,7 @@ input.checkbox:checked:after {
 		margin-top: 1.6em;
 	}
 	.navbar-nav > li > a {
-		padding: 10px 0px 10px 15px;
+		padding: 10px 15px 10px 15px;
 	}
 	.w3ls_vegetables_menu {
 		left: 10%;
