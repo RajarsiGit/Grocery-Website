@@ -287,19 +287,19 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 									$('.module.form-module > .toggle, .form, .cta').fadeOut();
 									$('.module.form-module').html(data);
 									$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
-                                    $('.dropdown-menu.drp-mnu').prepend("
-										<?php
+                                    $('.dropdown-menu.drp-mnu').prepend(
+										"<?php
 											if(isset($_COOKIE['u_id'])){
 												require_once "php/db_controller.php";
 												$db_handle = new DBController();
 												$query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
 												$result =  $db_handle->fetch($query);  
-												echo '<li><a href="/login">'.explode(' ', trim($result[0]['c_name']))[0].'</a></li>';
+												echo "<li><a href='/login'>".explode(' ', trim($result[0]['c_name']))[0]."</a></li>";
 											}else{
-												echo '<li><a href="/login">Login</a></li>';
+												echo "<li><a href='/login'>Login</a></li>";
 											}
-										?>
-									");
+										?>"
+									);
 									setTimeout(function() {location.reload();}, 1000);
 								}
 							});
@@ -323,19 +323,19 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 										$('.dropdown-menu.drp-mnu > li:first-child').remove();
 									}
                                     $('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
-									$('.dropdown-menu.drp-mnu').prepend("
-										<?php
+									$('.dropdown-menu.drp-mnu').prepend(
+										"<?php
 											if(isset($_COOKIE['u_id'])){
 												require_once "php/db_controller.php";
 												$db_handle = new DBController();
 												$query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
 												$result =  $db_handle->fetch($query);  
-												echo '<li><a href="/login">'.explode(' ', trim($result[0]['c_name']))[0].'</a></li>';
+												echo "<li><a href='/login'>".explode(' ', trim($result[0]['c_name']))[0]."</a></li>";
 											}else{
-												echo '<li><a href="/login">Login</a></li>';
+												echo "<li><a href='/login'>Login</a></li>";
 											}
-										?>
-									");
+										?>"
+									);
 									<?php
 										if(isset($_SESSION['pay']) && $_SESSION['pay'] == '1') {
 											$_SESSION['pay'] = '0';
