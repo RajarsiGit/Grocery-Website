@@ -18,7 +18,7 @@
                     }
                 }
                 else {
-                    echo "<div style='margin: 2em 1em 2em 1em; padding-bottom: 3em; text-align: center;'><h3>User not available!</h3><h4 style='padding-top: 1em;'>Taking you to registration page...</h4></div><script>setTimeout(function() {location.href = '/register';}, 1500);</script>";
+                    echo "<div style='margin: 2em 1em 2em 1em; padding-bottom: 3em; text-align: center;'><h3>User not available!</h3><h4 style='padding-top: 1em;'>Taking you to registration page...</h4></div><script>setTimeout(function() {location.href = '/register';}, 1000);</script>";
                 }
             }
         }

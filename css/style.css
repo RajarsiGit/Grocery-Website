@@ -13,7 +13,8 @@ html, body{
 	font-family: 'Open Sans', sans-serif;
 	background:#ffffff;
 	scrollbar-width: none;
-    -ms-overflow-style: none;
+	-ms-overflow-style: none;
+	-webkit-font-smoothing: antialiased;
 }
 body::-webkit-scrollbar {
     display: none;

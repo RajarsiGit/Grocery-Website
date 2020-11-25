@@ -32,7 +32,19 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script> 
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
 </head>
 <div class="loader_container">
 	<div class="loader">
@@ -214,10 +226,14 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 									echo '</tbody></table>';
 								}
 								else {
-									$_SESSION['profile'] = '1';
 									echo '<h4 style="text-align: center; margin: 0 0 20px 0">Please login to view your profile!</h4><button type="button" onclick="location.href=\'/login\'" style="display: block; margin: auto;">LOGIN</button>';
 								}
 							?>
+							<script>
+								if(!$.cookie('u_id')) {
+									$.cookie('profile', '1');
+								}
+							</script>
 						</form>
 					</div>
 				</div>

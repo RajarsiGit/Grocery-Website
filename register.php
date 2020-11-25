@@ -28,6 +28,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <!-- //font-awesome icons -->
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -244,6 +245,8 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 					  <input type="text" name="Username" placeholder="Username" required=" " maxlength="255">
 					  <input type="password" id="pass" name="Password" placeholder="Password" required=" " maxlength="255">
 					  <input type="password" id="re_pass" name="Re_Password" placeholder="Retype Password" required=" " maxlength="255">
+					  <div class="g-recaptcha" data-sitekey="6LeZk-wZAAAAABytwuTg5oDzwtGf53szwyUPJTV5"></div>
+						</br>
 					  <span id="msg"></span>
 					  <script>
 						  	$('#file').on('change', function() {
@@ -286,24 +289,20 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 								success: function(data) {
 									$('.module.form-module > .toggle, .form, .cta').fadeOut();
 									$('.module.form-module').html(data);
-									if($('.dropdown-menu.drp-mnu > li').length == 3) {
-										$('.dropdown-menu.drp-mnu > li:first-child').remove();
-									}
-									$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
-                                    $('.dropdown-menu.drp-mnu').prepend(
-										"<?php
-											if(isset($_COOKIE['u_id'])){
-												require_once "php/db_controller.php";
-												$db_handle = new DBController();
-												$query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
-												$result =  $db_handle->fetch($query);  
-												echo "<li><a href='/login'>".explode(' ', trim($result[0]['c_name']))[0]."</a></li>";
-											}else{
-												echo "<li><a href='/login'>Login</a></li>";
+									if($.cookie('u_id')) {
+										if($('.dropdown-menu.drp-mnu > li').length == 3) {
+											$('.dropdown-menu.drp-mnu > li:first-child').remove();
+										}
+										$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
+										$.ajax({
+											type: 'GET',
+											url: 'php/getname.php',
+											success: function(data) {
+												$('.dropdown-menu.drp-mnu').prepend(data);
 											}
-										?>"
-									);
-									setTimeout(function() {location.reload();}, 1000);
+										});
+									}
+									setTimeout(function() {location.href = '/login';}, 1500);
 								}
 							});
 						});
@@ -322,29 +321,30 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 								success: function(data) {
 									$('.module.form-module > .toggle, .form, .cta').fadeOut();
 									$('.module.form-module').html(data);
-									if($('.dropdown-menu.drp-mnu > li').length == 3) {
-										$('.dropdown-menu.drp-mnu > li:first-child').remove();
-									}
-                                    $('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
-									$('.dropdown-menu.drp-mnu').prepend(
-										"<?php
-											if(isset($_COOKIE['u_id'])){
-												require_once "php/db_controller.php";
-												$db_handle = new DBController();
-												$query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
-												$result =  $db_handle->fetch($query);  
-												echo "<li><a href='/login'>".explode(' ', trim($result[0]['c_name']))[0]."</a></li>";
-											}else{
-												echo "<li><a href='/login'>Login</a></li>";
-											}
-										?>"
-									);
-									<?php
-										if(isset($_SESSION['pay']) && $_SESSION['pay'] == '1') {
-											$_SESSION['pay'] = '0';
-											echo 'setTimeout(function() {$("#cart").submit();}, 1500);';
+									if($.cookie('u_id')) {
+										if($('.dropdown-menu.drp-mnu > li').length == 3) {
+											$('.dropdown-menu.drp-mnu > li:first-child').remove();
 										}
-									?>
+										$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
+										$.ajax({
+											type: 'GET',
+											url: 'php/getname.php',
+											success: function(data) {
+												$('.dropdown-menu.drp-mnu').prepend(data);
+											}
+										});
+									}
+									if($.cookie('u_id') && $.cookie('pay')) {
+										$.removeCookie('pay');
+										setTimeout(function() {$("#cart").submit();}, 1500);
+									}
+									else if($.cookie('u_id') && $.cookie('profile')) {
+										$.removeCookie('profile');
+										setTimeout(function() {location.href="/profile";}, 1500);
+									}
+									else { 
+										setTimeout(function() {location.href = '/login';}, 1500);
+									}
 								}
 							});
 						});
