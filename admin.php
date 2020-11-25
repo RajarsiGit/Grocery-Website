@@ -64,6 +64,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
                             <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(4)">DROP CUSTOMER TABLE</button>
                             <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(5)">DROP CART TABLE</button>
                             <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(6)">DROP ADDRESS_DETAILS TABLE</button>
+                            <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="window.open('https://databases.000webhost.com/db_structure.php?server=1&db=id15407179_grocery', '_blank');">PHPMYADMIN DATABASE</button>
                             <div id="msg"></div>
                         </form>
                     </div>
