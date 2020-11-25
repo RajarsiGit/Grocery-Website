@@ -233,6 +233,9 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 								if(!$.cookie('u_id')) {
 									$.cookie('profile', '1');
 								}
+								else {
+									$.removeCookie('profile');
+								}
 							</script>
 						</form>
 					</div>
