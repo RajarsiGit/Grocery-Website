@@ -45,6 +45,15 @@
         case '/bread' :
             require __DIR__ . '/bread.php';
             break;
+        case '/spices' :
+            require __DIR__ . '/spices.php';
+            break;
+        case '/dairy' :
+            require __DIR__ . '/dairy.php';
+            break;
+        case '/dryfruits' :
+            require __DIR__ . '/dryfruits.php';
+            break;
         case '/checkout' :
             require __DIR__ . '/checkout.php';
             break;

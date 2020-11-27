@@ -7,7 +7,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Our Grocery | Home</title>
+<title>Our Grocery | Fruits & Vegetables</title>
 <!-- for-mobile-apps -->
 <link rel="shortcut icon" href="images/favicon.png">
 <link rel="canonical" href="https://our-grocery.tk/" />
@@ -45,7 +45,6 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 </script>
 <!-- start-smoth-scrolling -->
 </head>
-</head>
 <div class="loader_container">
 	<div class="loader">
 		<div></div><div></div><div></div><div></div>
@@ -56,9 +55,8 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 		</script>
 	</div>
 </div>
+	
 <body>
-
-
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
@@ -144,6 +142,16 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 		</div>
 	</div>
 <!-- //header -->
+<!-- products-breadcrumb -->
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>|</span></li>
+				<li>Fruits & Vegetables</li>
+			</ul>
+		</div>
+	</div>
+<!-- //products-breadcrumb -->
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
@@ -203,171 +211,73 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-			<section class="slider">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<div class="w3l_banner_nav_right_banner">
-								<h3>Make your <span>food</span> with Spicy.</h3>
-								<div class="more">
-									<a href="/products" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="w3l_banner_nav_right_banner1">
-								<h3>Make your <span>food</span> with Spicy.</h3>
-								<div class="more">
-									<a href="/products" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="w3l_banner_nav_right_banner2">
-								<h3>upto <i>50%</i> off.</h3>
-								<div class="more">
-									<a href="/products" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-								</div>
-							</div>
-						</li>
-					</ul>
+			<div class="w3l_banner_nav_right_banner5">
+				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
+			</div>
+			<div class="w3l_banner_nav_right_banner3_btm">
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+					<div class="view view-tenth">
+						<img src="images/18.jpg" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Grocery Store</h4>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+						</div>
+					</div>
+					<h4>Fruits & Vegetables</h4>
+					<ol>
+						<li>sunt in culpa qui officia</li>
+						<li>commodo consequat</li>
+						<li>sed do eiusmod tempor incididunt</li>
+					</ol>
 				</div>
-			</section>
-			<!-- flexSlider -->
-				<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-				<script defer src="js/jquery.flexslider.js"></script>
-				<script type="text/javascript">
-				$(window).load(function(){
-				  $('.flexslider').flexslider({
-					animation: "slide",
-					start: function(slider){
-					  $('body').removeClass('loading');
-					}
-				  });
-				});
-			  </script>
-			<!-- //flexSlider -->
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+					<div class="view view-tenth">
+						<img src="images/19.jpg" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Grocery Store</h4>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+						</div>
+					</div>
+					<h4>Dry Fruits</h4>
+					<ol>
+						<li>enim ipsam voluptatem officia</li>
+						<li>tempora incidunt ut labore et</li>
+						<li>vel eum iure reprehenderit</li>
+					</ol>
+				</div>
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+					<div class="view view-tenth">
+						<img src="images/20.jpg" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>Grocery Store</h4>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+						</div>
+					</div>
+					<h4>Vegetables</h4>
+					<ol>
+						<li>dolorem eum fugiat voluptas</li>
+						<li>ut aliquid ex ea commodi</li>
+						<li>magnam aliquam quaerat</li>
+					</ol>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_veg">
+				<h3 class="w3l_fruit">Dairy Products</h3>
+				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
+					<?php
+                        $_SESSION['TYPE'] = 'dairy';
+						$_SESSION['LIMIT'] = '4';
+						$_SESSION['OFFSET'] = '0'; 
+                        include('php/fetch-prod.php');
+                    ?>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
 		</div>
 		<div class="clearfix"></div>
 	</div>
-<!-- banner -->
-	<div class="banner_bottom">
-			<div class="wthree_banner_bottom_left_grid_sub">
-			</div>
-			<div class="wthree_banner_bottom_left_grid_sub1">
-				<div class="col-md-4 wthree_banner_bottom_left">
-					<div class="wthree_banner_bottom_left_grid">
-						<img src="images/4.jpg" alt=" " class="img-responsive" />
-						<div class="wthree_banner_bottom_left_grid_pos">
-							<h4>Discount Offer <span>25%</span></h4>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 wthree_banner_bottom_left">
-					<div class="wthree_banner_bottom_left_grid">
-						<img src="images/5.jpg" alt=" " class="img-responsive" />
-						<div class="wthree_banner_btm_pos">
-							<h3>introducing <span>best store</span> for <i>groceries</i></h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 wthree_banner_bottom_left">
-					<div class="wthree_banner_bottom_left_grid">
-						<img src="images/6.jpg" alt=" " class="img-responsive" />
-						<div class="wthree_banner_btm_pos1">
-							<h3>Save <span>Upto</span> $10</h3>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="clearfix"> </div>
-	</div>
-<!-- top-brands -->
-	<div class="top-brands">
-		<div class="container">
-			<h3>Hot Offers</h3>
-			<div class="agile_top_brands_grids">
-				<?php
-					$_SESSION['TYPE'] = 'special';
-					$_SESSION['LIMIT'] = '4';
-					$_SESSION['OFFSET'] = '0';
-					include('php/fetch-prod.php');
-				?>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-<!-- //top-brands -->
-<!-- fresh-vegetables -->
-	<div class="fresh-vegetables">
-		<div class="container">
-			<h3>Top Products</h3>
-			<div class="w3l_fresh_vegetables_grids">
-				<div class="col-md-3 w3l_fresh_vegetables_grid w3l_fresh_vegetables_grid_left">
-					<div class="w3l_fresh_vegetables_grid2">
-						<ul>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/products">All Brands</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/vegetables">Vegetables</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/fruits">Fruits</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/juices">Juices</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/pet">Pet Food</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/bread">Bread & Bakery</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/household">Household</a></li>
-							<li><i class="fa fa-certificate" aria-hidden="true"></i><a href="/spices">Spices</a></li>
-							<li><i class="fa fa-certificate" aria-hidden="true"></i><a href="/dryfruits">Dry Fruits</a></li>
-							<li><i class="fa fa-certificate" aria-hidden="true"></i><a href="/dairy">Dairy Products</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-9 w3l_fresh_vegetables_grid_right">
-					<div class="col-md-4 w3l_fresh_vegetables_grid">
-						<div class="w3l_fresh_vegetables_grid1">
-							<img src="images/8.jpg" alt=" " class="img-responsive" />
-						</div>
-					</div>
-					<div class="col-md-4 w3l_fresh_vegetables_grid">
-						<div class="w3l_fresh_vegetables_grid1">
-							<div class="w3l_fresh_vegetables_grid1_rel">
-								<img src="images/7.jpg" alt=" " class="img-responsive" />
-								<div class="w3l_fresh_vegetables_grid1_rel_pos">
-									<div class="more m1">
-										<a href="/products" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="w3l_fresh_vegetables_grid1_bottom">
-							<img src="images/10.jpg" alt=" " class="img-responsive" />
-							<div class="w3l_fresh_vegetables_grid1_bottom_pos">
-								<h5>Special Offers</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 w3l_fresh_vegetables_grid">
-						<div class="w3l_fresh_vegetables_grid1">
-							<img src="images/9.jpg" alt=" " class="img-responsive" />
-						</div>
-						<div class="w3l_fresh_vegetables_grid1_bottom">
-							<img src="images/11.jpg" alt=" " class="img-responsive" />
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-					<div class="agileinfo_move_text">
-						<div class="agileinfo_marquee">
-							<h4>get <span class="blink_me">25% off</span> on first order and also get gift voucher</h4>
-						</div>
-						<div class="agileinfo_breaking_news">
-							<span> </span>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-<!-- //fresh-vegetables -->
+<!-- //banner -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
