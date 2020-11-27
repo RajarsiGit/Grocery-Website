@@ -38,6 +38,9 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 	<div class="loader">
 		<div></div><div></div><div></div><div></div>
 		<script>
+			$(document).ready(function(){
+				$('body').find('img[alt="www.000webhost.com"]').parent().closest('a').closest('div').remove();
+			});
 			$(window).load(function() {
 				$(".loader_container").fadeOut("slow");
 			});
