@@ -221,19 +221,29 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<div class="banner-bottom-grid1 privacy1-grid">
 					<ul>
 						<li><i class="glyphicon glyphicon-user" aria-hidden="true"></i></li>
-						<li>Data Collected <span>We collect information you provide directly to us. For example, we collect information when you create an account, subscribe, participate in any interactive features of our services, fill out a form, request customer support or otherwise communicate with us. The types of information we may collect include your name, email address, postal address, credit card information and other contact or identifying information you choose to provide.</span></li>
+						<li>Data Collected <span>We collect information you provide directly to us. For example, we collect information 
+						when you create an account, subscribe, participate in any interactive features of our services, fill out a form, 
+						request customer support or otherwise communicate with us. The types of information we may collect include your 
+						name, email address, postal address, credit card information and other contact or identifying information you 
+						choose to provide.</span></li>
 					</ul>
 					<ul>
 						<li><i class="glyphicon glyphicon-search" aria-hidden="true"></i></li>
-						<li>Use of the Data <span>We only use your personal information to provide you the My Website services or to communicate with you about the Website or the services.</span></li>
+						<li>Use of the Data <span>We only use your personal information to provide you the Our Grocery services or to 
+						communicate with you about the Our Grocery or the services we provide. Other than what is mentioned here we do not 
+						use your data for any other purposes, whatsoever.</span></li>
 					</ul>
 					<ul>
 						<li><i class="glyphicon glyphicon-paste" aria-hidden="true"></i></li>
-						<li>Sharing of Data <span>We don't share your personal information with third parties. Aggregated, anonymized data is periodically transmitted to external services to help us improve the Website and service.</span></li>
+						<li>Sharing of Data <span>We don't share your personal information with third parties. Aggregated, anonymized 
+						data is periodically transmitted to external services to help us improve the Website and service.</span></li>
 					</ul>
 					<ul>
 						<li><i class="glyphicon glyphicon-qrcode" aria-hidden="true"></i></li>
-						<li>Security <span>We take reasonable steps to protect personally identifiable information from loss, misuse, and unauthorized access, disclosure, alteration, or destruction. But, you should keep in mind that no Internet transmission is ever completely secure or error-free. In particular, email sent to or from the Sites may not be secure.</span></li>
+						<li>Security <span>We take reasonable steps to protect personally identifiable information from loss, misuse, 
+						and unauthorized access, disclosure, alteration, or destruction. But, you should keep in mind that no Internet 
+						transmission is ever completely secure or error-free. In particular, email sent to or from the Sites may not 
+						be secure.</span></li>
 					</ul>
 				</div>
 			</div>
@@ -241,25 +251,45 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<h3>Terms of Use</h3>
 				<div class="banner-bottom-grid1 privacy2-grid">
 					<div class="privacy2-grid1">
-						<h4>deserunt mollit anim id est laborum?</h4>
-						<p>YOUR ACCESS OR USE OF OUR WEBSITE MEANS THAT YOU HAVE READ AND YOU UNDERSTAND AND AGREE TO BE BOUND BY THESE TERMS OF USE. IF YOU ACCESS OR USE OUR WEBSITE ON BEHALF OF AN ENTITY, YOU REPRESENT THAT YOU HAVE THE AUTHORITY TO BIND THAT ENTITY, AND THESE TERMS OF USE ARE THE AGREEMENT OF SUCH ENTITY. IN THAT EVENT, “YOU,” “YOUR,” “VISITOR,” AND “USER” REFER TO THAT ENTITY. IF YOU DO NOT AGREE TO THESE TERMS, THEN YOU HAVE NO RIGHT TO ACCESS OR USE OUR WEBSITE AND ITS CONTENT AND SERVICES.</p>
+						<p>YOUR ACCESS OR USE OF OUR WEBSITE MEANS THAT YOU HAVE READ AND YOU UNDERSTAND AND AGREE TO BE BOUND BY 
+						THESE TERMS OF USE. IF YOU ACCESS OR USE OUR WEBSITE ON BEHALF OF AN ENTITY, YOU REPRESENT THAT YOU HAVE THE 
+						AUTHORITY TO BIND THAT ENTITY, AND THESE TERMS OF USE ARE THE AGREEMENT OF SUCH ENTITY. IN THAT EVENT, 
+						“YOU,” “YOUR,” “VISITOR,” AND “USER” REFER TO THAT ENTITY. IF YOU DO NOT AGREE TO THESE TERMS, THEN YOU HAVE 
+						NO RIGHT TO ACCESS OR USE OUR WEBSITE AND ITS CONTENT AND SERVICES.</p>
 						<div class="privacy2-grid1-sub">
 							<h5>Eligibility</h5>
-							<p>We invite users and visitors to WhoKnows.com.</p>
+							<p>We invite users and visitors to <a href="https://our-grocery.tk/">our-grocery.tk</a>.</p>
 						</div>
 						<div class="privacy2-grid1-sub">
 							<h5>Users</h5>
-							<p>Users are those of our customers registered to use WhoKnows.com. Users may, subject to these Terms of Use, (1) use a pilot version of the product which will use our Discovery Engine to create a Full Profile and Knowledge Graph for them, (2) use the Smart Layer to receive recommendations on expert colleagues in the network and relevant content within the network, (3) view the aggregated corporate dashboard, and (4) use other services which we may provide to WhoKnows.com users. To be a user, you must be at least 18 years old and legally capable of entering into this contract by yourself. When creating your account, you will be asked to choose a user name and password and may be asked to use your LinkedIn account or other supported social network. You must provide true, accurate and complete information. You may not let others use your account, or sell or otherwise transfer your account. You are responsible for maintaining the confidentiality of your password and for all activities that occur under your account. If you discover that the security of your account has been compromised, you must notify us as soon as possible by contacting us through https://our-grocery.tk/about</p>
+							<p>Users are those of our customers registered to use <a href="https://our-grocery.tk/">our-grocery.tk</a>. 
+							Users may, subject to these Terms of Use, (1) use a pilot version of the product which will use our Discovery 
+							Engine to create a Full Profile and Knowledge Graph for them, (2) use the Smart Layer to receive recommendations 
+							on expert colleagues in the network and relevant content within the network, (3) view the aggregated corporate 
+							dashboard, and (4) use other services which we may provide to <a href="https://our-grocery.tk/">our-grocery.tk</a> 
+							users. To be a user, you must be at least 18 years old and legally capable of entering into this contract by 
+							yourself. When creating your account, you will be asked to choose a user name and password and may be asked to 
+							use your LinkedIn account or other supported social network. You must provide true, accurate and complete 
+							information. You may not let others use your account, or sell or otherwise transfer your account. You are 
+							responsible for maintaining the confidentiality of your password and for all activities that occur under your 
+							account. If you discover that the security of your account has been compromised, you must notify us as soon as 
+							possible by contacting us through the <a href="https://our-grocery.tk/mail">link</a>.</p>
 						</div>
 						<div class="privacy2-grid1-sub">
 							<h5>Visitors</h5>
-							<p>Visitors may, subject to these Terms of Use, access and browse WhoKnows.com and use the other our-grocery.tk services provided to visitors.
-
-You must be at least 13 years old to post comments on WhoKnows.com and to give us your email address or any other personally identifiable information about you. If you are under 13, please do not give us any information about yourself, including your name, address, or email address. If we discover that a child under 13 has provided us with personally identifiable information, we will delete such information from our files.</p>
+							<p>Visitors may, subject to these Terms of Use, access and browse <a href="https://our-grocery.tk/">our-grocery.tk</a> 
+							and use the other our-grocery.tk services provided to visitors. You must be at least 13 years old to post 
+							comments on <a href="https://our-grocery.tk/">our-grocery.tk</a> and to give us your email address or any 
+							other personally identifiable information about you. If you are under 13, please do not give us any 
+							information about yourself, including your name, address, or email address. If we discover that a child 
+							under 13 has provided us with personally identifiable information, we will delete such information from our 
+							files.</p>
 						</div>
 						<div class="privacy2-grid1-sub">
 							<h5>Content</h5>
-							<p>our-grocery.tk contains both WhoKnows content and user content. The content on WhoKnows.com and any authorized clients are licensed, not sold. Such content is protected by copyright laws and, if applicable, by international treaties.</p>
+							<p><a href="https://our-grocery.tk/">our-grocery.tk</a> contains both Our Grocery content and user content. The content 
+							on <a href="https://our-grocery.tk/">our-grocery.tk</a> and any authorized clients are licensed, not sold. Such content 
+							is protected by copyright laws and, if applicable, by international treaties.</p>
 						</div>
 						
 					</div>

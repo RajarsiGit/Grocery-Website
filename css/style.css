@@ -1886,6 +1886,7 @@ h2.typoh2{
 }
 .privacy1-grid ul li span,.privacy2-grid1 p{
 	display:block;
+	text-align:justify;
 	font-size:14px;
 	color:#999;
 	line-height:1.8em;
