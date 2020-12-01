@@ -21,9 +21,10 @@
                             <title>Verify Email</title>
                         </head>
                         <body>
-                            <div class='text-align: center'>
-                                <h4>Please click the button below to reset your password. Only valid for 10 minutes!</h4>
-                                <p><a href='https://our-grocery.tk/password?token=$token'><button type='button' class='btn btn-primary' style='height: 2.5em; cursor: pointer;' >Reset Password</button></a></p>
+                            <div style='text-align: center; width: 75%;'>
+                                <h3>Password Reset</h3>
+                                <h4>Please click the button below to reset your password. </br>Only valid for 10 minutes!</h4>
+                                <p><a href='https://our-grocery.tk/password?token=$token' style='border-radius: 5px; background-color: #007bff; color: #fff; padding: 10px; text-decoration: none; font-weight: bold; font-size: 13px;'>Reset Password</a></p>
                             </div>
                         </body>
                     </html>";
