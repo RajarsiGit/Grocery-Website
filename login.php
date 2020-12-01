@@ -274,7 +274,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 					  <input type="submit" id="submit" value="Register">
 					</form>
 				  </div>
-				  <div class="cta"><a href="#">Forgot your password?</a></div>
+				  <div class="cta"><a href="/forgot">Forgot your password?</a></div>
 				<script>
 					$(document).ready(function() {
 						$('#signin').submit(function(e) {

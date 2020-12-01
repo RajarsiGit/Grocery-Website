@@ -66,7 +66,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 		<div class="w3l_offers">
 			<a href="/products">Today's special Offers !</a>
 		</div>
-        <div class="w3l_search">
+		<div class="w3l_search">
 		</div>
 		<div class="product_list_header">  
 			<form action="#" method="post" class="last">
@@ -76,7 +76,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
                     <input type="submit" name="submit" value="View your cart" class="button" />
                 </fieldset>
             </form>
-        </div>
+		</div>
 		<div class="w3l_header_right">
 			<ul>
 				<li class="dropdown profile_details_drop">
@@ -89,7 +89,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
                                         require_once "php/db_controller.php";
                                         $db_handle = new DBController();
                                         $query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
-                                        $result =  $db_handle->fetch($query);  
+										$result =  $db_handle->fetch($query);
                                         echo '<li><a href="/profile">'.explode(' ', trim($result[0]['c_name']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
                                     }else{
                                         echo '<li><a href="/login">Login</a></li>';
@@ -97,7 +97,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
                                 ?>
 								<li><a href="/register">Sign Up</a></li>
 							</ul>
-						</div>                  
+						</div>
 					</div>	
 				</li>
 			</ul>
@@ -217,49 +217,17 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 		<div class="w3l_banner_nav_right">
 <!-- login -->
 		<div class="w3_login">
-			<h3>Sign In & Sign Up</h3>
+			<h3>Forgot Password</h3>
 			<div class="w3_login_module">
 				<div class="module form-module">
-				  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
-					<div class="tooltip" id="click" onclick="">Click Me</div>
-				  </div>
-				  <div class="form">
-					<h2>Login to your account</h2>
-					<form action="" method="post" id="signin">
-					  <input type="text" name="Username" placeholder="Username or Email" required=" ">
-					  <input type="password" name="Password" placeholder="Password" required=" ">
-					  <input type="submit" value="Login">
-					</form>
-				  </div>
-				  <div class="form">
-					<h2>Create an account</h2>
-					<form action="" method="post" id="signup" enctype="multipart/form-data">
-					  <input type="text" name="Name" placeholder="Name" required=" " maxlength="255">
-					  <select name="Gender" required=" ">
-						<option value="" disabled selected hidden>Gender</option>
-						<option value="Male">Male</option>
-						<option value="Female">Female</option>
-						<option value="Transgender">Transgender</option>
-						<option value="Others">Others</option>
-					  </select>
-					  <input type="file" id="file" name="Photo" placeholder="Photo" required=" " value=" " accept="image/*">
-					  <input type="text" name="Phone" placeholder="Phone Number" required=" " maxlength="10">
-					  <input type="email" name="Email" placeholder="Email Address" required=" " maxlength="255">
-					  <input type="text" name="Username" placeholder="Username" required=" " maxlength="255">
-					  <input type="password" id="pass" name="Password" placeholder="Password" required=" " maxlength="255">
-					  <input type="password" id="re_pass" name="Re_Password" placeholder="Retype Password" required=" " maxlength="255">
-					  <div class="g-recaptcha" data-sitekey="6LeZk-wZAAAAABytwuTg5oDzwtGf53szwyUPJTV5"></div>
-						</br>
-					  <span id="msg"></span>
+				  <div class="form" style="display: block;">
+					<h2>Enter New Password</h2>
+					<form action="" method="post" id="forgot">
+                      <input type="password" id="pass" name="password" placeholder="Password" required=" ">
+                      <input type="password" id="re_pass" name="r_password" placeholder="Retype Password" required=" ">
+                      </br>
+                      <span id="msg"></span>
 					  <script>
-						  	$('#file').on('change', function() {
-								const size =  (this.files[0].size/1024).toFixed(2); 
-								if (size > 500) {
-									alert('File should be no more than 500KB!');
-									$('#file').val(null);
-								} else {
-								}
-							});
 						  $('#pass, #re_pass').on('keyup', function() {
 							  if($('#pass').val() == $('#re_pass').val()) {
 								$('#submit').prop('disabled', false).removeAttr('style');
@@ -271,18 +239,16 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 							  }
 						  });
 					  </script>
-					  <input type="submit" id="submit" value="Register">
+					  <input type="submit" value="Submit Password">
 					</form>
 				  </div>
-					</script>
-					<div class="cta"><a href="/forgot">Forgot your password?</a></div>
 				<script>
 					$(document).ready(function() {
-						$('#signin').submit(function(e) {
+						$('#forgot').submit(function(e) {
 							e.preventDefault();
-							var form = document.getElementById('signin');
+							var form = document.getElementById('forgot');
 							var data = new FormData(form);
-							var url = 'php/signin.php';
+							var url = 'php/password.php';
 							$.ajax({
 								type: 'POST',
 								url: url,
@@ -292,7 +258,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 								success: function(data) {
 									$('.module.form-module > .toggle, .form, .cta').fadeOut();
 									$('.module.form-module').html(data);
-									if($.cookie('u_id')) {
+                                    if($.cookie('u_id')) {
 										if($('.dropdown-menu.drp-mnu > li').length == 3) {
 											$('.dropdown-menu.drp-mnu > li:first-child').remove();
 										}
@@ -304,59 +270,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 												$('.dropdown-menu.drp-mnu').prepend(data);
 											}
 										});
-										if($.cookie('u_id') && $.cookie('pay')) {
-											$.removeCookie('pay');
-											setTimeout(function() {$("#cart").submit();}, 1500);
-										}
-										else if($.cookie('u_id') && $.cookie('profile')) {
-											$.removeCookie('profile');
-											setTimeout(function() {location.href="/profile";}, 1500);
-										}
-										else { 
-											setTimeout(function() {location.href="/login";}, 1500);
-										}
-									}
-								}
-							});
-						});
-						$('#signup').submit(function(e) {
-							e.preventDefault();
-							var form = document.getElementById('signup');
-							var data = new FormData(form);
-							var url = 'php/signup.php';
-							$.ajax({
-								type: 'POST',
-								enctype: 'multipart/form-data',
-								url: url,
-								data: data,
-								processData: false,
-								contentType: false,
-								success: function(data) {
-									$('.module.form-module > .toggle, .form, .cta').fadeOut();
-									$('.module.form-module').html(data);
-									if($.cookie('u_id')) {
-										if($('.dropdown-menu.drp-mnu > li').length == 3) {
-											$('.dropdown-menu.drp-mnu > li:first-child').remove();
-										}
-										$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
-										$.ajax({
-											type: 'GET',
-											url: 'php/getname.php',
-											success: function(data) {
-												$('.dropdown-menu.drp-mnu').prepend(data);
-											}
-										});
-										if($.cookie('u_id') && $.cookie('pay')) {
-											$.removeCookie('pay');
-											setTimeout(function() {$("#cart").submit();}, 1500);
-										}
-										else if($.cookie('u_id') && $.cookie('profile')) {
-											$.removeCookie('profile');
-											setTimeout(function() {location.href="/profile";}, 1500);
-										}
-										else { 
-											setTimeout(function() {location.href = '/login';}, 1500);
-										}
+										setTimeout(function() {location.href='/login';}, 1000);
 									}
 								}
 							});
@@ -520,12 +434,14 @@ $(document).ready(function(){
 		});
 
 	</script>
-
-	<script>
-	//login to register form
-	window.onload=function(){
-		document.getElementById("click").click();
-	};
-	</script>
+<script>
+	$(document).ready(function() {
+		if($.cookie('u_id')) {
+			setTimeout(function() {
+				location.href="/login";
+			}, 1000);
+		}
+	});
+</script>
 </body>
 </html>
