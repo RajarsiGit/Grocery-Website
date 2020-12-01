@@ -7,8 +7,7 @@
         $text= $_POST["Message"];
 
         $headers = 'MIME-Version: 1.0' . "\r\n";
-        $headers .= 'From: query@our-grocery.tk\r\n';
-        $headers .= 'Reply-To: ' . $email;
+        $headers .= "From: query@our-grocery.tk\r\n";
         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
         $message = '<table style="width:100%">
