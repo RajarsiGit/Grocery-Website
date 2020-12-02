@@ -1,13 +1,7 @@
 <?php
     session_start();
-    $request = $_SERVER['REQUEST_URI'];
 
-    function startsWith ($string, $startString) { 
-        $len = strlen($startString); 
-        return (substr($string, 0, $len) === $startString); 
-    }
-
-    switch ($request) {
+    switch ($_SERVER['REQUEST_URI']) {
         case '/' :
             require __DIR__ . '/home.php';
             break;
@@ -99,12 +93,12 @@
             require __DIR__ . '/admin.php';
             break;
         default:
-            if(startsWith($request, "/password?token=")) {
-                $_SESSION['token'] = substr($request, strlen('/password?token='));
+            if(stristr($_SERVER['REQUEST_URI'], '/password?token=')) {
+                $_SESSION['token'] = substr($_SERVER['REQUEST_URI'], strlen('/password?token='));
                 require __DIR__ . '/password.php';
                 break;
             }
             require __DIR__ . '/notfound.php';
-        break;
+            break;
     }
 ?>
