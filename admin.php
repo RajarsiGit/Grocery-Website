@@ -59,7 +59,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<div class="module form-module">
                     <div style="height: 5vh; "></div>
                     <div class="form">
-                        <form id="db">
+                        <form id="db" enctype="multipart/form-data">
                             <input id="input" type="hidden" value="" name="data">
                             <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(1)">CREATE CUSTOMER TABLE</button>
                             <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(2)">CREATE CART TABLE</button>
@@ -68,6 +68,8 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
                             <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(5)">DROP CART TABLE</button>
                             <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(6)">DROP ADDRESS_DETAILS TABLE</button>
                             <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="window.open('https://databases.000webhost.com/db_structure.php?server=1&db=id15407179_grocery', '_blank');">PHPMYADMIN DATABASE</button>
+                            <input type="file" name="file" style="color: #fff; width: 40%; margin: 0.25em auto 0.25em auto;" accept=".csv">
+                            <button type="button" style="color: #fff; width: 100%; margin: 0.25em;" onclick="submitForm(7)">UPDATE PRODUCTS</button>
                             <div id="msg"></div>
                         </form>
                     </div>
@@ -75,13 +77,16 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
                         function submitForm(n) {
                             $('#input').attr('value', n)
                             $('#msg').html('');
-                            var data = $("#db").serialize();
+                            var data = new FormData($('form')[0]);
                             $.ajax({
                                 type : 'POST',
                                 url  : 'php/db.php',
                                 data : data,
+                                processData: false,
+								contentType: false,
                                 success : function(data){
                                     $("#msg").html(data);
+                                    $("#db")[0].reset();
                                 }
                             });
                         }

@@ -41,6 +41,36 @@
     $d_address = "DROP TABLE `grocery`.`address_details`;";
 
     $query = array($c_customer, $c_cart, $c_address, $d_customer, $d_cart, $d_address);
+
+    if($type == 6) {
+        if($_FILES["file"]["size"] > 0) {
+            $q1 = "DROP TABLE `grocery`.`product_details`;";
+            $q2 = "CREATE TABLE `grocery`.`product_details` (
+                `p_id` INT NOT NULL AUTO_INCREMENT,
+                `p_name` VARCHAR(255) NOT NULL,
+                `p_new_rate` DOUBLE(16, 2) NOT NULL,
+                `p_old_rate` DOUBLE(16, 2) NOT NULL,
+                `p_img_name` VARCHAR(100) NOT NULL,
+                `p_type` VARCHAR(255) NOT NULL,
+                `offer_tag` INT NOT NULL,
+                PRIMARY KEY (`p_id`)
+            ) ENGINE = InnoDB;";
+            if($db_handle->run($q1) && $db_handle->run($q2)) {
+                $file = fopen($_FILES["file"]["tmp_name"], "r");
+                while(($row = fgetcsv($file, 10000, ","))) {
+                    $q = "INSERT INTO `grocery`.`product_details` VALUES ($row[0], '$row[1]', $row[2], $row[3], '$row[4]', '$row[5]', $row[6]);";
+                    $db_handle->run($q);
+                }
+                echo "<div style='text-align:center; padding: 1em 1em 1em 1em; color: green;'><h4>Query run successful!</h4></div>";
+                exit();
+            }
+            else {
+                echo "<div style='text-align:center; padding: 1em 1em 1em 1em; color: red;'><h4>Query run failed!</h4></div>";
+                exit();
+            }
+        }
+    }
+
     $result =  $db_handle->run($query[$type]);
 
     if($result) {
