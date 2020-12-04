@@ -215,53 +215,35 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 		</div>
 		<div class="w3l_banner_nav_right">
 			<div class="w3l_banner_nav_right_banner10">
-				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
+				<h3>Best Deals For Frozens<span class="blink_me"></span></h3>
 			</div>
 			<div class="w3l_banner_nav_right_banner3_btm">
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml" style="cursor: pointer;" onclick="location.href='/frozen';">
 					<div class="view view-tenth">
 						<img src="images/24.jpg" alt=" " class="img-responsive">
 						<div class="mask">
-							<h4>Grocery Store</h4>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+							<h4>Frozen Meat</h4>
+							<p>Frozen Meat packets available only at Our Grocery!</p>
 						</div>
 					</div>
-					<h4>Frozen Meat</h4>
-					<ol>
-						<li>sunt in culpa qui officia</li>
-						<li>commodo consequat</li>
-						<li>sed do eiusmod tempor incididunt</li>
-					</ol>
 				</div>
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml" style="cursor: pointer;" onclick="">
 					<div class="view view-tenth">
 						<img src="images/29.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
-							<h4>Grocery Store</h4>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+							<h4>Frozen Chocolate Chips</h4>
+							<p>Coming very soon!</p>
 						</div>
 					</div>
-					<h4>Frozen Chocolate Chips</h4>
-					<ol>
-						<li>enim ipsam voluptatem officia</li>
-						<li>tempora incidunt ut labore et</li>
-						<li>vel eum iure reprehenderit</li>
-					</ol>
 				</div>
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml" style="cursor: pointer;" onclick="">
 					<div class="view view-tenth">
 						<img src="images/30.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
-							<h4>Grocery Store</h4>
-							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+							<h4>Frozen Soybean</h4>
+							<p>Coming very soon!</p>
 						</div>
 					</div>
-					<h4>Frozen Soybean</h4>
-					<ol>
-						<li>dolorem eum fugiat voluptas</li>
-						<li>ut aliquid ex ea commodi</li>
-						<li>magnam aliquam quaerat</li>
-					</ol>
 				</div>
 				<div class="clearfix"> </div>
 			</div>

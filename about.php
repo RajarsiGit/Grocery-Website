@@ -223,7 +223,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 							like, AI solutions, UI/UX, Android & Web apps etc. We have but one goal and 
 							that is to provide you with the best software solution for your everyday
 							problems.</p>
-			<p class="animi">We are also part of a larger team known as <strong>Ultra-Dev$.</strong> <a href="https://ultra-devs.000webhostapp.com/" target="_blank" style="font-weight: bold;">Visit</a> our website to know more.</p>
+			<p class="animi">We are also part of a larger team known as <strong>Ultra-Dev$.</strong> <a href="https://ultra-devs.ml/" target="_blank" style="font-weight: bold;">Visit</a> our website to know more.</p>
 			<p class="animi">We are proud to mention few of our other projects and areas that we worked
 							on very recently:</p>
 			<div class="agile_about_grids">

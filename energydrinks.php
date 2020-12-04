@@ -215,7 +215,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 		</div>
 		<div class="w3l_banner_nav_right">
 			<div class="w3l_banner_nav_right_banner7">
-				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
+				<h3>Best Deals For Energy Drinks<span class="blink_me"></span></h3>
 			</div>
 			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_sub">
 				<h3>Energy Drinks</h3>

@@ -1271,7 +1271,7 @@ button.submit.check_out{
 }
 /*-- //products-breadcrumb --*/
 /*-- products --*/
-.w3l_banner_nav_right_banner3,.w3l_banner_nav_right_banner4,.w3l_banner_nav_right_banner5,.w3l_banner_nav_right_banner6,.w3l_banner_nav_right_banner7,.w3l_banner_nav_right_banner8,.w3l_banner_nav_right_banner9,.w3l_banner_nav_right_banner10{
+.w3l_banner_nav_right_banner3,.w3l_banner_nav_right_banner4,.w3l_banner_nav_right_banner5,.w3l_banner_nav_right_banner6,.w3l_banner_nav_right_banner7,.w3l_banner_nav_right_banner8,.w3l_banner_nav_right_banner9,.w3l_banner_nav_right_banner10,.w3l_banner_nav_right_banner11{
 	min-height:300px;
 	padding-top: 7em;
 }
@@ -1300,7 +1300,7 @@ button.submit.check_out{
 	-ms-background-size:cover;
 }
 .w3l_banner_nav_right_banner6{
-	background:url(../images/21.jpg) no-repeat 0px 0px;
+	background:url(../images/34.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -1339,7 +1339,15 @@ button.submit.check_out{
 	-o-background-size:cover;
 	-ms-background-size:cover;
 }
-.w3l_banner_nav_right_banner3 h3,.w3l_banner_nav_right_banner4 h3,.w3l_banner_nav_right_banner5 h3,.w3l_banner_nav_right_banner6 h3,.w3l_banner_nav_right_banner7 h3,.w3l_banner_nav_right_banner8 h3,.w3l_banner_nav_right_banner9 h3,.w3l_banner_nav_right_banner10 h3{
+.w3l_banner_nav_right_banner11{
+	background:url(../images/35.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+}
+.w3l_banner_nav_right_banner3 h3,.w3l_banner_nav_right_banner4 h3,.w3l_banner_nav_right_banner5 h3,.w3l_banner_nav_right_banner6 h3,.w3l_banner_nav_right_banner7 h3,.w3l_banner_nav_right_banner8 h3,.w3l_banner_nav_right_banner9 h3,.w3l_banner_nav_right_banner10 h3,.w3l_banner_nav_right_banner11 h3{
 	font-size: 2em;
     color: #FA1818;
     text-transform: capitalize;
@@ -1351,7 +1359,7 @@ button.submit.check_out{
     text-align: center;
 	position:relative;
 }
-.w3l_banner_nav_right_banner3 span,.w3l_banner_nav_right_banner4 span,.w3l_banner_nav_right_banner5 span,.w3l_banner_nav_right_banner6 span,.w3l_banner_nav_right_banner7 span,.w3l_banner_nav_right_banner8 span,.w3l_banner_nav_right_banner9 span,.w3l_banner_nav_right_banner10 span{
+.w3l_banner_nav_right_banner3 span,.w3l_banner_nav_right_banner4 span,.w3l_banner_nav_right_banner5 span,.w3l_banner_nav_right_banner6 span,.w3l_banner_nav_right_banner7 span,.w3l_banner_nav_right_banner8 span,.w3l_banner_nav_right_banner9 span,.w3l_banner_nav_right_banner10 span,.w3l_banner_nav_right_banner11 span{
 	background: url(../images/img-sp.png) no-repeat 1px -116px;
     display: block;
     width: 50px;
@@ -2904,7 +2912,7 @@ input.checkbox:checked:after {
 	.w3l_header_right {
 		padding-left: 4em;
 	}
-	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3 {
+	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3, .w3l_banner_nav_right_banner11 h3 {
 		width: 45%;
 	}
 	.w3l_banner_nav_right_banner1, .w3l_banner_nav_right_banner, .w3l_banner_nav_right_banner2 {
@@ -2990,7 +2998,7 @@ input.checkbox:checked:after {
 	.wthree_banner_btm_pos1 h3 {
 		font-size: 1.6em;
 	}
-	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3 {
+	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3, .w3l_banner_nav_right_banner11 h3 {
 		margin-left: 8em;
 	}
 	.view p {
@@ -3117,11 +3125,11 @@ input.checkbox:checked:after {
 		width: 85px;
 		height: 85px;
 	}
-	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3 {
+	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3, .w3l_banner_nav_right_banner11 h3 {
 		font-size: 1.7em;
 		width: 55%;
 	}
-	.w3l_banner_nav_right_banner3, .w3l_banner_nav_right_banner4, .w3l_banner_nav_right_banner5, .w3l_banner_nav_right_banner6, .w3l_banner_nav_right_banner7, .w3l_banner_nav_right_banner8, .w3l_banner_nav_right_banner9, .w3l_banner_nav_right_banner10 {
+	.w3l_banner_nav_right_banner3, .w3l_banner_nav_right_banner4, .w3l_banner_nav_right_banner5, .w3l_banner_nav_right_banner6, .w3l_banner_nav_right_banner7, .w3l_banner_nav_right_banner8, .w3l_banner_nav_right_banner9, .w3l_banner_nav_right_banner10, .w3l_banner_nav_right_banner11 {
 		min-height: 225px;
 		padding-top: 5.5em;
 	}
@@ -3214,7 +3222,7 @@ input.checkbox:checked:after {
 	.navbar-nav > li > a {
 		padding: 10px 0px 10px 25px;
 	}
-	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3 {
+	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3, .w3l_banner_nav_right_banner11 h3 {
 		margin-left: 7em;
 	}
 	.w3l_banner_nav_right_banner3_btml h4 {
@@ -3609,7 +3617,7 @@ input.checkbox:checked:after {
 	.modal-dialog {
 		width: 710px;
 	}
-	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3 {
+	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3, .w3l_banner_nav_right_banner11 h3 {
 		font-size: 1.4em;
 		width: 65%;
 		margin-left: 5em;
@@ -3881,7 +3889,7 @@ input.checkbox:checked:after {
 	.w3agile_newsletter_right {
 		width: 90%;
 	}
-	.w3l_banner_nav_right_banner3, .w3l_banner_nav_right_banner4, .w3l_banner_nav_right_banner5, .w3l_banner_nav_right_banner6, .w3l_banner_nav_right_banner7, .w3l_banner_nav_right_banner8, .w3l_banner_nav_right_banner9, .w3l_banner_nav_right_banner10 {
+	.w3l_banner_nav_right_banner3, .w3l_banner_nav_right_banner4, .w3l_banner_nav_right_banner5, .w3l_banner_nav_right_banner6, .w3l_banner_nav_right_banner7, .w3l_banner_nav_right_banner8, .w3l_banner_nav_right_banner9, .w3l_banner_nav_right_banner10, .w3l_banner_nav_right_banner11 {
 		min-height: 190px;
 		padding-top: 4.5em;
 	}
@@ -4173,12 +4181,12 @@ input.checkbox:checked:after {
 		margin: 2em 0 0;
 		padding: 1.5em 0 0;
 	}
-	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3 {
+	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3, .w3l_banner_nav_right_banner11 h3 {
 		font-size: 1.2em;
 		width: 75%;
 		margin-left: 3em;
 	}
-	.w3l_banner_nav_right_banner3 span, .w3l_banner_nav_right_banner4 span, .w3l_banner_nav_right_banner5 span, .w3l_banner_nav_right_banner6 span, .w3l_banner_nav_right_banner7 span, .w3l_banner_nav_right_banner8 span, .w3l_banner_nav_right_banner9 span, .w3l_banner_nav_right_banner10 span {
+	.w3l_banner_nav_right_banner3 span, .w3l_banner_nav_right_banner4 span, .w3l_banner_nav_right_banner5 span, .w3l_banner_nav_right_banner6 span, .w3l_banner_nav_right_banner7 span, .w3l_banner_nav_right_banner8 span, .w3l_banner_nav_right_banner9 span, .w3l_banner_nav_right_banner10 span, .w3l_banner_nav_right_banner11 span {
 		top: -85%;
 	}
 	.w3l_banner_nav_right_banner3_btml {
@@ -4394,7 +4402,7 @@ input.checkbox:checked:after {
 	.w3agile_newsletter_right input[type="email"] {
 		width: 62%;
 	}
-	.w3l_banner_nav_right_banner3, .w3l_banner_nav_right_banner4, .w3l_banner_nav_right_banner5, .w3l_banner_nav_right_banner6, .w3l_banner_nav_right_banner7, .w3l_banner_nav_right_banner8, .w3l_banner_nav_right_banner9, .w3l_banner_nav_right_banner10 {
+	.w3l_banner_nav_right_banner3, .w3l_banner_nav_right_banner4, .w3l_banner_nav_right_banner5, .w3l_banner_nav_right_banner6, .w3l_banner_nav_right_banner7, .w3l_banner_nav_right_banner8, .w3l_banner_nav_right_banner9, .w3l_banner_nav_right_banner10, .w3l_banner_nav_right_banner11 {
 		min-height: 155px;
 		padding-top: 3.7em;
 	}
@@ -4580,7 +4588,7 @@ input.checkbox:checked:after {
 	.wthree_banner_btm_pos h3 span {
 		padding-left: 5em;
 	}
-	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3 {
+	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3, .w3l_banner_nav_right_banner11 h3 {
 		width: 86%;
 		margin-left: 1em;
 	}
@@ -4759,13 +4767,13 @@ input.checkbox:checked:after {
 		font-size: 13px;
 		padding: 9px 0;
 	}
-	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3 {
+	.w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3, .w3l_banner_nav_right_banner11 h3 {
 		font-size: 1.1em;
 	}
-	.w3l_banner_nav_right_banner3 span, .w3l_banner_nav_right_banner4 span, .w3l_banner_nav_right_banner5 span, .w3l_banner_nav_right_banner6 span, .w3l_banner_nav_right_banner7 span, .w3l_banner_nav_right_banner8 span, .w3l_banner_nav_right_banner9 span, .w3l_banner_nav_right_banner10 span {
+	.w3l_banner_nav_right_banner3 span, .w3l_banner_nav_right_banner4 span, .w3l_banner_nav_right_banner5 span, .w3l_banner_nav_right_banner6 span, .w3l_banner_nav_right_banner7 span, .w3l_banner_nav_right_banner8 span, .w3l_banner_nav_right_banner9 span, .w3l_banner_nav_right_banner10 span, .w3l_banner_nav_right_banner11 span {
 		top: -125%;
 	}
-	.w3l_banner_nav_right_banner3, .w3l_banner_nav_right_banner4, .w3l_banner_nav_right_banner5, .w3l_banner_nav_right_banner6, .w3l_banner_nav_right_banner7, .w3l_banner_nav_right_banner8, .w3l_banner_nav_right_banner9, .w3l_banner_nav_right_banner10 {
+	.w3l_banner_nav_right_banner3, .w3l_banner_nav_right_banner4, .w3l_banner_nav_right_banner5, .w3l_banner_nav_right_banner6, .w3l_banner_nav_right_banner7, .w3l_banner_nav_right_banner8, .w3l_banner_nav_right_banner9, .w3l_banner_nav_right_banner10, .w3l_banner_nav_right_banner11 {
 		min-height: 125px;
 		padding-top: 2.7em;
 	}
