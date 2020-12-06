@@ -58,7 +58,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 			</ul>
 		</div>
 	</div>
-<!-- //products-breadcrumb -->
+<!-- //product-breadcrumb -->
 <!-- banner -->
 	<div class="banner" style="vertical-align: middle;">
 		<div class="w3l_banner_nav_left"></div>

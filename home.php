@@ -65,7 +65,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="/products">Today's special Offers !</a>
+			<a href="/product">Today's special Offers !</a>
 		</div>
 		<div class="w3l_search">
 		</div>
@@ -133,7 +133,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<ul class="special_items">
 					<li><a href="/events">Events</a><i>/</i></li>
 					<li><a href="/about">About Us</a><i>/</i></li>
-					<li><a href="/products">Best Deals</a><i>/</i></li>
+					<li><a href="/product">Best Deals</a><i>/</i></li>
 					<li><a href="/services">Services</a></li>
 				</ul>
 			</div>
@@ -163,15 +163,15 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
-						<li><a href="/products">Branded Foods</a></li>
+						<li><a href="/product">Branded Foods</a></li>
 						<li><a href="/household">Households</a></li>
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>	
-										<li><a href="/vegetables">Vegetables</a></li>
-										<li><a href="/fruits">Fruits</a></li>
+										<li><a href="/vegetable">Vegetables</a></li>
+										<li><a href="/fruit">Fruits</a></li>
 									</ul>
 								</div>                  
 							</div>				
@@ -181,9 +181,9 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>
-                                        <li><a href="/softdrinks">Soft Drinks</a></li>
-                                        <li><a href="/juices">Juices</a></li>
-                                        <li><a href="/energydrinks">Energy Drinks</a></li>
+                                        <li><a href="/softdrink">Soft Drinks</a></li>
+                                        <li><a href="/juice">Juices</a></li>
+                                        <li><a href="/energydrink">Energy Drinks</a></li>
 									</ul>
 								</div>                  
 							</div>	
@@ -213,7 +213,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 							<div class="w3l_banner_nav_right_banner">
 								<h3>Make your <span>food</span> with Spicy.</h3>
 								<div class="more">
-									<a href="/spices" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+									<a href="/spice" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
 								</div>
 							</div>
 						</li>
@@ -221,7 +221,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 							<div class="w3l_banner_nav_right_banner1">
 								<h3>Get your <span>fresh</span> veges.</h3>
 								<div class="more">
-									<a href="/vegetables" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+									<a href="/vegetable" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
 								</div>
 							</div>
 						</li>
@@ -229,7 +229,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 							<div class="w3l_banner_nav_right_banner2">
 								<h3>upto <i>50%</i> off.</h3>
 								<div class="more">
-									<a href="/energydrinks" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+									<a href="/energydrink" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
 								</div>
 							</div>
 						</li>
@@ -310,15 +310,15 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<div class="col-md-3 w3l_fresh_vegetables_grid w3l_fresh_vegetables_grid_left">
 					<div class="w3l_fresh_vegetables_grid2">
 						<ul>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/products">All Brands</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/vegetables">Vegetables</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/fruits">Fruits</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/juices">Juices</a></li>
+							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/product">All Brands</a></li>
+							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/vegetable">Vegetables</a></li>
+							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/fruit">Fruits</a></li>
+							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/juice">Juices</a></li>
 							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/pet">Pet Food</a></li>
 							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/bread">Bread & Bakery</a></li>
 							<li><i class="fa fa-check" aria-hidden="true"></i><a href="/household">Household</a></li>
-							<li><i class="fa fa-certificate" aria-hidden="true"></i><a href="/spices">Spices</a></li>
-							<li><i class="fa fa-certificate" aria-hidden="true"></i><a href="/dryfruits">Dry Fruits</a></li>
+							<li><i class="fa fa-certificate" aria-hidden="true"></i><a href="/spice">Spices</a></li>
+							<li><i class="fa fa-certificate" aria-hidden="true"></i><a href="/dryfruit">Dry Fruits</a></li>
 							<li><i class="fa fa-certificate" aria-hidden="true"></i><a href="/dairy">Dairy Products</a></li>
 						</ul>
 					</div>
@@ -335,7 +335,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 								<img src="images/7.jpg" alt=" " class="img-responsive" />
 								<div class="w3l_fresh_vegetables_grid1_rel_pos">
 									<div class="more m1">
-										<a href="/products" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+										<a href="/product" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
 									</div>
 								</div>
 							</div>
@@ -379,7 +379,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<ul class="w3_footer_grid_list">
 					<li><a href="/events">Events</a></li>
 					<li><a href="/about">About Us</a></li>
-					<li><a href="/products">Best Deals</a></li>
+					<li><a href="/product">Best Deals</a></li>
 					<li><a href="/services">Services</a></li>
 					
 				</ul>
@@ -398,7 +398,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 					<li><a href="/pet">Pet Food</a></li>
 					<li><a href="/frozen">Frozen Snacks</a></li>
 					<li><a href="/kitchen">Kitchen</a></li>
-					<li><a href="/products">Branded Foods</a></li>
+					<li><a href="/product">Branded Foods</a></li>
 					<li><a href="/household">Households</a></li>
 				</ul>
 			</div>
@@ -419,7 +419,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<div class="clearfix"> </div>
 			</div>
 			<div class="wthree_footer_copy">
-				<p>© 2020 Grocery Store. All rights reserved | Design by <a href="https://rajarsigit.github.io/">Rajarsi</a> & Sawon</p>
+				<p>© 2020 Grocery Store. All rights reserved | Design by <a href="https://rajarsigit.github.io/" target="_blank">Rajarsi</a> & Sawon</p>
 			</div>
 		</div>
 	</div>

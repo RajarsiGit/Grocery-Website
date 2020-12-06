@@ -63,7 +63,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="/products">Today's special Offers !</a>
+			<a href="/product">Today's special Offers !</a>
 		</div>
 		<div class="w3l_search">
 		</div>
@@ -131,7 +131,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<ul class="special_items">
 					<li><a href="/events">Events</a><i>/</i></li>
 					<li><a href="/about">About Us</a><i>/</i></li>
-					<li><a href="/products">Best Deals</a><i>/</i></li>
+					<li><a href="/product">Best Deals</a><i>/</i></li>
 					<li><a href="/services">Services</a></li>
 				</ul>
 			</div>
@@ -154,7 +154,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 			</ul>
 		</div>
 	</div>
-<!-- //products-breadcrumb -->
+<!-- //product-breadcrumb -->
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
@@ -171,15 +171,15 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
-						<li><a href="/products">Branded Foods</a></li>
+						<li><a href="/product">Branded Foods</a></li>
 						<li><a href="/household">Households</a></li>
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>	
-										<li><a href="/vegetables">Vegetables</a></li>
-										<li><a href="/fruits">Fruits</a></li>
+										<li><a href="/vegetable">Vegetables</a></li>
+										<li><a href="/fruit">Fruits</a></li>
 									</ul>
 								</div>                  
 							</div>				
@@ -189,9 +189,9 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>
-                                        <li><a href="/softdrinks">Soft Drinks</a></li>
-                                        <li><a href="/juices">Juices</a></li>
-                                        <li><a href="/energydrinks">Energy Drinks</a></li>
+                                        <li><a href="/softdrink">Soft Drinks</a></li>
+                                        <li><a href="/juice">Juices</a></li>
+                                        <li><a href="/energydrink">Energy Drinks</a></li>
 									</ul>
 								</div>                  
 							</div>	
@@ -254,10 +254,10 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 					<h4>Rajarsi Saha</h4>
 					<p>Developer</p>
 					<ul class="agileits_social_icons agileits_social_icons_team">
-						<li><a href="https://www.facebook.com/rajarsi.saha.3997" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/rajarsi-saha-2709a297" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li><a href="https://github.com/RajarsiGit" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-						<li><a href="mailto://rajarsi3997@gmail.com" class="google"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/rajarsi.saha.3997" class="facebook" target="_balnk"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/rajarsi-saha-2709a297" class="linkedin" target="_balnk"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="https://github.com/RajarsiGit" class="github" target="_balnk"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+						<li><a href="mailto://rajarsi3997@gmail.com" class="google" target="_balnk"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 				<div class="col-md-6 agileits_team_grid">
@@ -265,10 +265,10 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 					<h4>Sawon Bhattacharya</h4>
 					<p>Developer</p>
 					<ul class="agileits_social_icons agileits_social_icons_team">
-						<li><a href="https://www.facebook.com/sawon.bhattacharjee" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/sawon-bhattacharya-890187167" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li><a href="https://github.com/SawonBhattacharya" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-						<li><a href="mailto://sawon17081997@gmail.com" class="google"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/sawon.bhattacharjee" class="facebook" target="_balnk"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/sawon-bhattacharya-890187167" class="linkedin" target="_balnk"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="https://github.com/SawonBhattacharya" class="github" target="_balnk"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+						<li><a href="mailto://sawon17081997@gmail.com" class="google" target="_balnk"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
@@ -352,7 +352,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<ul class="w3_footer_grid_list">
 					<li><a href="/events">Events</a></li>
 					<li><a href="/about">About Us</a></li>
-					<li><a href="/products">Best Deals</a></li>
+					<li><a href="/product">Best Deals</a></li>
 					<li><a href="/services">Services</a></li>
 					
 				</ul>
@@ -371,7 +371,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 					<li><a href="/pet">Pet Food</a></li>
 					<li><a href="/frozen">Frozen Snacks</a></li>
 					<li><a href="/kitchen">Kitchen</a></li>
-					<li><a href="/products">Branded Foods</a></li>
+					<li><a href="/product">Branded Foods</a></li>
 					<li><a href="/household">Households</a></li>
 				</ul>
 			</div>
@@ -392,7 +392,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<div class="clearfix"> </div>
 			</div>
 			<div class="wthree_footer_copy">
-				<p>© 2020 Grocery Store. All rights reserved | Design by <a href="https://rajarsigit.github.io/">Rajarsi</a> & Sawon</p>
+				<p>© 2020 Grocery Store. All rights reserved | Design by <a href="https://rajarsigit.github.io/" target="_blank">Rajarsi</a> & Sawon</p>
 			</div>
 		</div>
 	</div>

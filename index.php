@@ -14,26 +14,26 @@
         case '/about' :
             require __DIR__ . '/about.php';
             break;
-        case '/products' :
-            require __DIR__ . '/products.php';
+        case '/product' :
+            require __DIR__ . '/product.php';
             break;
         case '/household' :
             require __DIR__ . '/household.php';
             break;
-        case '/fruits' :
-            require __DIR__ . '/fruits.php';
+        case '/fruit' :
+            require __DIR__ . '/fruit.php';
             break;
-        case '/vegetables' :
-            require __DIR__ . '/vegetables.php';
+        case '/vegetable' :
+            require __DIR__ . '/vegetable.php';
             break;
-        case '/softdrinks' :
-            require __DIR__ . '/softdrinks.php';
+        case '/softdrink' :
+            require __DIR__ . '/softdrink.php';
             break;
-        case '/juices' :
-            require __DIR__ . '/juices.php';
+        case '/juice' :
+            require __DIR__ . '/juice.php';
             break;
-        case '/energydrinks' :
-            require __DIR__ . '/energydrinks.php';
+        case '/energydrink' :
+            require __DIR__ . '/energydrink.php';
             break;
         case '/pet' :
             require __DIR__ . '/pet.php';
@@ -44,14 +44,14 @@
         case '/bread' :
             require __DIR__ . '/bread.php';
             break;
-        case '/spices' :
-            require __DIR__ . '/spices.php';
+        case '/spice' :
+            require __DIR__ . '/spice.php';
             break;
         case '/dairy' :
             require __DIR__ . '/dairy.php';
             break;
-        case '/dryfruits' :
-            require __DIR__ . '/dryfruits.php';
+        case '/dryfruit' :
+            require __DIR__ . '/dryfruit.php';
             break;
         case '/checkout' :
             require __DIR__ . '/checkout.php';

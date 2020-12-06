@@ -7,7 +7,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Our Grocery | Products</title>
+<title>Our Grocery | Dry Fruits</title>
 <!-- for-mobile-apps -->
 <link rel="shortcut icon" href="images/favicon.png">
 <link rel="canonical" href="https://our-grocery.tk/" />
@@ -63,7 +63,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="/products">Today's special Offers !</a>
+			<a href="/product">Today's special Offers !</a>
 		</div>
 		<div class="w3l_search">
 		</div>
@@ -131,7 +131,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<ul class="special_items">
 					<li><a href="/events">Events</a><i>/</i></li>
 					<li><a href="/about">About Us</a><i>/</i></li>
-					<li><a href="/products">Best Deals</a><i>/</i></li>
+					<li><a href="/product">Best Deals</a><i>/</i></li>
 					<li><a href="/services">Services</a></li>
 				</ul>
 			</div>
@@ -150,11 +150,11 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="/">Home</a><span>|</span></li>
-				<li>Branded Foods</li>
+				<li>Dry Fruits</li>
 			</ul>
 		</div>
 	</div>
-<!-- //products-breadcrumb -->
+<!-- //product-breadcrumb -->
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
@@ -171,15 +171,15 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
-						<li><a href="/products">Branded Foods</a></li>
+						<li><a href="/product">Branded Foods</a></li>
 						<li><a href="/household">Households</a></li>
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>	
-										<li><a href="/vegetables">Vegetables</a></li>
-										<li><a href="/fruits">Fruits</a></li>
+										<li><a href="/vegetable">Vegetables</a></li>
+										<li><a href="/fruit">Fruits</a></li>
 									</ul>
 								</div>                  
 							</div>				
@@ -189,9 +189,9 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>
-                                        <li><a href="/softdrinks">Soft Drinks</a></li>
-                                        <li><a href="/juices">Juices</a></li>
-                                        <li><a href="/energydrinks">Energy Drinks</a></li>
+                                        <li><a href="/softdrink">Soft Drinks</a></li>
+                                        <li><a href="/juice">Juices</a></li>
+                                        <li><a href="/energydrink">Energy Drinks</a></li>
 									</ul>
 								</div>                  
 							</div>	
@@ -214,73 +214,46 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-			<div class="w3l_banner_nav_right_banner3">
-				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
+			<div class="w3l_banner_nav_right_banner5">
+				<h3>Best Deals For Dry Fruits<span class="blink_me"></span></h3>
 			</div>
 			<div class="w3l_banner_nav_right_banner3_btm">
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml" style="cursor: pointer;" onclick="location.href='/household';">
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml" style="cursor: pointer;" onclick="location.href='/fruit';">
 					<div class="view view-tenth">
-						<img src="images/13.jpg" alt=" " class="img-responsive" />
+						<img src="images/18.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
-							<h4>Utensils</h4>
-							<p>Best utensils available here at Our Grocery</p>
+							<h4>Fruits</h4>
+							<p>Fresh, hand-picked fruits available nowhere but at Our Grocery!</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml" style="cursor: pointer;" onclick="">
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml" style="cursor: pointer;" onclick="location.href='/dryfruit';">
 					<div class="view view-tenth">
-						<img src="images/14.jpg" alt=" " class="img-responsive" />
+						<img src="images/19.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
-							<h4>Personal Care</h4>
-							<p>Coming very soon!</p>
+							<h4>Dry Fruits</h4>
+							<p>Good quality and seasoned dry fruits here at Our Grocery!</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 w3l_banner_nav_right_banner3_btml" style="cursor: pointer;" onclick="">
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml" style="cursor: pointer;" onclick="location.href='/vegetable';">
 					<div class="view view-tenth">
-						<img src="images/15.jpg" alt=" " class="img-responsive" />
+						<img src="images/20.jpg" alt=" " class="img-responsive" />
 						<div class="mask">
-							<h4>Biscuits & Cookies</h4>
-							<p>Coming very soon!</p>
+							<h4>Vegetables</h4>
+							<p>Vegetables you'll never get anywhere other than Our Grocery!</p>
 						</div>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<div class="w3ls_w3l_banner_nav_right_grid">
-				<h3>Popular Brands</h3>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>food</h6>
-                    <?php
-                        $_SESSION['TYPE'] = 'food';
-						$_SESSION['LIMIT'] = '4';
-						$_SESSION['OFFSET'] = '0';
-                        include('php/fetch-prod.php');
-                    ?>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>vegetables & fruits</h6>
-                    <?php
-                        $_SESSION['TYPE'] = 'vegetables';
-						$_SESSION['LIMIT'] = '2';
-						$_SESSION['OFFSET'] = '0';
-                        include('php/fetch-prod.php');
-					?>
+			<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_veg">
+				<h3 class="w3l_fruit">Dry Fruits</h3>
+				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
 					<?php
-                        $_SESSION['TYPE'] = 'fruits';
-						$_SESSION['LIMIT'] = '2';
-						$_SESSION['OFFSET'] = '0';
-                        include('php/fetch-prod.php');
-                    ?>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>beverages</h6>
-                    <?php
-                        $_SESSION['TYPE'] = 'softdrinks';
+                        $_SESSION['TYPE'] = 'dryfruits';
 						$_SESSION['LIMIT'] = '4';
-						$_SESSION['OFFSET'] = '0';
+						$_SESSION['OFFSET'] = '0'; 
                         include('php/fetch-prod.php');
                     ?>
 					<div class="clearfix"> </div>
@@ -298,7 +271,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<ul class="w3_footer_grid_list">
 					<li><a href="/events">Events</a></li>
 					<li><a href="/about">About Us</a></li>
-					<li><a href="/products">Best Deals</a></li>
+					<li><a href="/product">Best Deals</a></li>
 					<li><a href="/services">Services</a></li>
 					
 				</ul>
@@ -317,7 +290,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 					<li><a href="/pet">Pet Food</a></li>
 					<li><a href="/frozen">Frozen Snacks</a></li>
 					<li><a href="/kitchen">Kitchen</a></li>
-					<li><a href="/products">Branded Foods</a></li>
+					<li><a href="/product">Branded Foods</a></li>
 					<li><a href="/household">Households</a></li>
 				</ul>
 			</div>
@@ -338,7 +311,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<div class="clearfix"> </div>
 			</div>
 			<div class="wthree_footer_copy">
-				<p>© 2020 Grocery Store. All rights reserved | Design by <a href="https://rajarsigit.github.io/">Rajarsi</a> & Sawon</p>
+				<p>© 2020 Grocery Store. All rights reserved | Design by <a href="https://rajarsigit.github.io/" target="_blank">Rajarsi</a> & Sawon</p>
 			</div>
 		</div>
 	</div>
@@ -378,24 +351,25 @@ $(document).ready(function(){
 <!-- //here ends scrolling icon -->
 <script src="js/minicart.js"></script>
 <script>
-	paypal.minicart.render();
+		paypal.minicart.render();
 
-	paypal.minicart.cart.on('checkout', function (evt) {
-		var items = this.items(),
-			len = items.length,
-			total = 0,
-			i;
+		paypal.minicart.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
 
-		// Count the number of each item in the cart
-		for (i = 0; i < len; i++) {
-			total += items[i].get('quantity');
-		}
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
 
-		if (total < 3) {
-			alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
-			evt.preventDefault();
-		}
-	});
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+
 	</script>
 </body>
 </html>
