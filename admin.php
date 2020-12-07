@@ -5,7 +5,7 @@ License: MIT License
 License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 -->
 <!DOCTYPE html>
-<html>
+<html class="no-js" style="scroll-behavior: smooth;">
 <head>
 <title>Our Grocery | Admin DB</title>
 <!-- for-mobile-apps -->

@@ -5,7 +5,7 @@ License: MIT License
 License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 -->
 <!DOCTYPE html>
-<html>
+<html class="no-js" style="scroll-behavior: smooth;">
 <head>
 <title>Our Grocery | Juices</title>
 <!-- for-mobile-apps -->
@@ -251,7 +251,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<ul class="w3_footer_grid_list">
 					<li><a href="/faqs">FAQ</a></li>
 					<li><a href="/privacy">privacy policy</a></li>
-					<li><a href="/privacy">terms of use</a></li>
+					<li><a href="/privacy#termsofuse">terms of use</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">

@@ -5,7 +5,7 @@ License: MIT License
 License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 -->
 <!DOCTYPE html>
-<html>
+<html class="no-js" style="scroll-behavior: smooth;">
 <head>
 <title>Our Grocery | Privacy Policy</title>
 <!-- for-mobile-apps -->
@@ -247,7 +247,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 					</ul>
 				</div>
 			</div>
-			<div class="privacy1">
+			<div id="termsofuse" class="privacy1">
 				<h3>Terms of Use</h3>
 				<div class="banner-bottom-grid1 privacy2-grid">
 					<div class="privacy2-grid1">
@@ -319,7 +319,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<ul class="w3_footer_grid_list">
 					<li><a href="/faqs">FAQ</a></li>
 					<li><a href="/privacy">privacy policy</a></li>
-					<li><a href="/privacy">terms of use</a></li>
+					<li><a href="/privacy#termsofuse">terms of use</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
@@ -408,6 +408,15 @@ $(document).ready(function(){
 			}
 		});
 
+	</script>
+	<script>
+		$(document).ready(function(){
+			if (window.location.hash == "#termsofuse") {
+				$('html, body').animate({
+					scrollTop: $("#termsofuse").offset().top - 120
+				}, 1000);
+			}
+		});
 	</script>
 </body>
 </html>
