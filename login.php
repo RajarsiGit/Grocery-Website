@@ -531,7 +531,7 @@ $(document).ready(function(){
 					$db_handle = new DBController();
 					$query = "SELECT c_name, c_photo FROM customer WHERE c_id = ".intval($_COOKIE['u_id'])." LIMIT 1";
 					$result = $db_handle->fetch($query);
-					echo "<div style='margin: 1em 1em 1em 1em; text-align: center;'><h3>Welcome!</h3><br><div><img src='".$result[0]['c_photo']."' height='100'></div><br><h4 style='padding: 1em 1em 1em 1em;'>".explode(' ', trim($result[0]['c_name']))[0]."</h4></div>";
+					echo "<div style='margin: 1em 1em 1em 1em; text-align: center;'><h3>Welcome!</h3><br><div><img src='".$result[0]['c_photo']."' height='100' draggable='false'></div><br><h4 style='padding: 1em 1em 1em 1em;'>".explode(' ', trim($result[0]['c_name']))[0]."</h4></div>";
 				}
 				else {
 					echo "";

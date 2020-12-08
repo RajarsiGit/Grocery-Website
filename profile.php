@@ -219,7 +219,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 											echo '<td style="width: 80%;"><input type="password" value="'.$value.'" disabled style="display: inline-flex; float: right; width: 100%;"></td></tr>';
 										}
 										elseif(ucfirst(substr($key, 2)) == 'Photo') {
-											echo '<td style="width: 80%;"><img src="'.$value.'" style="display: block; height: 150px; margin: 0 auto 20px auto; padding: 10px 0px; "></td></tr>';
+											echo '<td style="width: 80%;"><img src="'.$value.'" style="display: block; height: 150px; margin: 0 auto 20px auto; padding: 10px 0px;" draggable="false"></td></tr>';
 										}
 										else {
 											echo '<td style="width: 80%;"><input type="text" value="'.$value.'" disabled style="display: inline-flex; float: right; width: 100%;"></td></tr>';
