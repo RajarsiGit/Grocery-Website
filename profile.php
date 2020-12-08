@@ -202,7 +202,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <!-- about -->
 		<div class="w3_login">
 			<h3>Your Profile</h3>
-			<div class="w3_login_module">
+			<div class="w3_login_module" style="min-height: 600px;">
 				<div class="module form-module" style="max-width: 90%;">
 					<div class="form" style="display: block">
 						<form>
@@ -214,7 +214,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 									$result =  $db_handle->fetch($query);
 									echo '<table style="width:100%;"><tbody>';
 									foreach($result[0] as $key => $value) {
-										echo '<tr><td><label class="control-label" style="display: inline-flex; margin: 0 0 20px; padding: 10px 0px; width: 25%;">'.ucfirst(substr($key, 2)).' </label><td>';
+										echo '<tr><td><label class="control-label" style="display: inline-flex; margin: 0 0 20px; padding: 10px 0px; width: 25%; font-size: 100%; border: none; font-weight: bold; ">'.ucfirst(substr($key, 2)).' </label><td>';
 										if(ucfirst(substr($key, 2)) == 'Password') {
 											echo '<td style="width: 80%;"><input type="password" value="'.$value.'" disabled style="display: inline-flex; float: right; width: 100%;"></td></tr>';
 										}
