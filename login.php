@@ -5,7 +5,7 @@ License: MIT License
 License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 -->
 <!DOCTYPE html>
-<html class="no-js" style="scroll-behavior: smooth;">
+<html class="no-js">
 <head>
 <title>Our Grocery | Sign In & Sign Up</title>
 <!-- for-mobile-apps -->
@@ -85,17 +85,16 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
 								<?php
-                                    if(isset($_COOKIE['u_id'])){
-                                        require_once "php/db_controller.php";
-                                        $db_handle = new DBController();
-                                        $query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
-										$result =  $db_handle->fetch($query);
-                                        echo '<li><a href="/profile">'.explode(' ', trim($result[0]['c_name']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
-                                    }else{
-                                        echo '<li><a href="/login">Login</a></li>';
-                                    }
-                                ?>
-								<li><a href="/register">Sign Up</a></li>
+									if(isset($_COOKIE['u_id'])){
+										require_once "php/db_controller.php";
+										$db_handle = new DBController();
+										$query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
+      									$result =  $db_handle->fetch($query);  
+										echo '<li><a href="/profile">'.explode(' ', trim($result[0]['c_name']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+									}else{
+										echo '<li><a href="/login">Login</a></li><li><a href="/register">Sign Up</a></li>';
+									}
+								?>
 							</ul>
 						</div>
 					</div>	
@@ -242,7 +241,8 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 						<option value="Transgender">Transgender</option>
 						<option value="Others">Others</option>
 					  </select>
-					  <input type="file" id="file" name="Photo" placeholder="Photo" required=" " value=" " accept="image/*">
+					  <input type="file" id="file" name="Photo" placeholder="Photo" required=" " value=" " accept="image/*" style="display:none;">
+					  <label for="file" class="">Photo</label>
 					  <input type="text" name="Phone" placeholder="Phone Number" required=" " maxlength="10">
 					  <input type="email" name="Email" placeholder="Email Address" required=" " maxlength="255">
 					  <input type="text" name="Username" placeholder="Username" required=" " maxlength="255">
@@ -254,8 +254,8 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 					  <script>
 						  	$('#file').on('change', function() {
 								const size =  (this.files[0].size/1024).toFixed(2); 
-								if (size > 500) {
-									alert('File should be no more than 500KB!');
+								if (size > 1000) {
+									alert('File should be no more than 1MB!');
 									$('#file').val(null);
 								} else {
 								}
@@ -292,10 +292,10 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 									$('.module.form-module > .toggle, .form, .cta').fadeOut();
 									$('.module.form-module').html(data);
 									if($.cookie('u_id')) {
-										if($('.dropdown-menu.drp-mnu > li').length == 3) {
+										if($('.dropdown-menu.drp-mnu > li').length == 2) {
 											$('.dropdown-menu.drp-mnu > li:first-child').remove();
+											$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
 										}
-										$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
 										$.ajax({
 											type: 'GET',
 											url: 'php/getname.php',
@@ -334,10 +334,10 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 									$('.module.form-module > .toggle, .form, .cta').fadeOut();
 									$('.module.form-module').html(data);
 									if($.cookie('u_id')) {
-										if($('.dropdown-menu.drp-mnu > li').length == 3) {
+										if($('.dropdown-menu.drp-mnu > li').length == 2) {
 											$('.dropdown-menu.drp-mnu > li:first-child').remove();
+											$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
 										}
-										$('.dropdown-menu.drp-mnu > li:first-child > a').html("Logout").attr("onclick", "document.cookie = \"u_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC;\"; location.reload();");
 										$.ajax({
 											type: 'GET',
 											url: 'php/getname.php',

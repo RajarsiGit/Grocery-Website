@@ -2832,11 +2832,12 @@ input.checkbox:checked:after {
     font-weight: 400;
     line-height: 1;
 }
-.form-module input[type="text"],.form-module input[type="password"],.form-module input[type="email"],.form-module input[type="file"],.form-module select {
+.form-module input[type="text"],.form-module input[type="password"],.form-module input[type="email"],.form-module input[type="file"],.form-module select, .form-module label {
   background-color: white;
   outline: none;
   display: block;
   width: 100%;
+  color: #767676;
   border: 1px solid #d9d9d9;
   margin: 0 0 20px;
   padding: 10px 15px;
@@ -2846,7 +2847,7 @@ input.checkbox:checked:after {
   transition: 0.3s ease;
   font-size:14px;
 }
-.form-module input[type="text"]:focus,.form-module input[type="password"]:focus,.form-module input[type="email"]:focus,.form-module input[type="file"]:focus,.form-module select:focus {
+.form-module input[type="text"]:focus,.form-module input[type="password"]:focus,.form-module input[type="email"]:focus,.form-module input[type="file"]:focus,.form-module select:focus, .form-module label:focus {
   border:1px solid #A9A9A9;
   color: #333333;
 }

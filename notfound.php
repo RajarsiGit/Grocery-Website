@@ -5,7 +5,7 @@ License: MIT License
 License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 -->
 <!DOCTYPE html>
-<html class="no-js" style="scroll-behavior: smooth;">
+<html class="no-js">
 <head>
 <title>Our Grocery | Page Not Found - Error 404</title>
 <!-- for-mobile-apps -->

@@ -5,7 +5,7 @@ License: MIT License
 License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 -->
 <!DOCTYPE html>
-<html class="no-js" style="scroll-behavior: smooth;">
+<html class="no-js">
 <head>
 <title>Our Grocery | About Us</title>
 <!-- for-mobile-apps -->
@@ -91,10 +91,9 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
       									$result =  $db_handle->fetch($query);  
 										echo '<li><a href="/profile">'.explode(' ', trim($result[0]['c_name']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
 									}else{
-										echo '<li><a href="/login">Login</a></li>';
+										echo '<li><a href="/login">Login</a></li><li><a href="/register">Sign Up</a></li>';
 									}
 								?>
-								<li><a href="/register">Sign Up</a></li>
 							</ul>
 						</div>                  
 					</div>	

@@ -5,7 +5,7 @@ License: MIT License
 License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 -->
 <!DOCTYPE html>
-<html class="no-js" style="scroll-behavior: smooth;">
+<html class="no-js">
 <head>
 <title>Our Grocery | Home</title>
 <!-- for-mobile-apps -->
@@ -86,17 +86,16 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 						<div class="w3ls_vegetables">
 							<ul class="dropdown-menu drp-mnu">
 								<?php
-                                    if(isset($_COOKIE['u_id'])){
-                                        require_once "php/db_controller.php";
-                                        $db_handle = new DBController();
-                                        $query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
-                                        $result =  $db_handle->fetch($query);  
-                                        echo '<li><a href="/profile">'.explode(' ', trim($result[0]['c_name']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
-                                    }else{
-                                        echo '<li><a href="/login">Login</a></li>';
-                                    }
-                                ?>
-								<li><a href="/register">Sign Up</a></li>
+									if(isset($_COOKIE['u_id'])){
+										require_once "php/db_controller.php";
+										$db_handle = new DBController();
+										$query = "SELECT c_name from customer WHERE c_id = ".intval($_COOKIE['u_id']).";";
+      									$result =  $db_handle->fetch($query);  
+										echo '<li><a href="/profile">'.explode(' ', trim($result[0]['c_name']))[0].'</a></li><li><a href="" onclick="$.removeCookie(\'u_id\') = \'\'; location.reload();">Logout</a></li>';
+									}else{
+										echo '<li><a href="/login">Login</a></li><li><a href="/register">Sign Up</a></li>';
+									}
+								?>
 							</ul>
 						</div>                  
 					</div>	
