@@ -257,19 +257,21 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 								if (size > 1000) {
 									alert('File should be no more than 1MB!');
 									$('#file').val(null);
+									$('label[for=file]').html('Photo');
 								} else {
+									$('label[for=file]').html($('#file').val().split('\\').pop());
 								}
 							});
-						  $('#pass, #re_pass').on('keyup', function() {
-							  if($('#pass').val() == $('#re_pass').val()) {
-								$('#submit').prop('disabled', false).removeAttr('style');
-								$('#msg').html('Matching').css('color', 'green');
-							  }
-							  else {
-								$('#submit').prop('disabled', true).css('background', 'gray');
-								$('#msg').html('Not Matching').css('color', 'red');
-							  }
-						  });
+							$('#pass, #re_pass').on('keyup', function() {
+								if($('#pass').val() == $('#re_pass').val()) {
+									$('#submit').prop('disabled', false).removeAttr('style');
+									$('#msg').html('Matching').css('color', 'green');
+								}
+								else {
+									$('#submit').prop('disabled', true).css('background', 'gray');
+									$('#msg').html('Not Matching').css('color', 'red');
+								}
+							});
 					  </script>
 					  <input type="submit" id="submit" value="Register">
 					</form>
