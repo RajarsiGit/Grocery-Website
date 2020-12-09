@@ -285,54 +285,17 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 							<article style="position: absolute; width: 100%; opacity: 0;"> 
 								<div class="banner-wrap">
 									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Andrew Smith <span>Customer</span></h4>
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Our Grocery provides a very smooth shopping experience. This site has been designed, prioritizing the customer's experience. The UI looks out of this world. Also, all the functionalities pretty smooth and efficient. Kudos to the team for creating such amazing software. Shopping has never been so easy and overwhelming. .</p>
+										<h4>Souvik Ghosh <span>Customer</span></h4>
 									</div>
 									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Thomson Richard <span>Customer</span></h4>
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>I just wanted to share a quick note and let you know that you guys did a really good job. It’s really great how easy your website is to explore & do smooth shopping. I never had any problem at all.Your online shopping site is so much faster and easier to work with than other sites. Now it’s almost like having a supermarket right here with me.Thanks for being so awesome. High fives!</p>
+										<h4>Ayan Mukherjee <span>Customer</span></h4>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
 							</article>
-							<article style="position: absolute; width: 100%; opacity: 0;"> 
-								<div class="banner-wrap">
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Crisp Kale <span>Customer</span></h4>
-									</div>
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>John Paul <span>Customer</span></h4>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</article>
-							<article style="position: absolute; width: 100%; opacity: 0;"> 
-								<div class="banner-wrap">
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Rosy Carl <span>Customer</span></h4>
-									</div>
-									<div class="col-md-6 w3_testimonials_grid">
-										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
-											repellat.</p>
-										<h4>Rockson Doe <span>Customer</span></h4>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-							</article>
+							
 						</div>
 					</div>
 					<script src="js/jquery.wmuSlider.js"></script> 
