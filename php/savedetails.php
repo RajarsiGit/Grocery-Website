@@ -20,7 +20,7 @@
         $query = "INSERT INTO address_details (a_name, a_phone, a_landmark, a_city, a_type, total_price) VALUES('".$name."',  '".$phone."', '".$landmark."', '".$city."', '".$type."', '".$total_price."');";
         $result =  $db_handle->run($query);
         if($result) {
-          echo "<h4 style='text-align: center;'>Thank you for shopping with us! Taking you to payment page...</h4><script>setTimeout(function() {location.href = '/payment';}, 2500);</script>";
+          echo "<h4 style='text-align: center;'>Thank you for shopping with us! Your order will be delivered in 4 to 5 days....</h4><script>setTimeout(function() {location.href = '/home';}, 5000);</script>";
         }
         else{
           echo "<h4 style='text-align: center;'>Data failed to be inserted!</h4><script>setTimeout(function() {location.reload();}, 1500);</script>";
