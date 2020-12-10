@@ -56,6 +56,9 @@
         case '/checkout' :
             require __DIR__ . '/checkout.php';
             break;
+        case '/payment' :
+            require __DIR__ . '/payment.php';
+            break;
         case '/events' :
             require __DIR__ . '/events.php';
             break;
