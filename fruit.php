@@ -319,7 +319,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 				<div class="clearfix"> </div>
 			</div>
 			<div class="wthree_footer_copy">
-				<p>© 2020 Grocery Store. All rights reserved | Design by <a href="https://rajarsi.ml/" target="_blank">Rajarsi</a> & Sawon<a href="sawonbhattacharya.github.io/Portfolio/" target="_blank"></p>
+				<p>© 2020 Grocery Store. All rights reserved | Design by <a href="https://rajarsi.ml/" target="_blank">Rajarsi</a> & <a href="https://sawonbhattacharya.github.io/Portfolio/" target="_blank">Sawon</a></p>
 			</div>
 		</div>
 	</div>
