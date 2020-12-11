@@ -290,7 +290,14 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 							on <a href="https://our-grocery.tk/">our-grocery.tk</a> and any authorized clients are licensed, not sold. Such content 
 							is protected by copyright laws and, if applicable, by international treaties.</p>
 						</div>
-						
+						<div class="privacy2-grid1-sub">
+							<h5>Site Cookies</h5>
+							<p>We store cookies on your browsing device in your browser allocated disk space. Cookies are basically needed for smooth
+							running of this website which includes your session time, as well as your cart choices and your login information. These 
+							information stored on your computer will give you a better and hassle-free user experience. Since we provide dyanamic 
+							content on <a href="https://our-grocery.tk/">our-grocery.tk</a>, we require the use of cookies in your browser. Rest assured 
+							our cookies will not harm you or your device in any manner whatsoever.</p>
+						</div>
 					</div>
 				</div>
 			</div>
