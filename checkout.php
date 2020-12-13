@@ -229,7 +229,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
                                 $result =  $db_handle->fetch($query);
                                 echo "<tr>
                                         <td class=\"invert\">".strval($i)."</td>
-                                        <td class=\"invert-image\"><a href=\"/single\"><img src=\"".$result[0]['p_img_name']."\" alt=\" \" class=\"img-responsive\"></a></td>
+                                        <td class=\"invert-image\"><a href=\"\"><img src=\"".$result[0]['p_img_name']."\" alt=\" \" class=\"img-responsive\"></a></td>
                                         <td class=\"invert\">".strval($q)."</td>
                                         <td class=\"invert\">".$p_name."</td>
                                         <td class=\"invert\">".number_format(strval($r), 2, '.', '')."</td>
@@ -328,6 +328,9 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 								processData: false,
 								contentType: false,
 								success: function(data) {
+									if(window.history.replaceState) {
+										window.history.replaceState(null, null, window.location.href);
+									}
 									$('.col-md-8.address_form_agile').html(data);
 								}
 							});
