@@ -180,7 +180,7 @@ ul.dropdown-menu.drp-mnu li a i {
     text-decoration: none;
     text-transform: uppercase;
     display: block;
-    background: url(../images/img-sp.png) no-repeat 54px 6px;
+    background: url(../images/img-sp.png) no-repeat 66px 6px;
     line-height: 1;
     height: 97px;
 }
@@ -191,7 +191,8 @@ ul.dropdown-menu.drp-mnu li a i {
 	color:#fff;
 }
 .w3ls_logo_products_left h1 a span {
-    font-size: .3em;
+	font-size: .3em;
+	font-weight: 900;
     display: block;
     color: #FA1818;
 }
@@ -3072,7 +3073,7 @@ input.checkbox:checked:after {
 	}
 	.w3ls_logo_products_left h1 a {
 		font-size: 1.3em;
-		background: url(../images/img-sp.png) no-repeat 43px -3px;
+		background: url(../images/img-sp.png) no-repeat 54px -3px;
 		height: 88px;
 	}
 	.w3ls_logo_products_left1 ul.phone_email li:last-child {
@@ -3260,7 +3261,7 @@ input.checkbox:checked:after {
 	}
 	.w3ls_logo_products_left h1 a {
 		font-size: 1.2em;
-		background: url(../images/img-sp.png) no-repeat 38px -9px;
+		background: url(../images/img-sp.png) no-repeat 47px -9px;
 		height: 83px;
 	}
 	.w3ls_logo_products_left1 ul.phone_email li {
@@ -3569,7 +3570,7 @@ input.checkbox:checked:after {
 	}
 	.w3ls_logo_products_left h1 a {
 		font-size: 1em;
-		background: url(../images/img-sp.png) no-repeat 28px -17px;
+		background: url(../images/img-sp.png) no-repeat 35px -17px;
 		height: 74px;
 	}
 	.w3ls_logo_products_left1 {
@@ -3680,7 +3681,7 @@ input.checkbox:checked:after {
 	}
 	.w3ls_logo_products_left h1 a {
 		font-size: 1.2em;
-		background: url(../images/img-sp.png) no-repeat 38px -8px;
+		background: url(../images/img-sp.png) no-repeat 47px -8px;
 		height: 85px;
 	}
 	ul.dropdown-menu.drp-mnu {
@@ -4093,12 +4094,12 @@ input.checkbox:checked:after {
 	.w3ls_logo_products_left {
 		float: none;
 		text-align: center;
-		width: 31%;
+		width: max-content;
 		margin: 0 auto;
 	}
 	.w3ls_logo_products_left h1 a {
 		font-size: 1em;
-		background: url(../images/img-sp.png) no-repeat 28px -18px;
+		background: url(../images/img-sp.png) no-repeat 35px -18px;
 		height: 75px;
 	}
 	.w3ls_logo_products_left1 ul.special_items li i {
@@ -4366,7 +4367,7 @@ input.checkbox:checked:after {
 	.w3ls_logo_products_left {
 		float: none;
 		text-align: center;
-		width: 31%;
+		width: max-content;
 		margin: 0 auto;
 	}
 	.w3ls_logo_products_left1:nth-child(3) {

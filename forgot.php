@@ -34,6 +34,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/three.min.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script> 
 <script type="text/javascript">
@@ -47,14 +48,17 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 <!-- start-smoth-scrolling -->
 </head>
 <div class="loader_container">
-	<div class="loader">
-		<div></div><div></div><div></div><div></div>
+	<div>
+		<script src="js/loader.js"></script>
 		<script>
 			$(document).ready(function(){
 				$('body').find('img[alt="www.000webhost.com"]').parent().closest('a').closest('div').remove();
 			});
 			$(window).load(function() {
 				$(".loader_container").fadeOut("slow");
+				setTimeout(() => {
+					$(".loader_container").remove();
+				}, 5000);
 			});
 		</script>
 	</div>
@@ -126,7 +130,7 @@ License URL: https://github.com/RajarsiGit/Grocery-Website/blob/main/LICENSE/
 	<div class="logo_products">
 		<div class="container">
 			<div class="w3ls_logo_products_left">
-				<h1><a href="/"><span>Grocery</span> Store</a></h1>
+				<h1><a href="/"><span>Our</span>Grocery</a></h1>
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
