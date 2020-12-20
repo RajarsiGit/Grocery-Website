@@ -14,5 +14,7 @@
             "username": "root",
             "password": "toor"
         }
-    ]
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
